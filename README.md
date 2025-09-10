@@ -3,8 +3,8 @@ Code for https://brookemahoney.com.
 ## To run locally with python:
 
 ```
-cd docroot;
-python -m http.serve;
+cd docs;
+python -m http.server;
 ```
 
-Preview site at https://localhost:8000
+Preview site at http://localhost:8000

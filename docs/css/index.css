@@ -1,0 +1,46 @@
+:root {
+  --color-background: indigo;
+  --color-heading: orange;
+  --color-text: pink;
+  --color-link: yellow;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+a {
+  color: var(--color-link);
+
+  &:visited {
+    text-decoration-color: var(--color-heading);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
