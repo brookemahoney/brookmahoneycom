@@ -2,28 +2,96 @@
 <head>
   <title>Brooke Mahoney</title>
   <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/index.css" />
+  <style>
+    :root {
+      --color-background: linear-gradient(180deg, #5c2882 0%, #541582 16%, #4b0082 84%, #23003d 100%);
+      --color-heading: goldenrod;
+      --color-text: cornsilk;
+      --color-link: yellow;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--color-background);
+      color: var(--color-text);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 24px;
+      height: 100%;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    
+    main {
+      background-color: rgba(0,0,0,.2);
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px #11111188, -5px -5px 5px #11111188;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: var(--color-link);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--color-heading);
+      margin: .4em 0;
+      text-shadow: 0.08em 0.08em 0.1em #2e002e;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 38px;
+    }
+
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+
+</style>
 </head>
 <body>
-  <h1>Brooke Mahoney</h1>
+  <main>
 
-  <h2>Hello</h2>
+    <h1>Brooke Mahoney</h1>
 
-  <p>Thank you for visiting.</p>
-
-  <h2>Web Development</h2>
-
-  <p>
-    I've been coding for the web since 1995. I'm an expert at HTML, CSS, Javascript, and PHP. I specialize in Drupal and React.
-  </p>
-
-  <ul>
-    <li>
-      <a href="https://drupal.org/u/loopduplicate">My profile on Drupal.org</a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/brooke-marie-mahoney/">My profile on Linked.in</a>
-    </li>
-  </ul>
+    <h2>Coding for the Web Since 1995</h2>
+  
+    <h2>Expertise</h2>
+  
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>PHP</li>
+    </ul>
+  
+    <h2>Specialties</h2>
+  
+    <ul>
+      <li>Drupal</li>
+      <li>React</li>
+    </ul>
+  
+    <h2>External Links</h2>
+  
+    <ul>
+      <li>
+        <a href="https://drupal.org/u/loopduplicate">Drupal.org</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/brooke-marie-mahoney/">Linked.in</a>
+      </li>
+    </ul>
+  
+  </main>
 </body>
 </html>
