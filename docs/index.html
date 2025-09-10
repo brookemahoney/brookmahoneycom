@@ -21,17 +21,10 @@
       font-size: 24px;
       height: 100%;
       margin: 0 auto;
-      max-width: 800px;
+      max-width: 840px;
+      padding: 0 2%;
     }
     
-    main {
-      background-color: rgba(0,0,0,.2);
-      border-radius: 20px;
-      box-shadow: 5px 5px 5px #11111188, -5px -5px 5px #11111188;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
     a {
       color: var(--color-link);
     }
@@ -44,12 +37,14 @@
 
     h1 {
       font-size: 48px;
+      margin: 40px 0;
       text-align: center;
     }
 
     h2 {
+      background-color: rgba(0,0,0,.2);
       font-size: 38px;
-      margin: 0.2em 0 0.8em;
+      text-align: center;
     }
 
     h3 {
@@ -61,6 +56,23 @@
       max-width: 100%;
     }
 
+    .card {
+      background-color: #ffffff11;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px #11111188, -10px -10px 20px #ffffff33;
+      padding-bottom: 20px;
+
+      > * {
+        margin: 20px;
+      }
+
+      h2 {
+        border-bottom: 1px solid #ffffff33;
+        margin: 0;
+        padding: 10px 0 20px;
+      }
+    }
+
 </style>
 </head>
 <body>
@@ -69,35 +81,38 @@
 
   <main>
     
-    <h2>Coding for the Web Since 1995</h2>
+    <section class="card">
+      <h2>Coding for the Web Since 1995</h2>
   
-    <h3>Expertise</h3>
-  
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Javascript</li>
-      <li>PHP</li>
-    </ul>
-  
-    <h3>Specialties</h3>
-  
-    <ul>
-      <li>Drupal</li>
-      <li>React</li>
-    </ul>
-  
-    <h3>External Links</h3>
-  
-    <ul>
-      <li>
-        <a href="https://drupal.org/u/loopduplicate">Drupal.org</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/brooke-marie-mahoney/">Linked.in</a>
-      </li>
-    </ul>
-  
+      <h3>Expertise</h3>
+    
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+      </ul>
+    
+      <h3>Specialties</h3>
+    
+      <ul>
+        <li>Drupal</li>
+        <li>React</li>
+      </ul>
+    
+      <h3>External Links</h3>
+    
+      <ul>
+        <li>
+          <a href="https://drupal.org/u/loopduplicate">Drupal.org</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/brooke-marie-mahoney/">Linked.in</a>
+        </li>
+      </ul>
+    
+    </section>
+
   </main>
 
 </body>
