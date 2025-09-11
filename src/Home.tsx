@@ -1,6 +1,5 @@
-import './App.css'
 
-function App() {
+export default function Home() {
   return (
     <>
       <h1>Brooke Mahoney</h1>
@@ -41,7 +40,5 @@ function App() {
 
       </main>
     </>
-  )
-}
-
-export default App
+  );
+};

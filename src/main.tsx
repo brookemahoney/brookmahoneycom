@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './normalize.css'
-import App from './App.tsx'
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router';
+import './normalize.css';
+import './App.css';
+import Home from './Home.tsx';
+
+// See https://reactrouter.com/start/declarative/routing for help on routing.
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+  <BrowserRouter>
+    <Routes>
+      <Route index element={<Home />} />
+    </Routes>
+  </BrowserRouter>,
+);
