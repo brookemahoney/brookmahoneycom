@@ -1,7 +1,12 @@
+import type { Route } from "./+types/home";
 
-export default function Home() {
-  return (
-    <>
+export const meta = ({ }: Route.MetaArgs) => ([
+  { title: "Brooke Mahoney" },
+  { name: "description", content: "Coding for the Web Since 1995" },
+]);
+
+const Home = () => (
+  <>
       <h1>Brooke Mahoney</h1>
 
       <main>
@@ -40,5 +45,6 @@ export default function Home() {
 
       </main>
     </>
-  );
-};
+);
+
+export default Home;
