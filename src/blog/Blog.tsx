@@ -1,3 +1,6 @@
+import './Blog.css';
+import FooterNav from '../components/FooterNav';
+
 export default function Blog() {
   return (
     <div className="page--blog">
@@ -5,20 +8,16 @@ export default function Blog() {
 
       <main>
 
-        <section className="card">
+        <section className="card card--blog-posts">
           <h2 className="card--heading">Blog Posts</h2>
-          <ul>
-            <li><a href="/blog/20250912">20250912</a></li>
-          </ul>
+          <section className="card--inner">
+            <ul>
+              <li><a href="/blog/20250912">20250912 - Random Things, Catching Up, and AI</a></li>
+            </ul>
+          </section>
         </section>
 
-        <nav className="menu--footer">
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-          </ul>
-        </nav>
+        <FooterNav />
 
       </main>
     </div>

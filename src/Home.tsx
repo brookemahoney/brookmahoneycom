@@ -1,4 +1,5 @@
 import './Home.css';
+import FooterNav from './components/FooterNav';
 
 export default function Home() {
   return (
@@ -11,44 +12,39 @@ export default function Home() {
 
         <section className="card">
           <h2 className="card--heading">Coding for the Web Since 1995</h2>
+          <section className="card--inner">
 
-          <h3>Expertise</h3>
+            <h3>Expertise</h3>
 
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>PHP</li>
-          </ul>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>PHP</li>
+            </ul>
 
-          <h3>Specialties</h3>
+            <h3>Specialties</h3>
 
-          <ul>
-            <li>Drupal</li>
-            <li>React</li>
-          </ul>
+            <ul>
+              <li>Drupal</li>
+              <li>React</li>
+            </ul>
 
-          <h3>External Links</h3>
+            <h3>External Links</h3>
 
-          <ul>
-            <li>
-              <a href="https://drupal.org/u/loopduplicate">Drupal.org</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/brooke-marie-mahoney/">Linked.in</a>
-            </li>
-          </ul>
+            <ul>
+              <li>
+                <a href="https://drupal.org/u/loopduplicate">Drupal.org</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/brooke-marie-mahoney/">Linked.in</a>
+              </li>
+            </ul>
 
+          </section>
         </section>
 
-        <nav className="menu--footer">
-          <ul>
-            <li>
-              <a href="/blog">Blog</a>
-            </li>
-          </ul>
-        </nav>
-
+        <FooterNav />
 
       </main>
     </div>

@@ -3,6 +3,8 @@
   --color-heading: orange;
   --color-text: cornsilk;
   --color-link: deepskyblue;
+  --padding: 20px;
+  --border-radius: var(--padding);
 }
 
 *, *::before, *::after {
@@ -61,19 +63,20 @@ img {
 
 .card {
   background-color: #ffffff11;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   box-shadow: 1px 1px 2px #11111188, -1px -1px 2px #ffffff33;
-  padding-bottom: 20px;
-
-  > * {
-    margin: 20px;
-  }
+  padding-bottom: var(--padding);
+  margin-bottom: calc(var(--padding) *2);
 }
 
 .card--heading {
   background-color: rgba(0,0,0,0.2);
   border-bottom: 1px solid #ffffff33;
-  border-radius: 20px 20px 0 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   margin: 0;
-  padding: 10px 0 20px;
+  padding: calc(var(--padding)/2) 0 var(--padding);
+}
+
+.card--inner {
+  margin: 20px;
 }
