@@ -1,15 +1,21 @@
-import FooterNav from '../components/FooterNav';
-
-export default function Blog20250912() {
-  return (
-    <div className="page--blog">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+    <title>Brooke Mahoney</title>
+  </head>
+  <body>
+    <div class="page--blog">
       <h1>Brooke Mahoney</h1>
 
       <main>
 
-        <section className="card">
-          <h2 className="card--heading">20250912</h2>
-          <section className="card--inner">
+        <section class="card">
+          <h2 class="card--heading">20250912</h2>
+          <section class="card--inner">
             <h3>Random Things, Catching Up</h3>
             <p>
               Things. Stuff. Blog. React. Drupal. Gatsby. Tome. React-Router. Remix.
@@ -28,7 +34,7 @@ export default function Blog20250912() {
               I'm really looking forward to working full time again. I just need to find a good company that could use someone who likes working with Drupal and/or React. In the meantime, I'm going to spend my days working on learning what best practices have changed.
             </p>
             <p>
-              This site is hosted on Github pages, which is kinda cool. They host the code too. So, I just am paying for a domain and email and hosting is done for free. I just have to keep the source code for the site public, which is fine. Open source it all, ok. It's using Vite with a simple React Router implementation for now.
+              This site is hosted on Github pages, which is kinda cool. They host the code too. So, I just am paying for a domain and email and hosting is done for free. I just have to keep the source code for the site public, which is fine. Open source it all, ok. I was using Vite with a simple React Router implementation. For now, I'm using vanilla HTML and CSS.
             </p>
             <p>
               So, I suppose I'll migrate this site over to Drupal with Gatsby. I'll develop the Drupal site and back it up locally with Apple's Time Machine. I'll use Gatsby to export my Drupal site to a static site. This method should work good for my home site with its simplistic blog that I want to keep this year and it will be a good way to showcase some of my Drupal and React skills.
@@ -45,9 +51,24 @@ export default function Blog20250912() {
           </section>
         </section>
 
-        <FooterNav />
+        <section class="card footer-nav">
+          <h2 class="card--heading">Site Navigation</h2>
+          <section class="card--inner">
+            <nav class="footer-nav--menu">
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/blog">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+
 
       </main>
     </div>
-  );
-};
+  </body>
+</html>
