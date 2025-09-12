@@ -28,6 +28,10 @@ body {
 
 a {
   color: var(--color-link);
+
+  &:hover {
+    color: plum;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,4 +83,13 @@ img {
 
 .card--inner {
   margin: 20px;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: var(--color-heading);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
