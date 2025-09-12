@@ -1,0 +1,15 @@
+:root {
+  background: transparent;
+}
+
+#root {
+  margin-bottom: 40px;
+}
+
+a {
+  color: var(--color-link);
+
+  &:hover {
+    color: plum;
+  }
+}
