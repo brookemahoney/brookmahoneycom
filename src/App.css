@@ -2,7 +2,7 @@
   --color-background: linear-gradient(180deg, #5c2882 0%, #541582 16%, #4b0082 84%, #23003d 100%);
   --color-heading: orange;
   --color-text: cornsilk;
-  --color-link: yellow;
+  --color-link: deepskyblue;
 }
 
 *, *::before, *::after {
@@ -15,12 +15,12 @@ html {
 
 body {
   background: var(--color-background);
-  color: var(--color-text);
+  color: pink;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
   height: 100%;
   margin: 0 auto;
-  max-width: 840px;
+  max-width: 1200px;
   padding: 0 2%;
 }
 
@@ -68,12 +68,12 @@ img {
   > * {
     margin: 20px;
   }
+}
 
-  h2 {
-    background-color: rgba(0,0,0,0.2);
-    border-bottom: 1px solid #ffffff33;
-    border-radius: 20px 20px 0 0;
-    margin: 0;
-    padding: 10px 0 20px;
-  }
+.card--heading {
+  background-color: rgba(0,0,0,0.2);
+  border-bottom: 1px solid #ffffff33;
+  border-radius: 20px 20px 0 0;
+  margin: 0;
+  padding: 10px 0 20px;
 }

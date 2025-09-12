@@ -1,13 +1,16 @@
+import './Home.css';
 
 export default function Home() {
   return (
-    <>
+    <div className="page--home">
       <h1>Brooke Mahoney</h1>
 
       <main>
 
+        <p className="home--welcome">Welcome to the fanciest website ever!</p>
+
         <section className="card">
-          <h2>Coding for the Web Since 1995</h2>
+          <h2 className="card--heading">Coding for the Web Since 1995</h2>
 
           <h3>Expertise</h3>
 
@@ -38,7 +41,16 @@ export default function Home() {
 
         </section>
 
+        <nav className="menu--footer">
+          <ul>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+          </ul>
+        </nav>
+
+
       </main>
-    </>
+    </div>
   );
 };
