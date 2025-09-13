@@ -7,7 +7,9 @@
   --border-radius: var(--padding);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -34,15 +36,22 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
   color: var(--color-heading);
+  font-weight: bold;
   margin: .4em 0;
   text-shadow:
     0.08em 0.08em 0.1em #2e002e,
     -0.04em -0.04em 0.1em #9348c8;
 }
 
-h1 {
+h1, .site-title {
   font-size: 48px;
   margin: 40px 0;
   text-align: center;
@@ -74,7 +83,7 @@ img {
 }
 
 .card--heading {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid #ffffff33;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   margin: 0;
@@ -85,11 +94,14 @@ img {
   margin: 20px;
 }
 
-.site-title a {
-  text-decoration: none;
-  color: var(--color-heading);
+.site-title {
 
-  &:hover {
-    text-decoration: underline;
+  a {
+    text-decoration: none;
+    color: var(--color-heading);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

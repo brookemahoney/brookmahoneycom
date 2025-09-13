@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+    <title>Brooke Mahoney</title>
+  </head>
+  <body>
+    <div class="page--blog">
+      <div class="site-title">
+        <a href="/">Brooke Mahoney</a>
+      </div>
+
+      <main>
+
+        <section class="card">
+          <h1 class="card--heading">Drupal Tome and Gatsby - 20250912-1</h2>
+          <section class="card--inner">
+            <h3>Let's do Drupal Gatsby</h3>
+            <p>
+              Deep breath. OK, I really want this site to be a Drupal Gatsby site. Let's plan it out. I'll read through the docs on the Drupal Gatsby project pages first, to see if there's a recipe available. Then, using Orbstack and DDEV I'll spin up a new drupal instance. I think it makes sense to have the root folder live in a subfolder of the main repo... like how about 'drupal'.
+            </p>
+            <h3>Let's do Tome</h3>
+            <p>
+              Found this: "You may use any static site generator in conjunction with Tome by reading exporting JSON directly. See tome-gatsby for an example of a Gatsby integration."
+            </p>
+            <p>
+              "If you want to use Drupal to generate HTML, Tome ships with a static site generator that uses Drupal's internal request handling and concurrency to ensure that pages are exported as quickly as possible."
+              <cite><a href="https://tome.fyi/docs/technical/static/">https://tome.fyi/docs/technical/static/</a></cite>
+            </p>
+            <p>
+              Aside: I asked them if they meant "reading exported JSON" instead: https://github.com/drupal-tome/drupal-tome.github.io/issues/35
+            </p>
+            <p>
+              So, If I use Tome, I can use their generator, or Gatsby's, or others. I think it makes sense to Condiser using Tome, especially since the University of Maryland started using it to host 1900 pages, according to a presentation given a few months ago. "At USA.gov, we've reimagined Drupal—not as a single monolith, but as a constellation of microservices, with the Tome module powering our static site generation (SSG) strategy. " Speaker: Jacob Yeager <cite>"Best Drupal is No Drupal Static Site Generation with Tome and Microservices" - <a href="https://www.youtube.com/watch?v=aWWwOKv8fPg">https://www.youtube.com/watch?v=aWWwOKv8fPg</a></cite>
+            </p>
+
+          </section>
+        </section>
+
+        <section class="card footer-nav">
+          <h2 class="card--heading">Site Navigation</h2>
+          <section class="card--inner">
+            <nav class="footer-nav--menu">
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/blog">Blog</a>
+                </li>
+                <li>
+                  <a href="/rando-pet">Random Adoptable Pet</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+
+
+      </main>
+    </div>
+  </body>
+</html>
