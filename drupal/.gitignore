@@ -1,0 +1,6 @@
+.ddev
+vendor
+web
+.editorconfig
+.gitattributes
+recipes
