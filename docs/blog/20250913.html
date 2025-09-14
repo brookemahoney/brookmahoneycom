@@ -22,31 +22,21 @@
           <section class="card--inner">
             <h3>Morning, ya'll</h3>
             <p>
-              When it's morning, I catch up on reading. I check drupal planet, ycombinator, youtube subs, medium digest,
-              email, this, that, and the other. If every day I do this, I know I'm still developing at the cutting edge.
-              When something new comes out, I will always at least see the headlines.
+              When it's morning, I catch up on reading. I check drupal planet, ycombinator, youtube subs, medium digest, email, this, that, and the other. If every day I do this, I know I'm still developing at the cutting edge. When something new comes out, I will always at least see the headlines.
             </p>
             <p>
-              Yesterday was productive. I learned that Tome is a cool thing for static site generators for Drupal and
-              that it integrates with Gatsby or anything else that can digest JSON. This seems to be a great thing to
-              use. Even if it's buggy, it will be fine, because I can help fix it.
+              Yesterday was productive. I learned that Tome is a cool thing for static site generators for Drupal and that it integrates with Gatsby or anything else that can digest JSON. This seems to be a great thing to use. Even if it's buggy, it will be fine, because I can help fix it.
             </p>
             <p>
-              I like the idea of Tome, which can use Drupal's caching and rendering pipelines. Does the Drupal Gatsby
-              module do anything similar or does it just hook up to GraphQL? What does the module ecosystem look like
-              for Drupal Gatsby versus Tome? Does it makes sense for the two modules to work together so that the Gatsby
+              I like the idea of Tome, which can use Drupal's caching and rendering pipelines. Does the Drupal Gatsby module do anything similar or does it just hook up to GraphQL? What does the module ecosystem look like for Drupal Gatsby versus Tome? Does it makes sense for the two modules to work together so that the Gatsby
               module provides a generator entity type for Tome?
             </p>
             <p>
-              I think the first thing I'll do is spin up a default drupal site and then add Tome to it and see what that
-              does.
+              I think the first thing I'll do is spin up a default drupal site and then add Tome to it and see what that does.
             </p>
             <h3>Spinning up a Tome Drupal site locally</h3>
             <p>
-              FirstStart Orbstack. Then, Go to the DDEV docs for the most up to date instructions on creating a new
-              Drupal site: <a
-                href="https://docs.ddev.com/en/stable/users/quickstart/#drupal">https://docs.ddev.com/en/stable/users/quickstart/#drupal</a>.
-              At the time of this writing, this is how it's done:
+              FirstStart Orbstack. Then, Go to the DDEV docs for the most up to date instructions on creating a new Drupal site: <a href="https://docs.ddev.com/en/stable/users/quickstart/#drupal">https://docs.ddev.com/en/stable/users/quickstart/#drupal</a>. At the time of this writing, this is how it's done:
             </p>
             <p>
               <code>
@@ -62,9 +52,7 @@
               </code>
             </p>
             <p>
-              Next, I'll visit <a
-                href="https://tome.fyi/docs/installing-existing-site/">https://tome.fyi/docs/installing-existing-site/</a>
-              and follow the instructions there to install Tome on an existing site.
+              Next, I'll visit <a href="https://tome.fyi/docs/installing-existing-site/">https://tome.fyi/docs/installing-existing-site/</a> and follow the instructions there to install Tome on an existing site.
             </p>
             <p>
               <code>
@@ -98,6 +86,12 @@ open http://localhost:8001
             <p>
               Now that I've tried Drupal 11 with Tome and I've started to configure the Drupal site, I'm wondering if using Drupal CMS instead of core Drupal 11 makes more sense. I'm going to give that a go. I might still end up using core and a few contrib modules, but I won't know for sure until I really get my hands dirty with Drupal CMS.
             </p>
+            <h3>The road to Drupal Core contributions.</h3>
+            <p>I've tried out Drupal CMS. When I started to dig into what the new core modules are. I see there's an Announcements module but I can't tell what it does. I install the help module and see that the help page for it could use a bit of improvement. This is a perfect time for me to set up my computer for Drupal Core development. After a lot of time searching through various methods, I came across the DDEV concept of "add-ons". There are add-ons for contributing to Drupal core and contrib. Woo hoo.<br>
+              <cite><a href="https://addons.ddev.com/addons/justafish/ddev-drupal-core-dev">https://addons.ddev.com/addons/justafish/ddev-drupal-core-dev</a></cite><br>
+              <cite><a href="https://addons.ddev.com/addons/ddev/ddev-drupal-contrib">https://addons.ddev.com/addons/ddev/ddev-drupal-contrib</a></cite>
+            </p>
+            </h3>
           </section>
       </section>
 
