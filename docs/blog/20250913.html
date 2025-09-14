@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/normalize.css" />
   <link rel="stylesheet" href="../css/app.css" />
-  <title>Morning routine, Trying Tome | Brooke Mahoney</title>
+  <title>Morning routine, Trying Tome, and Contributing to Drupal Core | Brooke Mahoney</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     <main>
 
       <section class="card">
-        <h1 class="card--heading">20250913 - Morning routine, Trying Tome</h2>
+        <h1 class="card--heading">20250913 - Morning routine, Trying Tome, and Contributing to Drupal Core</h2>
           <section class="card--inner">
             <h3>Morning, ya'll</h3>
             <p>
@@ -91,15 +91,13 @@ open http://localhost:8001
               <cite><a href="https://addons.ddev.com/addons/justafish/ddev-drupal-core-dev">https://addons.ddev.com/addons/justafish/ddev-drupal-core-dev</a></cite><br>
               <cite><a href="https://addons.ddev.com/addons/ddev/ddev-drupal-contrib">https://addons.ddev.com/addons/ddev/ddev-drupal-contrib</a></cite>
             </p>
-            <p>
-              The core add-on is not an official ddev add-on and it doesn't seem to be as feature-rich as the contrib one. My next strategy for learning is to watch the most recent version of the First Time Contributer Workshop on youtube: <a href="https://www.youtube.com/watch?v=5MMk--3ez9Y">https://www.youtube.com/watch?v=5MMk--3ez9Y</a>.
-            </p>
-            <p>
-              Dang, it's not really technical enough to help me.
-            </p>
-            <h3>OK, the new way (versus the old way of making a diff and a patch file) to contribute to Drupal core is:</h3>
+
+            <h3>
+              OK, the new plan (versus the old way of making a diff and a patch file) to contribute to Drupal core is:
+            </h3>
+
             <ul>
-              <li>Use ddev to create an environment to test changes using a combination of mark.ie's approach, which reminds us to use the <code>--prefer-source</code> composer flag: <a href="https://mark.ie/blog/setting-up-a-local-development-environment-with-ddev-to-contribute-to-drupal-core/">https://mark.ie/blog/setting-up-a-local-development-environment-with-ddev-to-contribute-to-drupal-core/</a>, and <a href="https://addons.ddev.com/addons/justafish/ddev-drupal-core-dev">https://addons.ddev.com/addons/justafish/ddev-drupal-core-dev</a></li>
+              <li>Use ddev to create an environment to test changes using a combination of <a href="https://mark.ie/blog/setting-up-a-local-development-environment-with-ddev-to-contribute-to-drupal-core/">mark.ie's approach</a>, which reminds us to use the <code>--prefer-source</code> composer flag, and <a href="https://addons.ddev.com/addons/justafish/ddev-drupal-core-dev">the ddev core add-on</a>. Terminal commands below.</li>
               <li>Once satisfied, make an issue on d.o.</li>
               <li>When the issue is created, a button appears that allows for creating an issue fork.</li>
               <li>Using a separate directory from the one you test locally in, commit your changes to that branch and push back up.</li>
