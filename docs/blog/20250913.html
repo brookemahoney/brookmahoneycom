@@ -97,23 +97,12 @@ open http://localhost:8001
             </h3>
 
             <ul>
-              <li>Use ddev to create an environment to test changes using a combination of <a href="https://mark.ie/blog/setting-up-a-local-development-environment-with-ddev-to-contribute-to-drupal-core/">mark.ie's approach</a>, which reminds us to use the <code>--prefer-source</code> composer flag, and <a href="https://addons.ddev.com/addons/justafish/ddev-drupal-core-dev">the ddev core add-on</a>. Terminal commands below.</li>
+              <li>Use ddev to create an environment to test changes using <a href="https://addons.ddev.com/addons/justafish/ddev-drupal-core-dev">the ddev core add-on</a></li>
               <li>Once satisfied, make an issue on d.o.</li>
               <li>When the issue is created, a button appears that allows for creating an issue fork.</li>
               <li>Using a separate directory from the one you test locally in, commit your changes to that branch and push back up.</li>
               <li>For testing it on the web, consider using DrupalPod (See <a href="https://www.drupaleasy.com/blogs/ultimike/2023/12/using-drupalpod-core-and-contrib-development">https://www.drupaleasy.com/blogs/ultimike/2023/12/using-drupalpod-core-and-contrib-development</a>)</li>
             </ul>
-            <h3>Commands to spin up a ddev local development environment suitable for Drupal core development</h3>
-            <p>
-              <code>
-                git clone https://git.drupalcode.org/project/drupal.git drupal<br>
-cd drupal<br>
-ddev config --omit-containers=db --disable-settings-management<br>
-ddev composer install --prefer-source<br>
-ddev add-on get justafish/ddev-drupal-core-dev
-              </code>
-            </p>
-
           </section>
       </section>
 
