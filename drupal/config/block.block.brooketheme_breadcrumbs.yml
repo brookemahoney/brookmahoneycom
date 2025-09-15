@@ -1,17 +1,17 @@
-uuid: df3f1932-19cc-45c9-b7df-2fb3e5ab1f3e
+uuid: ca273fde-2c40-4f51-a106-31b5d629f892
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - brookeolivero
+    - brooketheme
 _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
-id: brookeolivero_breadcrumbs
-theme: brookeolivero
-region: breadcrumb
-weight: 0
+id: brooketheme_breadcrumbs
+theme: brooketheme
+region: content
+weight: -2
 provider: null
 plugin: system_breadcrumb_block
 settings:

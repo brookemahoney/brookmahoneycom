@@ -1,0 +1,20 @@
+uuid: ad5c8529-ffa9-4320-b41e-2ea70bb49a28
+langcode: en
+status: true
+dependencies:
+  theme:
+    - brooketheme
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: brooketheme_primary_admin_actions
+theme: brooketheme
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

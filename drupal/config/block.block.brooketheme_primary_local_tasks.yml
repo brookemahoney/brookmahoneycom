@@ -1,15 +1,15 @@
-uuid: 20bef3f3-9b5f-44a9-aec3-bd736a92a487
+uuid: 8bd2a841-af81-4e03-bfcd-303cc71703fe
 langcode: en
 status: true
 dependencies:
   theme:
-    - brookeolivero
+    - brooketheme
 _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
-id: brookeolivero_primary_local_tasks
-theme: brookeolivero
-region: highlighted
-weight: -4
+id: brooketheme_primary_local_tasks
+theme: brooketheme
+region: content
+weight: -1
 provider: null
 plugin: local_tasks_block
 settings:

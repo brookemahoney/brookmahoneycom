@@ -1,15 +1,15 @@
-uuid: 101f3ab9-d338-47c6-9969-0ad52504f764
+uuid: 71383f33-9938-4e56-950b-965c2bd2a1f7
 langcode: en
 status: true
 dependencies:
   theme:
-    - brookeolivero
+    - brooketheme
 _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
-id: brookeolivero_page_title
-theme: brookeolivero
-region: content_above
-weight: -5
+id: brooketheme_page_title
+theme: brooketheme
+region: content
+weight: 2
 provider: null
 plugin: page_title_block
 settings:

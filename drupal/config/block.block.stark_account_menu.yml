@@ -1,4 +1,4 @@
-uuid: 8dcb0cfd-72d9-4a25-a714-682c28d8c82e
+uuid: c7977151-6943-48e4-af3b-a9465d3f851c
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - brookeolivero
+    - stark
 _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
-id: brookeolivero_account_menu
-theme: brookeolivero
+id: stark_account_menu
+theme: stark
 region: secondary_menu
 weight: -4
 provider: null

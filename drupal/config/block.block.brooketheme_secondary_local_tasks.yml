@@ -1,0 +1,22 @@
+uuid: 62d3869b-7c35-434e-bd65-c18cf08c7e8c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - brooketheme
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: brooketheme_secondary_local_tasks
+theme: brooketheme
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

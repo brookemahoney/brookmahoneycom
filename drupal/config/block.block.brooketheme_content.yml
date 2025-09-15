@@ -1,0 +1,22 @@
+uuid: 2c6f3609-737d-428a-8346-0c1b749f4e5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - brooketheme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: brooketheme_content
+theme: brooketheme
+region: content
+weight: 3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

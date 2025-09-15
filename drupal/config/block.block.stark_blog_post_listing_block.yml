@@ -1,4 +1,4 @@
-uuid: 0206762e-2de2-4384-9836-b9fdb44966f8
+uuid: c2f49cf6-16f5-4579-a43e-198d3205667c
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - brookeolivero
-id: brookeolivero_blog_post_listing_block
-theme: brookeolivero
+    - stark
+id: stark_blog_post_listing_block
+theme: stark
 region: content
 weight: -4
 provider: null

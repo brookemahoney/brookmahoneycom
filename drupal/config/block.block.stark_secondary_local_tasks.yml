@@ -1,13 +1,13 @@
-uuid: a5922f66-dd9a-45f8-8f0f-a34b97028302
+uuid: 4348126b-e416-42ae-9348-2bd70c7f45a5
 langcode: en
 status: true
 dependencies:
   theme:
-    - brookeolivero
+    - stark
 _core:
   default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
-id: brookeolivero_secondary_local_tasks
-theme: brookeolivero
+id: stark_secondary_local_tasks
+theme: stark
 region: highlighted
 weight: -2
 provider: null
