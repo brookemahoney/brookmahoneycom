@@ -1,0 +1,29 @@
+uuid: 0206762e-2de2-4384-9836-b9fdb44966f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_post_listing
+  module:
+    - system
+    - views
+  theme:
+    - brookeolivero
+id: brookeolivero_blog_post_listing_block
+theme: brookeolivero
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:blog_post_listing-block_1'
+settings:
+  id: 'views_block:blog_post_listing-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /blog

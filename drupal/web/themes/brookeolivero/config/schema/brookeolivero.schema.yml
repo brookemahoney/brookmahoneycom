@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Olivero theme.
+
+brookeolivero.settings:
+  type: olivero.settings
+  label: 'BrookeOlivero settings'

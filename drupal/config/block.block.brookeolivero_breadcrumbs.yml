@@ -1,0 +1,26 @@
+uuid: df3f1932-19cc-45c9-b7df-2fb3e5ab1f3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - brookeolivero
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: brookeolivero_breadcrumbs
+theme: brookeolivero
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

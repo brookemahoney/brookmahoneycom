@@ -1,15 +1,15 @@
-uuid: cc217c6d-39b6-4a1b-a9da-ab36eed050c5
+uuid: c3bbb5d6-7d02-4bb3-b96b-df1542a7460a
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - brookeolivero
 _core:
   default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: olivero_content
-theme: olivero
+id: brookeolivero_content
+theme: brookeolivero
 region: content
 weight: -5
 provider: null
