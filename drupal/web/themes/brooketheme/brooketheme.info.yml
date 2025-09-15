@@ -1,0 +1,24 @@
+name: brooketheme
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - brooketheme/base
+  - brooketheme/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - brooketheme/user
+  core/drupal.dropbutton:
+    - brooketheme/dropbutton
+  core/drupal.dialog:
+    - brooketheme/dialog
+  file/drupal.file:
+    - brooketheme/file
+  core/drupal.progress:
+    - brooketheme/progress
+  core/drupal.tablesort:
+    - brooketheme/drupal.tablesort
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.2.4'
