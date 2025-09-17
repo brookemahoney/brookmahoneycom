@@ -7,15 +7,16 @@
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="/themes/brooketheme/favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="alternate" type="application/rss+xml" title="" href="https://brookemahoney.com/rss.xml" />
+<link rel="canonical" href="https://brookemahoney.com/blog/bash-scripts-drupal-and-tome" />
+<link rel="shortlink" href="https://brookemahoney.com/node/11" />
 
-    <title>Welcome! | Brooke Mahoney</title>
-    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_T-GBqDzumpILIbNjqXycs_qe2JgJtUposN5tPhztz78.css?delta=0&amp;language=en&amp;theme=brooketheme&amp;include=eJxNykEKgDAMRNELBXumRActNgYyVdHTC7px8xePbxmxoi9wFFNC7AcOUmdQxkiULdK11RvCix3-_UfFyfJ28Jj2hgdXsiCD" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_E56UxlVBQkAFNB4xk4FWldR0mLaZiNpzrv0I04_4GkU.css?delta=1&amp;language=en&amp;theme=brooketheme&amp;include=eJxNykEKgDAMRNELBXumRActNgYyVdHTC7px8xePbxmxoi9wFFNC7AcOUmdQxkiULdK11RvCix3-_UfFyfJ28Jj2hgdXsiCD" />
+    <title>Bash scripts for Drupal and Tome | Brooke Mahoney</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_KxkpZGvNUs_yWI08husNYuYrE7TG-LA3HIGJKH3oK_o.css?delta=0&amp;language=en&amp;theme=brooketheme&amp;include=eJxLKsrPz04tyUjNTdVPSixO1UlCEshNLS5OTE8tRhHMy09J1UnOLwKxinITczKrUnWKK4tLUnPBBgAAGBIfrg" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_8_ozQll1MTsl_5c4cpUC0A3KRwE2bnAK04IvFgR4wpo.css?delta=1&amp;language=en&amp;theme=brooketheme&amp;include=eJxLKsrPz04tyUjNTdVPSixO1UlCEshNLS5OTE8tRhHMy09J1UnOLwKxinITczKrUnWKK4tLUnPBBgAAGBIfrg" />
 
     
   </head>
-  <body class="path-node">
+  <body class="path-node page-node-type-blog-post">
         <a href="#main-content" class="visually-hidden focusable skip-link">
       Skip to main content
     </a>
@@ -51,7 +52,10 @@
                   <a href="/">Home</a>
               </li>
           <li>
-                  
+                  <a href="/blog">Blog</a>
+              </li>
+          <li>
+                  Bash Scripts For Drupal and Tome
               </li>
         </ol>
   </nav>
@@ -73,30 +77,45 @@
   
     
       
-  <h1 class="page-title">Welcome!</h1>
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Bash scripts for Drupal and Tome</span>
+</h1>
 
 
   </div>
 <div id="block-brooketheme-content" class="block block-system block-system-main-block">
   
     
-      <div class="views-element-container"><div class="view view-frontpage view-id-frontpage view-display-id-page_1 js-view-dom-id-8fd80e7587c821703018f3457abebb24878930238210244278a9e42b24bef832">
+      
+<article class="node node--type-blog-post node--view-mode-full">
+
   
     
-      
-      <div class="view-empty">
-      No front page content has been created yet.<br />Follow the <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">User Guide</a> to start building your site.
-    </div>
-  
-      
-              <div class="feed-icons">
-      <a href="https://brookemahoney.com/rss.xml" class="feed-icon">
-  Subscribe to 
-</a>
 
-    </div>
+  
+  <div class="node__content">
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Well, I got the website all working with <a href="https://drupal.org">Drupal</a>. I have <a href="https://tome.fyi/">Tome</a> successfully exporting the dynamic site to a static site. I'm using some custom bash code to build and preview the static site:</p><pre><code class="language-bash language-plaintext">alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
+alias brookemahoneycomPreview='brookemahoneycomCd &amp;&amp; cd docs &amp;&amp; python -m http.server &amp; open "http://localhost:8000"'
+
+brookemahoneycomBuild() {
+  # Starts Orbstack if it isn't running.
+  orb
+  # Changes to the drupal directory.
+  cd ~/Sites/brookemahoneycom/drupal
+  # Exports the site with Tome.
+  ddev drush tome:static --uri=https://brookemahoney.com
+  # Removes old docs directory.
+  rm -rf ~/Sites/brookemahoneycom/docs
+  # Copies the Tome build directory to docs for Github hosting.
+  cp -R ~/Sites/brookemahoneycom/drupal/html ~/Sites/brookemahoneycom/docs
+  # Copies CNAME file for Github hosting.
+  cp ~/projects/brookemahoneycom/sync/CNAME ~/Sites/brookemahoneycom/docs/CNAME
+}
+</code></pre><p>All the code for the Drupal install is in <a href="https://github.com/brookemahoney/brookmahoneycom">this site's Github repo</a>.</p></div>
+      
   </div>
-</div>
+
+</article>
 
   </div>
 
@@ -116,7 +135,7 @@
 
         
               <ul class="menu">
-                    <li class="menu-item menu-item--active-trail">
+                    <li class="menu-item">
         <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
               </li>
                 <li class="menu-item">

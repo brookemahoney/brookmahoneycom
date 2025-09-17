@@ -1,0 +1,78 @@
+form {
+  .ck {
+    --color-background: linear-gradient(180deg, #5c2882 0%, #541582 16%, #4b0082 84%, #23003d 100%);
+    --color-heading: orange;
+    --color-text: cornsilk;
+    --color-link: deepskyblue;
+
+    &.ck-editor__main>.ck-editor__editable {
+      background-color: var(--color-background);
+      color: pink;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 24px;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .site-name {
+      color: var(--color-heading);
+      font-weight: bold;
+      margin: .4em 0;
+      text-shadow:
+        0.08em 0.08em 0.1em #2e002e,
+        -0.04em -0.04em 0.1em #9348c8;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin: 40px 0;
+      text-align: center;
+      text-shadow:
+        0.04em 0.04em 0.02em #2e002e,
+        -0.04em -0.04em 0.04em #9348c8;
+    }
+
+    h2 {
+      font-size: 34px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+
+    .card {
+      background-color: #ffffff11;
+      border-radius: var(--border-radius);
+      box-shadow: 1px 1px 2px #11111188, -1px -1px 2px #ffffff33;
+      padding-bottom: var(--padding);
+      margin-bottom: calc(var(--padding) *2);
+    }
+
+    .card--heading {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid #ffffff33;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+      margin: 0;
+      padding: calc(var(--padding)/2) var(--padding) var(--padding);
+      text-align: center;
+    }
+
+    .card--inner {
+      margin: 20px;
+    }
+  }
+
+  .ck-content pre {
+    color: inherit;
+  }
+}

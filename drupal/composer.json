@@ -21,6 +21,7 @@
         "drupal/core-recipe-unpack": "^11.2",
         "drupal/core-recommended": "^11.2",
         "drupal/easy_breadcrumb": "^2.0",
+        "drupal/menu_link_attributes": "^1.5",
         "drupal/pathauto": "^1.13",
         "drupal/tome": "^1.13",
         "drush/drush": "^13.6"

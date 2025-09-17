@@ -3,7 +3,6 @@ body.user-logged-in {
   --color-heading: orange;
   --color-text: cornsilk;
   --color-link: deepskyblue;
-  /* --color-link-dark:; */
 
   background: var(--color-background);
   color: var(--color-text);
@@ -63,8 +62,17 @@ body.user-logged-in {
     background-color: #ffffff11;
   }
 
+  .entity-meta__header {
+    background-color: purple;
+    color: pink;
+  }
+
   .fieldset {
     background-color: plum;
+  }
+
+  .form-item__description {
+    color: pink;
   }
 
   .is-horizontal .tabs__link {

@@ -4,8 +4,8 @@ base:
     base:
       css/app.css: {}
     component:
-      css/components/toolbar.css: {}
       css/components/card.css: {}
+      css/components/toolbar.css: {}
       css/components/action-links.css:
         weight: -10
       css/components/breadcrumb.css:

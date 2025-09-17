@@ -6,6 +6,11 @@ package: Custom
 core_version_requirement: ^10 || ^11
 libraries:
   - brookeclaro/global
+libraries-override:
+  claro/card:
+    css:
+      component:
+        css/components/card.css: css/components/card.css
 regions:
   header: 'Header'
   primary_menu: 'Primary menu'
