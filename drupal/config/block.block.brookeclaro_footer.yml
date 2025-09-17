@@ -1,4 +1,4 @@
-uuid: 2e0490f5-c569-4838-aa3b-5b20717c3fb4
+uuid: 203b7b68-45cc-4fab-a5cc-4e6e4a7deeb3
 langcode: en
 status: true
 dependencies:
@@ -7,17 +7,17 @@ dependencies:
   module:
     - system
   theme:
-    - stark
-id: stark_footer
-theme: stark
-region: sidebar_first
-weight: 0
+    - brookeclaro
+id: brookeclaro_footer
+theme: brookeclaro
+region: footer
+weight: -4
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
   label: Footer
-  label_display: visible
+  label_display: '0'
   provider: system
   level: 1
   depth: null

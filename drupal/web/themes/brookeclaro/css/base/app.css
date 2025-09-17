@@ -1,0 +1,135 @@
+body.user-logged-in {
+  --color-background: linear-gradient(180deg, #5c2882 0%, #541582 16%, #4b0082 84%, #23003d 100%);
+  --color-heading: orange;
+  --color-text: cornsilk;
+  --color-link: deepskyblue;
+  /* --color-link-dark:; */
+
+  background: var(--color-background);
+  color: var(--color-text);
+
+  a {
+    color: var(--color-link);
+
+    &:hover {
+      color: plum;
+    }
+  }
+
+  table {
+    a, .link {
+      color:darkblue;
+    }
+  }
+
+  th {
+    background-color: violet;
+  }
+
+  tr, .draggable-table.tabledrag-disabled tr {
+    background-color: orchid;
+
+    &:hover {
+      background-color: plum;
+    }
+  }
+
+  .admin-item__description {
+    color: pink;
+  }
+
+  .breadcrumb__item + .breadcrumb__item::before {
+    content: ' > ';
+  }
+
+  .claro-details {
+    background-color: plum;
+    color: black;
+  }
+
+  .claro-details__summary {
+    color: black;
+
+    &:hover {
+      background-color: pink;
+    }
+  }
+
+  .claro-details__summary.claro-details__summary--package-listing {
+    background-color: violet;
+  }
+
+  .content-header {
+    background-color: #ffffff11;
+  }
+
+  .fieldset {
+    background-color: plum;
+  }
+
+  .is-horizontal .tabs__link {
+    color: pink;
+
+    &:hover {
+      background-color: purple;
+    }
+  }
+
+  .panel__title {
+    background-color: purple;
+  }
+
+  .toolbar .toolbar-tray {
+    background-color: violet;
+
+    .menu-item--active-trail > .toolbar-box a,
+    a.is-active {
+      background-color: plum;
+    }
+  }
+
+  .toolbar .toolbar-toggle-orientation {
+    background-color: orchid;
+  }
+
+  .toolbar .toolbar-menu {
+    background-color: violet;
+  }
+
+  .toolbar button.toolbar-icon {
+    background-color: purple;
+
+    &.toolbar-icon-edit {
+      background-color: black;
+    }
+  }
+
+  .toolbar .toolbar-icon.toolbar-handle:focus {
+    background-color: purple;
+  }
+
+  .toolbar-tray a, .toolbar-tray a:visited {
+    color: black;
+    font-weight: bold;
+  }
+
+  .toolbar .toolbar-bar .toolbar-tab > .toolbar-item.is-active {
+    background-color: pink;
+  }
+
+  .vertical-tabs__menu-link:hover::before {
+    background-color: purple;
+  }
+
+  .vertical-tabs__menu-item.is-selected .vertical-tabs__menu-link {
+    background-color: pink;
+  }
+
+  .views-exposed-form.views-exposed-form {
+    background-color: orchid;
+  }
+
+  .views-bulk-actions {
+    background-color: orchid;
+  }
+}

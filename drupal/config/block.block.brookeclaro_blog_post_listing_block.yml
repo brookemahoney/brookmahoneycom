@@ -1,4 +1,4 @@
-uuid: c2f49cf6-16f5-4579-a43e-198d3205667c
+uuid: 58f50306-4a51-4906-a9fe-8cf927738d36
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,11 @@ dependencies:
     - system
     - views
   theme:
-    - stark
-id: stark_blog_post_listing_block
-theme: stark
+    - brookeclaro
+id: brookeclaro_blog_post_listing_block
+theme: brookeclaro
 region: content
-weight: -4
+weight: -3
 provider: null
 plugin: 'views_block:blog_post_listing-block_1'
 settings:

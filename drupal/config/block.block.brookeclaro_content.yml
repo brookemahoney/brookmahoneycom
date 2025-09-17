@@ -1,17 +1,17 @@
-uuid: 1b84d642-7ea5-4c7d-90ea-8e5117ed8808
+uuid: b3a605d7-71f0-4b81-a57f-954980ec897a
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - stark
+    - brookeclaro
 _core:
   default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: stark_content
-theme: stark
+id: brookeclaro_content
+theme: brookeclaro
 region: content
-weight: -5
+weight: -4
 provider: null
 plugin: system_main_block
 settings:

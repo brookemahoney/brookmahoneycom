@@ -1,4 +1,5 @@
 .ddev
+html
 vendor
 web/core
 web/modules

@@ -1,0 +1,46 @@
+
+.toolbar .toolbar-tray {
+  background-color: violet;
+
+  .menu-item--active-trail > .toolbar-box a,
+  a.is-active {
+    background-color: plum;
+  }
+}
+
+.toolbar .toolbar-toggle-orientation {
+  background-color: orchid;
+}
+
+.toolbar .toolbar-menu {
+  background-color: violet;
+}
+
+.toolbar button.toolbar-icon {
+  background-color: purple;
+
+  &.toolbar-icon-edit {
+    background-color: black;
+  }
+}
+
+.toolbar .toolbar-icon.toolbar-handle:focus {
+  background-color: purple;
+}
+
+.toolbar-tray a, .toolbar-tray a:visited {
+  color: black;
+  font-weight: bold;
+}
+
+.toolbar .toolbar-bar .toolbar-tab > .toolbar-item.is-active {
+  background-color: pink;
+}
+
+.vertical-tabs__menu-link:hover::before {
+  background-color: purple;
+}
+
+.vertical-tabs__menu-item.is-selected .vertical-tabs__menu-link {
+  background-color: pink;
+}

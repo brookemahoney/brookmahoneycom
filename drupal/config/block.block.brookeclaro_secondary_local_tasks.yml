@@ -1,14 +1,14 @@
-uuid: 4348126b-e416-42ae-9348-2bd70c7f45a5
+uuid: 9dbf8db4-e9fc-405d-8e1c-b07b8d8c1e8d
 langcode: en
 status: true
 dependencies:
   theme:
-    - stark
+    - brookeclaro
 _core:
   default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
-id: stark_secondary_local_tasks
-theme: stark
-region: highlighted
+id: brookeclaro_secondary_local_tasks
+theme: brookeclaro
+region: header
 weight: -2
 provider: null
 plugin: local_tasks_block

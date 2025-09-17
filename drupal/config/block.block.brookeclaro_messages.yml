@@ -1,0 +1,30 @@
+uuid: b14a5c57-514c-4593-9084-278d27b60817
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - brookeclaro
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: brookeclaro_messages
+theme: brookeclaro
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

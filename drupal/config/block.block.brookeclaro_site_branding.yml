@@ -1,17 +1,17 @@
-uuid: eb39f298-cf39-4ed7-90a1-b833b65d7886
+uuid: 443b5792-96b0-49c6-9170-2b0d4e38f67d
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - brookeclaro
 _core:
   default_config_hash: '-OAAZDw1OR_UyAEPEKX0Hu4LaZD149vW9PmMnIC-v0o'
-id: olivero_site_branding
-theme: olivero
+id: brookeclaro_site_branding
+theme: brookeclaro
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:
@@ -19,7 +19,7 @@ settings:
   label: 'Site branding'
   label_display: '0'
   provider: system
-  use_site_logo: true
+  use_site_logo: false
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }

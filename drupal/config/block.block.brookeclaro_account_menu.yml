@@ -1,17 +1,17 @@
-uuid: f872a1b0-afe9-490b-a499-76cbb7fc7285
+uuid: e66bd4c7-ecbb-4066-b863-95ffda2cd551
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
   module:
     - system
   theme:
-    - olivero
+    - brookeclaro
 _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
-id: olivero_account_menu
-theme: olivero
+id: brookeclaro_account_menu
+theme: brookeclaro
 region: secondary_menu
 weight: -4
 provider: null

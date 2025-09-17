@@ -1,15 +1,15 @@
-uuid: 50ae85fb-f8fb-4784-978f-4ad9dce275c2
+uuid: 46d29c46-580c-4ea3-bc08-798c4991d8bf
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - brookeclaro
 _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
-id: olivero_breadcrumbs
-theme: olivero
+id: brookeclaro_breadcrumbs
+theme: brookeclaro
 region: breadcrumb
 weight: 0
 provider: null
@@ -19,4 +19,8 @@ settings:
   label: Breadcrumbs
   label_display: '0'
   provider: system
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

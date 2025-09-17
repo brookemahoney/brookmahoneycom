@@ -25,7 +25,7 @@ ul.tabs {
   text-decoration: none;
 }
 .tabs a.is-active {
-  background-color: #eee;
+  background-color: purple;
 }
 .tabs a:focus,
 .tabs a:hover {
