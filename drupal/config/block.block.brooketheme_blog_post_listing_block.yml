@@ -1,4 +1,4 @@
-uuid: a7579370-ffed-4a06-bb52-0a7cd45e66fc
+uuid: a76ab038-9092-4c6e-99c5-4babe01153b9
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: brooketheme_blog_post_listing_block
 theme: brooketheme
 region: content
-weight: 4
+weight: -3
 provider: null
 plugin: 'views_block:blog_post_listing-block_1'
 settings:

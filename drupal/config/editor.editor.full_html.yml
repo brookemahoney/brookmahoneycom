@@ -13,28 +13,34 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
+      - heading
       - bold
       - italic
       - strikethrough
-      - superscript
-      - subscript
       - removeFormat
       - '|'
-      - link
-      - '|'
+      - alignment
+      - indent
+      - outdent
       - bulletedList
       - numberedList
       - '|'
+      - horizontalLine
       - blockQuote
+      - link
       - drupalInsertImage
       - insertTable
-      - horizontalLine
       - '|'
-      - heading
       - codeBlock
       - '|'
       - sourceEditing
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_codeBlock:
       languages:
         -

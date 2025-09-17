@@ -1,4 +1,4 @@
-uuid: ad5c8529-ffa9-4320-b41e-2ea70bb49a28
+uuid: df3961eb-ad97-49de-a29a-ecefa9c4abe8
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,8 @@ _core:
   default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
 id: brooketheme_primary_admin_actions
 theme: brooketheme
-region: content
-weight: -3
+region: highlighted
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

@@ -1,13 +1,32 @@
 name: Brooke's Theme
 type: theme
-description: 'A theme for brookemahoney.com'
-package: Custom
+'base theme': stable9
 version: 1.0.0
-core_version_requirement: ^11
-base theme: false
-starterkit: false
 libraries:
-  - brooketheme/global-styling
+  - brooketheme/base
+  - brooketheme/messages
   - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - brooketheme/user
+  core/drupal.dropbutton:
+    - brooketheme/dropbutton
+  core/drupal.dialog:
+    - brooketheme/dialog
+  file/drupal.file:
+    - brooketheme/file
+  core/drupal.progress:
+    - brooketheme/progress
+  core/drupal.tablesort:
+    - brooketheme/drupal.tablesort
+description: 'A theme for brookemahoney.com'
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.2.4'
 regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
   content: Content
+  footer: Footer

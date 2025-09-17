@@ -1,4 +1,4 @@
-uuid: 2c6f3609-737d-428a-8346-0c1b749f4e5d
+uuid: 5d18f4f3-7733-48c2-989c-11f263034464
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: brooketheme_content
 theme: brooketheme
 region: content
-weight: 3
+weight: -4
 provider: null
 plugin: system_main_block
 settings:

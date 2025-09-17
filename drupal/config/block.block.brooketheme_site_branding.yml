@@ -1,4 +1,4 @@
-uuid: 01fdc87b-f921-4a30-9c3a-3cce99c8fc12
+uuid: f291e82a-220d-483d-9a0f-6449411638e5
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: '-OAAZDw1OR_UyAEPEKX0Hu4LaZD149vW9PmMnIC-v0o'
 id: brooketheme_site_branding
 theme: brooketheme
-region: content
-weight: -5
+region: header
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

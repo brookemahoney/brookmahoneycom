@@ -1,4 +1,4 @@
-uuid: 1f84e939-e7b0-4ba1-bfe6-cd03ff29cfc1
+uuid: 2354bc17-fab9-47a7-aeb4-3b6877d80aa1
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ dependencies:
     - brooketheme
 id: brooketheme_footer
 theme: brooketheme
-region: content
-weight: 5
+region: footer
+weight: -4
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

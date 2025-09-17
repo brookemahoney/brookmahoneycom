@@ -1,4 +1,4 @@
-uuid: ca273fde-2c40-4f51-a106-31b5d629f892
+uuid: 949ac934-587f-4e44-9272-845c429bb16c
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: brooketheme_breadcrumbs
 theme: brooketheme
-region: content
-weight: -2
+region: breadcrumb
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

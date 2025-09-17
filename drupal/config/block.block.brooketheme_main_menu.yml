@@ -1,4 +1,4 @@
-uuid: 15d7e787-18be-4e0e-a0bb-b9e344ef930a
+uuid: ad390692-f2d6-4ec2-a859-6d4caf06fb27
 langcode: en
 status: false
 dependencies:
@@ -12,8 +12,8 @@ _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
 id: brooketheme_main_menu
 theme: brooketheme
-region: content
-weight: -4
+region: primary_menu
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:

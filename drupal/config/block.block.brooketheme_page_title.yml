@@ -1,4 +1,4 @@
-uuid: 71383f33-9938-4e56-950b-965c2bd2a1f7
+uuid: 5f04e05b-9bd9-451b-80f5-24d4c2dc766b
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: brooketheme_page_title
 theme: brooketheme
 region: content
-weight: 2
+weight: -5
 provider: null
 plugin: page_title_block
 settings:
