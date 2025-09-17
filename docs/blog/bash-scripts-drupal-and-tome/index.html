@@ -94,8 +94,12 @@
   
   <div class="node__content">
     
-            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Well, I got the website all working with <a href="https://drupal.org">Drupal</a>. I have <a href="https://tome.fyi/">Tome</a> successfully exporting the dynamic site to a static site. I'm using some custom bash code to build and preview the static site:</p><pre><code class="language-bash language-plaintext">alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
-alias brookemahoneycomPreview='brookemahoneycomCd &amp;&amp; cd docs &amp;&amp; python -m http.server &amp; open "http://localhost:8000"'
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Well, I got the website all working with <a href="https://drupal.org">Drupal</a>. I have <a href="https://tome.fyi/">Tome</a> successfully exporting the dynamic site to a static site. I'm using some custom bash code to build and preview the static site. It use <a href="https://www.npmjs.com/package/concurrently">Concurrently</a> to run two processes in one terminal session.</p><pre><code class="language-bash language-plaintext">alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
+brookemahoneycomPreview () {
+  brookemahoneycomCd
+  cd docs
+  concurrently 'python -m http.server' 'open "http://localhost:8000"'
+}
 
 brookemahoneycomBuild() {
   # Starts Orbstack if it isn't running.
@@ -142,13 +146,13 @@ brookemahoneycomBuild() {
         <a href="/blog" data-drupal-link-system-path="node/4">Blog</a>
               </li>
                 <li class="menu-item">
-        <a href="https://drupal.org/u/loopduplicate">Drupal.org</a>
+        <a href="https://drupal.org/u/loopduplicate" target="_blank">Drupal.org</a>
               </li>
                 <li class="menu-item">
-        <a href="https://github.com/brookemahoney">Github</a>
+        <a href="https://github.com/brookemahoney" target="_blank">Github</a>
               </li>
                 <li class="menu-item">
-        <a href="https://www.linkedin.com/in/brooke-marie-mahoney/">Linked.in</a>
+        <a href="https://www.linkedin.com/in/brooke-marie-mahoney/" target="_blank">Linked.in</a>
               </li>
         </ul>
   
