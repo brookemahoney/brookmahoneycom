@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - editor
+    - highlight_js
 _core:
   default_config_hash: vpZysv3RHJjhYzq7O_q5q8mVlHdrSzKELmXyiX6RtV0
 name: 'Full HTML'
@@ -14,19 +15,19 @@ filters:
     id: editor_file_reference
     provider: editor
     status: true
-    weight: 11
+    weight: 15
     settings: {  }
   filter_align:
     id: filter_align
     provider: filter
     status: true
-    weight: 8
+    weight: 9
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
-    weight: 9
+    weight: 10
     settings: {  }
   filter_html:
     id: filter_html
@@ -37,15 +38,34 @@ filters:
       allowed_html: ''
       filter_html_help: true
       filter_html_nofollow: false
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: 0
+    settings: {  }
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
     status: true
-    weight: 10
+    weight: 11
     settings: {  }
   filter_image_lazy_load:
     id: filter_image_lazy_load
     provider: filter
     status: true
-    weight: 15
+    weight: -10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: false
+    weight: 9
+    settings:
+      filter_url_length: 72
+  highlight_js:
+    id: highlight_js
+    provider: highlight_js
+    status: true
+    weight: 100
     settings: {  }

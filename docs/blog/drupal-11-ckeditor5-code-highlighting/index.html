@@ -7,10 +7,10 @@
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="/themes/brooketheme/favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="canonical" href="https://brookemahoney.com/blog/bash-scripts-drupal-and-tome" />
-<link rel="shortlink" href="https://brookemahoney.com/node/11" />
+<link rel="canonical" href="https://brookemahoney.com/blog/drupal-11-ckeditor5-code-highlighting" />
+<link rel="shortlink" href="https://brookemahoney.com/node/12" />
 
-    <title>Bash scripts for Drupal and Tome | Brooke Mahoney</title>
+    <title>Drupal 11 CKEditor5 Code Highlighting | Brooke Mahoney</title>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_KfvVqyZ7UHTHI0o2VaDbjUhZ073zhzlyUttskVMksdM.css?delta=0&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/3024.min.css" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_8_ozQll1MTsl_5c4cpUC0A3KRwE2bnAK04IvFgR4wpo.css?delta=2&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
@@ -56,7 +56,7 @@
                   <a href="/blog">Blog</a>
               </li>
           <li>
-                  Bash Scripts For Drupal and Tome
+                  Drupal 11 CKEditor5 Code Highlighting
               </li>
         </ol>
   </nav>
@@ -78,7 +78,7 @@
   
     
       
-  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Bash scripts for Drupal and Tome</span>
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Drupal 11 CKEditor5 Code Highlighting</span>
 </h1>
 
 
@@ -95,28 +95,9 @@
   
   <div class="node__content">
     
-            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Well, I got the website all working with <a href="https://drupal.org">Drupal</a>. I have <a href="https://tome.fyi/">Tome</a> successfully exporting the dynamic site to a static site. I'm using some custom bash code to build and preview the static site. It use <a href="https://www.npmjs.com/package/concurrently">Concurrently</a> to run two processes in one terminal session.</p><pre><code class="language-bash language-plaintext">alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
-brookemahoneycomPreview () {
-  brookemahoneycomCd
-  cd docs
-  concurrently 'python -m http.server' 'open "http://localhost:8000"'
-}
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Well, I guess bash isn't the most common of things to highlight or something because CKEditor5 in Drupal 11 doesn't come with that function. So, now I have to go figure out the best way to do the highlighting. First, I wonder if there is highlighting on any of the code block choices? Let's try some PHP:</p><pre><code class="language-php">&lt;?php
 
-brookemahoneycomBuild() {
-  # Starts Orbstack if it isn't running.
-  orb
-  # Changes to the drupal directory.
-  cd ~/Sites/brookemahoneycom/drupal
-  # Exports the site with Tome.
-  ddev drush tome:static --uri=https://brookemahoney.com
-  # Removes old docs directory.
-  rm -rf ~/Sites/brookemahoneycom/docs
-  # Copies the Tome build directory to docs for Github hosting.
-  cp -R ~/Sites/brookemahoneycom/drupal/html ~/Sites/brookemahoneycom/docs
-  # Copies CNAME file for Github hosting.
-  cp ~/projects/brookemahoneycom/sync/CNAME ~/Sites/brookemahoneycom/docs/CNAME
-}
-</code></pre><p>All the code for the Drupal install is in <a href="https://github.com/brookemahoney/brookmahoneycom">this site's Github repo</a>.</p><p>I also added the <a href="https://www.drupal.org/project/menu_link_attributes">Menu Link Attributes</a> and <a href="https://www.drupal.org/project/easy_breadcrumb">Easy Breadcrumb</a> modules.</p></div>
+function hook_ckeditor5_plugin_info_alter(array &amp;$plugin_definitions): void {}</code></pre><p>OK, well, that didn't work (well, it works now, but it didn't when I wrote that). It comes out as plain text. OK, let's see which modules are best for syntax highlighting nowadays. From what I see, CKEditor and highlight.js are a common pair. I'll do that. I'll try out the <a href="https://www.drupal.org/project/highlight_js">Highlight Js syntax highlighter module</a> .</p><p>That did it :)</p></div>
       
   </div>
 
@@ -143,7 +124,7 @@ brookemahoneycomBuild() {
                     <li class="menu-item">
         <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
               </li>
-                <li class="menu-item">
+                <li class="menu-item menu-item--active-trail">
         <a href="/blog" data-drupal-link-system-path="node/4">Blog</a>
               </li>
                 <li class="menu-item">
@@ -169,7 +150,7 @@ brookemahoneycomBuild() {
   </div>
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/11","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"button_data":{"copy_enable":false,"copy_bg_transparent":false,"copy_bg_color":"#661eaa","copy_txt_color":"#ffffff","copy_btn_text":"Copy","copy_success_text":"Copied","success_txt_color":"#4caf50"},"user":{"uid":0,"permissionsHash":"2cfcdc45117054f2578ef0f31781981156300e7511e12a3596143f48b7a7dc3c"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/12","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"button_data":{"copy_enable":false,"copy_bg_transparent":false,"copy_bg_color":"#661eaa","copy_txt_color":"#ffffff","copy_btn_text":"Copy","copy_success_text":"Copied","success_txt_color":"#4caf50"},"user":{"uid":0,"permissionsHash":"2cfcdc45117054f2578ef0f31781981156300e7511e12a3596143f48b7a7dc3c"}}</script>
 <script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0-rc.1"></script>
 <script src="/sites/default/files/js/js_yteYYo_KEKnYK1TbK8CsF01y2bHZKAJn5c6j42TMsYw.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=brooketheme&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>

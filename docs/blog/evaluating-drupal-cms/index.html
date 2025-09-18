@@ -11,8 +11,9 @@
 <link rel="shortlink" href="https://brookemahoney.com/node/8" />
 
     <title>Evaluating Drupal CMS | Brooke Mahoney</title>
-    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_KxkpZGvNUs_yWI08husNYuYrE7TG-LA3HIGJKH3oK_o.css?delta=0&amp;language=en&amp;theme=brooketheme&amp;include=eJxLKsrPz04tyUjNTdVPSixO1UlCEshNLS5OTE8tRhHMy09J1UnOLwKxinITczKrUnWKK4tLUnPBBgAAGBIfrg" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_8_ozQll1MTsl_5c4cpUC0A3KRwE2bnAK04IvFgR4wpo.css?delta=1&amp;language=en&amp;theme=brooketheme&amp;include=eJxLKsrPz04tyUjNTdVPSixO1UlCEshNLS5OTE8tRhHMy09J1UnOLwKxinITczKrUnWKK4tLUnPBBgAAGBIfrg" />
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_KfvVqyZ7UHTHI0o2VaDbjUhZ073zhzlyUttskVMksdM.css?delta=0&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/3024.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_8_ozQll1MTsl_5c4cpUC0A3KRwE2bnAK04IvFgR4wpo.css?delta=2&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
 
     
   </head>
@@ -94,7 +95,7 @@
   
   <div class="node__content">
     
-            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><section class="card--inner"><h3>Here we go</h3><p>Yesterday was a busy day, for sure. I learned so much. I learned the new workflows of Drupal core and contrib development. I contributed to DDEV's documentation. I found in issue in Drupal CMS, created a fix, and made my first Gitlab merge request.</p><p>Speaking of DDEV, I'm watching, <a href="https://www.youtube.com/watch?v=sUSHF4V7yzs">Contributor Training: Using Claude Code for DDEV Development", from the DDEV team on YouTube.</a></p><h3>Old Distributions remind me of Drupal CMS</h3><p>Years ago, I used to tell people that Drupal distributions should be used as examples for building sites instead of using them as a starting code base and extending them. Drupal distributions were great but sometimes they caused headaches when you wanted to override their functions. This is how I feel about Drupal CMS, so far. I will use it as an example and I'll build my own site with Drupal Core as a starting point. I'll be taking a look at each of the core and contributed modules that ship with Drupal CMS, taking note of which ones I'll need for the blog.</p><h3>Modules I'll start with</h3><p>Pathauto and Redirect should do. I'll disable all the modules that don't make sense for a static site.</p><h3>Theming</h3><p>For a theme, I'll use the guide on Drupal.org, <a href="https://www.drupal.org/docs/develop/theming-drupal/creating-sub-themes">https://www.drupal.org/docs/develop/theming-drupal/creating-sub-themes</a>, and use the option to generate a theme using drush:</p><p><code>ddev drush generate theme</code></p><p>&nbsp;</p></section></div>
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><section class="card--inner"><h3>Here we go</h3><p>Yesterday was a busy day, for sure. I learned so much. I learned the new workflows of Drupal core and contrib development. I contributed to DDEV's documentation. I found in issue in Drupal CMS, created a fix, and made my first Gitlab merge request.</p><p>Speaking of DDEV, I'm watching, <a href="https://www.youtube.com/watch?v=sUSHF4V7yzs">Contributor Training: Using Claude Code for DDEV Development", from the DDEV team on YouTube.</a></p><h3>Old Distributions remind me of Drupal CMS</h3><p>Years ago, I used to tell people that Drupal distributions should be used as examples for building sites instead of using them as a starting code base and extending them. Drupal distributions were great but sometimes they caused headaches when you wanted to override their functions. This is how I feel about Drupal CMS, so far. I will use it as an example and I'll build my own site with Drupal Core as a starting point. I'll be taking a look at each of the core and contributed modules that ship with Drupal CMS, taking note of which ones I'll need for the blog.</p><h3>Modules I'll start with</h3><p>Pathauto and Redirect should do. I'll disable all the modules that don't make sense for a static site.</p><h3>Theming</h3><p>For a theme, I'll use the guide on Drupal.org, <a href="https://www.drupal.org/docs/develop/theming-drupal/creating-sub-themes">https://www.drupal.org/docs/develop/theming-drupal/creating-sub-themes</a>, and use the option to generate a theme using drush:</p><pre><code class="language-bash">ddev drush generate theme</code></pre><p>&nbsp;</p></section></div>
       
   </div>
 
@@ -147,6 +148,12 @@
   </div>
 
     
-    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/8","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"button_data":{"copy_enable":false,"copy_bg_transparent":false,"copy_bg_color":"#661eaa","copy_txt_color":"#ffffff","copy_btn_text":"Copy","copy_success_text":"Copied","success_txt_color":"#4caf50"},"user":{"uid":0,"permissionsHash":"2cfcdc45117054f2578ef0f31781981156300e7511e12a3596143f48b7a7dc3c"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0-rc.1"></script>
+<script src="/sites/default/files/js/js_yteYYo_KEKnYK1TbK8CsF01y2bHZKAJn5c6j42TMsYw.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=brooketheme&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script src="/sites/default/files/js/js_C2TiAkMC0xQPh06ur1W-pS0B90gh3GxjtyV0IWMH3Mo.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=brooketheme&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+
   </body>
 </html>
