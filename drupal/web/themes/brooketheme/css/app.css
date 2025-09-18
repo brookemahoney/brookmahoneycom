@@ -37,8 +37,11 @@ a {
 }
 
 footer {
-  background-color: #ffffff11;
-  border: 1px solid purple;
+  background: var(--color-background), url('/themes/brooketheme/images/misc/fuzzyPurpleOval.svg');
+  background-blend-mode:overlay;
+  background-position: center center;
+  background-size: cover;
+  /* border: 1px solid purple; */
   border-radius: var(--border-radius);
   margin-bottom: calc(var(--padding) * 2);
   padding: var(--padding);
@@ -100,7 +103,10 @@ img {
 }
 
 main {
-  margin-bottom: calc(var(--padding) * 2);
+  background-image: url('/themes/brooketheme/images/misc/purpleFadedOval5.svg');
+  background-size: cover;
+  border-radius: var(--border-radius);
+  padding-bottom: calc(var(--padding) * 2);
 }
 
 pre {

@@ -71,8 +71,10 @@ body.user-logged-in {
     background-color: plum;
   }
 
-  .form-item__description {
-    color: pink;
+  .form-item__description,
+  .claro-details__description {
+    color: purple;
+    font-size: 14px;
   }
 
   .is-horizontal .tabs__link {
