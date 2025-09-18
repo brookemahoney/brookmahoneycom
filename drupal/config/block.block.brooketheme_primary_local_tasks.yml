@@ -1,6 +1,6 @@
 uuid: 695989b0-b838-48e6-8095-3e12da0602eb
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - brooketheme
@@ -8,7 +8,7 @@ _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
 id: brooketheme_primary_local_tasks
 theme: brooketheme
-region: highlighted
+region: header
 weight: -4
 provider: null
 plugin: local_tasks_block

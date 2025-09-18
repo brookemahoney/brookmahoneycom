@@ -35,6 +35,7 @@
 
 .toolbar .toolbar-bar .toolbar-tab > .toolbar-item.is-active {
   background-color: pink;
+  color: purple;
 }
 
 .vertical-tabs__menu-link:hover::before {

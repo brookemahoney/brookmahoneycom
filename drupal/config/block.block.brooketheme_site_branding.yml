@@ -11,7 +11,7 @@ _core:
 id: brooketheme_site_branding
 theme: brooketheme
 region: header
-weight: -6
+weight: -1
 provider: null
 plugin: system_branding_block
 settings:

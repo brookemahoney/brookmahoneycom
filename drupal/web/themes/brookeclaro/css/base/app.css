@@ -37,6 +37,10 @@ body.user-logged-in {
     color: pink;
   }
 
+  .block-disabled:not(:hover) {
+    color: purple;
+  }
+
   .breadcrumb__item + .breadcrumb__item::before {
     content: ' > ';
   }
@@ -60,6 +64,10 @@ body.user-logged-in {
 
   .content-header {
     background-color: #ffffff11;
+  }
+
+  .draggable-table .region-message {
+    color: purple;
   }
 
   .entity-meta__header {
@@ -88,6 +96,8 @@ body.user-logged-in {
   .panel__title {
     background-color: purple;
   }
+
+
 
   .toolbar .toolbar-tray {
     background-color: violet;
