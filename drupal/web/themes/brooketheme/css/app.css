@@ -43,6 +43,12 @@ footer {
   margin-bottom: calc(var(--padding) * 2);
   padding: var(--padding);
   padding-top: calc(var(--padding) - 8px);
+  text-align: center;
+
+  ul.menu {
+    display: inline-block;
+    margin-left: 0;
+  }
 
   .menu-item {
     display: inline-block;
