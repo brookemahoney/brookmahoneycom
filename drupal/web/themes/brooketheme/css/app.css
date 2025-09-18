@@ -106,7 +106,7 @@ main {
   background-image: url('/themes/brooketheme/images/misc/purpleFadedOval5.svg');
   background-size: cover;
   border-radius: var(--border-radius);
-  padding-bottom: calc(var(--padding) * 2);
+  margin-bottom: calc(var(--padding) * 2);
 }
 
 pre {
