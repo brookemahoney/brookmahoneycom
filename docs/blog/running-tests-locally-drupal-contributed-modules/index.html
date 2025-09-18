@@ -73,7 +73,7 @@
   
   <div class="node__content">
     
-            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Let's take a look at the <a href="https://www.drupal.org/project/easy_breadcrumb">Easy Breadcrumb</a> module's <a href="https://www.drupal.org/project/issues/easy_breadcrumb?categories=All">issue queue</a>. This looks like an interesting one: <a href="https://www.drupal.org/project/easy_breadcrumb/issues/3500483">https://www.drupal.org/project/easy_breadcrumb/issues/3500483</a> . It involves failing tests. I'll use the <a href="https://addons.ddev.com/addons/ddev/ddev-drupal-contrib">ddev addon for drupal contrib</a>.</p><p>When using that addon, I can easily run tests, like PHPUnit and PHP Code Sniffer (PHPcs). One of the issues that Easy Breadcrumb has is that it's failing PHPcs tests. I want to make changes but ignore all the stuff that was added by .ddev and drupal core when I look at the git diff. So, I add a .gitignore to the root folder with these contents:</p><pre><code class="language-plaintext">.ddev
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Let's take a look at the <a href="https://www.drupal.org/project/easy_breadcrumb">Easy Breadcrumb</a> module's <a href="https://www.drupal.org/project/issues/easy_breadcrumb?categories=All">issue queue</a>. This looks like an interesting one: <a href="https://www.drupal.org/project/easy_breadcrumb/issues/3500483">10.4+: Cache issue (BreadcrumbBuilderInterface::applies() now takes a second $cacheable_metadata argument)</a> . It involves failing tests. I'll use the <a href="https://addons.ddev.com/addons/ddev/ddev-drupal-contrib">ddev addon for drupal contrib</a>.</p><p>When using that addon, I can easily run tests, like PHPUnit and PHP Code Sniffer (PHPcs). One of the issues that Easy Breadcrumb has is that it's failing PHPcs tests. I want to make changes but ignore all the stuff that was added by .ddev and drupal core when I look at the git diff. So, I add a .gitignore to the root folder with these contents:</p><pre><code class="language-plaintext">.ddev
 vendor
 web
 recipes
@@ -83,7 +83,7 @@ recipes
 phpcs.xml.dist
 phpstan.neon
 phpstan-baseline.neon
-</code></pre><p>OK, added another merge request, this time for <a href="https://www.drupal.org/project/easy_breadcrumb/issues/3501555">Address PHPCS errors in gitlab-ci jobs</a>. I really like the new Gitlab workflow for Drupal Contrib.</p></div>
+</code></pre><p>Alright, added a <a href="https://git.drupalcode.org/project/easy_breadcrumb/-/merge_requests/156/diffs">merge request</a> for that one. It took awhile to understand what the correct code fix was. It was nice to be able to use VS Code and the Drupal extension to be able to navigate Drupal Core code so intuitively.</p><p>OK, added <a href="https://git.drupalcode.org/project/easy_breadcrumb/-/merge_requests/157">another merge request</a>, this time for <a href="https://www.drupal.org/project/easy_breadcrumb/issues/3501555">Address PHPCS errors in gitlab-ci jobs</a>. I really like the new Gitlab workflow for Drupal Contrib.</p></div>
       
   </div>
 
