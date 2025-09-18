@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/brooketheme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://brookemahoney.com/blog/running-tests-locally-drupal-contriuted-modules" />
+<link rel="shortlink" href="https://brookemahoney.com/node/13" />
+
+    <title>Running Tests Locally for Drupal Contriuted Modules | Brooke Mahoney</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_KfvVqyZ7UHTHI0o2VaDbjUhZ073zhzlyUttskVMksdM.css?delta=0&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/3024.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_8_ozQll1MTsl_5c4cpUC0A3KRwE2bnAK04IvFgR4wpo.css?delta=2&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
+
+    
+  </head>
+  <body class="path-node page-node-type-blog-post">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container">
+
+  <header role="banner">
+      <div class="region region-header">
+    <div id="block-brooketheme-site-branding" class="block block-system block-system-branding-block">
+  
+    
+          <div class="site-name">
+      <a href="/" rel="home">Brooke Mahoney</a>
+    </div>
+    </div>
+
+  </div>
+
+  </header>
+
+  
+  
+
+  
+
+  
+
+  
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-brooketheme-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Running Tests Locally for Drupal Contriuted Modules</span>
+</h1>
+
+
+  </div>
+<div id="block-brooketheme-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article class="node node--type-blog-post node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Let's take a look at the <a href="https://www.drupal.org/project/easy_breadcrumb">Easy Breadcrumb</a> module's <a href="https://www.drupal.org/project/issues/easy_breadcrumb?categories=All">issue queue</a>. This looks like an interesting one: <a href="https://www.drupal.org/project/easy_breadcrumb/issues/3500483">https://www.drupal.org/project/easy_breadcrumb/issues/3500483</a> . It involves failing tests. I'll use the <a href="https://addons.ddev.com/addons/ddev/ddev-drupal-contrib">ddev addon for drupal contrib</a>.</p><p>When using that addon, I can easily run tests, like PHPUnit and PHP Code Sniffer (PHPcs). One of the issues that Easy Breadcrumb has is that it's failing PHPcs tests. I want to make changes but ignore all the stuff that was added by .ddev and drupal core when I look at the git diff. So, I add a .gitignore to the root folder with these contents:</p><pre><code class="language-plaintext">.ddev
+vendor
+web
+recipes
+.editorconfig
+.gitattributes
+.gitignore
+phpcs.xml.dist
+phpstan.neon
+phpstan-baseline.neon
+</code></pre><p>OK, added another merge request, this time for <a href="https://www.drupal.org/project/easy_breadcrumb/issues/3501555">Address PHPCS errors in gitlab-ci jobs</a>. I really like the new Gitlab workflow for Drupal Contrib.</p></div>
+      
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+      <footer role="contentinfo">
+        <div class="region region-footer">
+    <nav role="navigation" aria-labelledby="block-brooketheme-footer-menu" id="block-brooketheme-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-brooketheme-footer-menu">Footer</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+              </li>
+                <li class="menu-item menu-item--active-trail">
+        <a href="/blog" data-drupal-link-system-path="node/4">Blog</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://drupal.org/u/loopduplicate" target="_blank">Drupal.org</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://github.com/brookemahoney" target="_blank">Github</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.linkedin.com/in/brooke-marie-mahoney/" target="_blank">Linked.in</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+    </footer>
+  
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/13","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"button_data":{"copy_enable":false,"copy_bg_transparent":false,"copy_bg_color":"#661eaa","copy_txt_color":"#ffffff","copy_btn_text":"Copy","copy_success_text":"Copied","success_txt_color":"#4caf50"},"user":{"uid":0,"permissionsHash":"2cfcdc45117054f2578ef0f31781981156300e7511e12a3596143f48b7a7dc3c"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0-rc.1"></script>
+<script src="/sites/default/files/js/js_yteYYo_KEKnYK1TbK8CsF01y2bHZKAJn5c6j42TMsYw.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=brooketheme&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script src="/sites/default/files/js/js_C2TiAkMC0xQPh06ur1W-pS0B90gh3GxjtyV0IWMH3Mo.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=brooketheme&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+
+  </body>
+</html>
