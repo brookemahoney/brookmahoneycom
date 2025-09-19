@@ -7,6 +7,20 @@
     <language>en</language>
     
     <item>
+  <title>Today was Dependency Injection Day</title>
+  <link>https://brookemahoney.com/blog/today-was-dependency-injection-day</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Today was Dependency Injection Day&lt;/span&gt;
+
+            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;The Config Suite module had some warnings from PHP Code Sniffer and PHPStan. I created some issues for that and ended up making three merge requests to get it all up to date. Much of my time was spent updating the old code to use dependency injection... define arguments in services.yml, add the services to the class in the constructor with annotations, repeat yourself and document all the new class variables like was done in the constructor.&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.drupal.org/project/config_suite/issues/3547548"&gt;https://www.drupal.org/project/config_suite/issues/3547548&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.drupal.org/project/config_suite/issues/3547547"&gt;https://www.drupal.org/project/config_suite/issues/3547547&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.drupal.org/project/config_suite/issues/3547542"&gt;https://www.drupal.org/project/config_suite/issues/3547542&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;
+      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-18T22:46:43-07:00" title="Thursday, 18 September 2025 - 22:46" class="datetime"&gt;Thu, 18 Sep 2025 - 22:46&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Fri, 19 Sep 2025 05:46:43 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">14 at https://brookemahoney.com</guid>
+    </item>
+<item>
   <title>Running Tests Locally for Drupal Contributed Modules</title>
   <link>https://brookemahoney.com/blog/running-tests-locally-drupal-contributed-modules</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Running Tests Locally for Drupal Contributed Modules&lt;/span&gt;
@@ -162,20 +176,6 @@ brookemahoneycomBuild() {
   <pubDate>Fri, 12 Sep 2025 22:16:47 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
     <guid isPermaLink="false">6 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>Random Things, Catching Up, and AI</title>
-  <link>https://brookemahoney.com/blog/random-things-catching-and-ai</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Random Things, Catching Up, and AI&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;h3&gt;Random Things, Catching Up&lt;/h3&gt;&lt;p&gt;Things. Stuff. Blog. React. Drupal. Gatsby. Tome. React-Router. Remix. Epic Stack. Drupal Stack. Fly.io. Typescript. Rusty dev chops.&lt;/p&gt;&lt;p&gt;Took a couple of years off. Now, I'm rusty; getting back into things. Been watching lots of recent Drupal presentations lately, mostly from DrupalCon and from GovCon. Also learned about the Epic Stack, which is what Kent Dodds has been working on. I've spent a lot of hours relearning Typescript and React.&lt;/p&gt;&lt;p&gt;Why have I been gone? Life got in the way, as an old manager of mine used to say. The last big company I worked for was a very successful startup, then Covid hit, and it was a wild ride after that. It became so wild that it wasn't a good fit for me anymore. I was with them for about 5 years, so it was sad to leave.&lt;/p&gt;&lt;p&gt;This first blog post here on my brand new super fancy site is a bit of a dump. It's ok. I have a headache today. It just reminded me of that.&lt;/p&gt;&lt;p&gt;I'm really looking forward to working full time again. I just need to find a good company that could use someone who likes working with Drupal and/or React. In the meantime, I'm going to spend my days working on learning what best practices have changed.&lt;/p&gt;&lt;p&gt;This site is hosted on Github pages, which is kinda cool. They host the code too. So, I just am paying for a domain and email and hosting is done for free. I just have to keep the source code for the site public, which is fine. Open source it all, ok. I was using Vite with a simple React Router implementation. For now, I'm using vanilla HTML and CSS.&lt;/p&gt;&lt;p&gt;So, I suppose I'll migrate this site over to Drupal with Gatsby. I'll develop the Drupal site and back it up locally with Apple's Time Machine. I'll use Gatsby to export my Drupal site to a static site. This method should work good for my home site with its simplistic blog that I want to keep this year and it will be a good way to showcase some of my Drupal and React skills.&lt;/p&gt;&lt;h3&gt;Aye, aye, AI&lt;/h3&gt;&lt;p&gt;Oh, AI. Forgot to talk about that. OMG, everyone is talking about it and apparently a lot people really like using it for web development. I've heard it described as a junior developer with no memory. To me, it's just not that helpful. I like to read manuals and understand every bit of code I write. I'm not one of those programmers who likes to move fast and make lots of mistakes. I like careful planning.&lt;/p&gt;&lt;p&gt;I think that's enough writing for now. It's been nice talking about this stuff with you. Maybe I'll try it again later.&lt;/p&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-11T15:34:17-07:00" title="Thursday, 11 September 2025 - 15:34" class="datetime"&gt;Thu, 11 Sep 2025 - 15:34&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Thu, 11 Sep 2025 22:34:17 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">5 at https://brookemahoney.com</guid>
     </item>
 
   </channel>
