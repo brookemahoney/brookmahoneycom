@@ -7,9 +7,9 @@
     <language>en</language>
     
     <item>
-  <title>Todays' Unpublished Blog Page</title>
-  <link>https://brookemahoney.com/blog/todays-unpublished-blog-page</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Todays' Unpublished Blog Page&lt;/span&gt;
+  <title>Purple Claro Drupal Theme</title>
+  <link>https://brookemahoney.com/blog/purple-claro-drupal-theme</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Purple Claro Drupal Theme&lt;/span&gt;
 
             &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;I made a simple sub-theme of Claro that I use for this site called Purple Claro. The only difference is it adds some shades of purple to it. When I'm doing contrib work, I end up seeing the grey Claro theme from core but I miss my Purple Claro. So, I planned to publish my purple theme so it's easy to pull it in with composer when I'm doing other work.&lt;/p&gt;&lt;p&gt;My first thought was to make a sub-theme of Claro. I tried that. But it turns out that when you just try to make a simple sub-theme using the &lt;a href="https://www.drupal.org/docs/develop/theming-drupal/creating-sub-themes"&gt;instructions on Drupal.org&lt;/a&gt;, there are things that still didn't work right. I had to manually export config for block layout, for starters. Then, I noticed that the nice little star icon next to page titles to add a shortcut was missing. So, I looked into how that was added but it turns out that the shortcut module and the Claro theme are dependent on each other for that functionality making it so I can't just reuse it. There seem to be a lot of modifications like this in Claro that I would have to figure out workarounds for.&lt;/p&gt;&lt;p&gt;So, my next thought is to make a module that just injects some CSS into Claro instead of making a sub-theme. We'll see how that goes...&lt;/p&gt;&lt;/div&gt;
       &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
