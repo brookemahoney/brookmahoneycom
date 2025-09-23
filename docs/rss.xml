@@ -94,6 +94,11 @@ function hook_ckeditor5_plugin_info_alter(array &amp;amp;$plugin_definitions): v
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Bash scripts for Drupal and Tome&lt;/span&gt;
 
             &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;Well, I got the website all working with &lt;a href="https://drupal.org"&gt;Drupal&lt;/a&gt;. I have &lt;a href="https://tome.fyi/"&gt;Tome&lt;/a&gt; successfully exporting the dynamic site to a static site. I'm using some custom bash code to build and preview the static site. It use &lt;a href="https://www.npmjs.com/package/concurrently"&gt;Concurrently&lt;/a&gt; to run two processes in one terminal session.&lt;/p&gt;&lt;pre&gt;&lt;code class="language-bash language-plaintext"&gt;alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
+brookemahoneycomLaunch () {
+  brookemahoneycomCd
+  cd drupal
+  ddev launch
+}
 brookemahoneycomPreview () {
   brookemahoneycomCd
   cd docs

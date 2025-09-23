@@ -74,6 +74,11 @@
   <div class="node__content">
     
             <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Well, I got the website all working with <a href="https://drupal.org">Drupal</a>. I have <a href="https://tome.fyi/">Tome</a> successfully exporting the dynamic site to a static site. I'm using some custom bash code to build and preview the static site. It use <a href="https://www.npmjs.com/package/concurrently">Concurrently</a> to run two processes in one terminal session.</p><pre><code class="language-bash language-plaintext">alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
+brookemahoneycomLaunch () {
+  brookemahoneycomCd
+  cd drupal
+  ddev launch
+}
 brookemahoneycomPreview () {
   brookemahoneycomCd
   cd docs
@@ -121,7 +126,7 @@ brookemahoneycomBuild() {
                     <li class="menu-item">
         <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
               </li>
-                <li class="menu-item">
+                <li class="menu-item menu-item--active-trail">
         <a href="/blog" data-drupal-link-system-path="node/4">Blog</a>
               </li>
                 <li class="menu-item">
