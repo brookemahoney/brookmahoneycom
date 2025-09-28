@@ -21,7 +21,6 @@
         "drupal/core-recipe-unpack": "^11.2",
         "drupal/core-recommended": "^11.2",
         "drupal/easy_breadcrumb": "^2.0",
-        "drupal/feeds": "^3.0",
         "drupal/highlight_js": "^1.1",
         "drupal/menu_link_attributes": "^1.5",
         "drupal/pathauto": "^1.13",
