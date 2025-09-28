@@ -1,0 +1,17 @@
+uuid: 9991d929-3cc8-425d-b87b-1ed266668c75
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'RSS Node'
+type: rss_node
+description: 'A content type to hold RSS nodes imported from feeds.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false
