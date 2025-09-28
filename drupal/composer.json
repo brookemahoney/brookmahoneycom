@@ -24,6 +24,7 @@
         "drupal/highlight_js": "^1.1",
         "drupal/menu_link_attributes": "^1.5",
         "drupal/pathauto": "^1.13",
+        "drupal/redirect": "^1.12",
         "drupal/tome": "^1.13",
         "drush/drush": "^13.6"
     },
