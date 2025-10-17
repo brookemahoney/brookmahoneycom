@@ -7,6 +7,20 @@
     <language>en</language>
     
     <item>
+  <title>Love Your Enemies</title>
+  <link>https://brookemahoney.com/blog/love-your-enemies</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Love Your Enemies&lt;/span&gt;
+
+            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;Love your enemies and hope the best for them (so that one day you all may be allies).&lt;/p&gt;&lt;/div&gt;
+      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-10-17T06:54:49-07:00" title="Friday, 17 October 2025 - 06:54" class="datetime"&gt;Fri, 17 Oct 2025 - 06:54&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Fri, 17 Oct 2025 13:54:49 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">138 at https://brookemahoney.com</guid>
+    </item>
+<item>
   <title>Contact</title>
   <link>https://brookemahoney.com/contact</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Contact&lt;/span&gt;
@@ -19,6 +33,18 @@
   <pubDate>Tue, 07 Oct 2025 19:26:04 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
     <guid isPermaLink="false">137 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Blog</title>
+  <link>https://brookemahoney.com/blog</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Blog&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-14T15:10:00-07:00" title="Sunday, 14 September 2025 - 15:10" class="datetime"&gt;Sun, 14 Sep 2025 - 15:10&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Sun, 14 Sep 2025 22:10:00 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">4 at https://brookemahoney.com</guid>
     </item>
 <item>
   <title>Welcome to Brooke Mahoney's Website</title>
