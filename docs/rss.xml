@@ -49,6 +49,87 @@
     <guid isPermaLink="false">137 at https://brookemahoney.com</guid>
     </item>
 <item>
+  <title>Running Tests Locally for Drupal Contributed Modules</title>
+  <link>https://brookemahoney.com/blog/running-tests-locally-drupal-contributed-modules</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Running Tests Locally for Drupal Contributed Modules&lt;/span&gt;
+
+            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;Let's take a look at the &lt;a href="https://www.drupal.org/project/easy_breadcrumb"&gt;Easy Breadcrumb&lt;/a&gt; module's &lt;a href="https://www.drupal.org/project/issues/easy_breadcrumb?categories=All"&gt;issue queue&lt;/a&gt;. This looks like an interesting one: &lt;a href="https://www.drupal.org/project/easy_breadcrumb/issues/3500483"&gt;10.4+: Cache issue (BreadcrumbBuilderInterface::applies() now takes a second $cacheable_metadata argument)&lt;/a&gt; . It involves failing tests. I'll use the &lt;a href="https://addons.ddev.com/addons/ddev/ddev-drupal-contrib"&gt;ddev addon for drupal contrib&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;When using that addon, I can easily run tests, like PHPUnit and PHP Code Sniffer (PHPcs). One of the issues that Easy Breadcrumb has is that it's failing PHPcs tests. I want to make changes but ignore all the stuff that was added by .ddev and drupal core when I look at the git diff. So, I add a .gitignore to the root folder with these contents:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;.ddev
+vendor
+web
+recipes
+.editorconfig
+.gitattributes
+.gitignore
+phpcs.xml.dist
+phpstan.neon
+phpstan-baseline.neon
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Alright, added a &lt;a href="https://git.drupalcode.org/project/easy_breadcrumb/-/merge_requests/156/diffs"&gt;merge request&lt;/a&gt; for that one. It took awhile to understand what the correct code fix was. It was nice to be able to use VS Code and the Drupal extension to be able to navigate Drupal Core code so intuitively.&lt;/p&gt;&lt;p&gt;OK, added &lt;a href="https://git.drupalcode.org/project/easy_breadcrumb/-/merge_requests/157"&gt;another merge request&lt;/a&gt;, this time for &lt;a href="https://www.drupal.org/project/easy_breadcrumb/issues/3501555"&gt;Address PHPCS errors in gitlab-ci jobs&lt;/a&gt;. I really like the new Gitlab workflow for Drupal Contrib.&lt;/p&gt;&lt;/div&gt;
+      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-17T20:31:40-07:00" title="Wednesday, 17 September 2025 - 20:31" class="datetime"&gt;Wed, 17 Sep 2025 - 20:31&lt;/time&gt;
+&lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;Drupal&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Thu, 18 Sep 2025 03:31:40 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">13 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Bash scripts for Drupal, DDEV, and Tome</title>
+  <link>https://brookemahoney.com/blog/bash-scripts-drupal-ddev-and-tome</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Bash scripts for Drupal, DDEV, and Tome&lt;/span&gt;
+
+            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;This website is made with &lt;a href="https://drupal.org"&gt;Drupal&lt;/a&gt;. It uses &lt;a href="https://tome.fyi/"&gt;Tome&lt;/a&gt; to export the dynamic site to a static site. I'm using some custom bash code to build and preview the static site. It use &lt;a href="https://www.npmjs.com/package/concurrently"&gt;Concurrently&lt;/a&gt; to run two processes in one terminal session.&lt;/p&gt;&lt;pre&gt;&lt;code class="language-bash language-plaintext"&gt;alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
+brookemahoneycomLaunch () {
+  # Starts Orbstack if it isn't running.
+  orb
+  brookemahoneycomCd
+  cd drupal
+  ddev launch
+}
+
+brookemahoneycomPreview () {
+  brookemahoneycomCd
+  cd docs
+  concurrently 'python -m http.server' 'open "http://localhost:8000"'
+}
+
+brookemahoneycomBuild() {
+  # Starts Orbstack if it isn't running.
+  orb
+  # Changes to the drupal directory.
+  cd ~/Sites/brookemahoneycom/drupal
+  # Exports the site with Tome.
+  ddev drush tome:static --uri=https://brookemahoney.com
+  # Removes old docs directory.
+  rm -rf ~/Sites/brookemahoneycom/docs
+  # Copies the Tome build directory to docs for Github hosting.
+  cp -R ~/Sites/brookemahoneycom/drupal/html ~/Sites/brookemahoneycom/docs
+  # Copies CNAME file for Github hosting.
+  cp ~/projects/brookemahoneycom/sync/CNAME ~/Sites/brookemahoneycom/docs/CNAME
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All the code for the Drupal install is in &lt;a href="https://github.com/brookemahoney/brookmahoneycom"&gt;this site's Github repo&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-17T13:46:57-07:00" title="Wednesday, 17 September 2025 - 13:46" class="datetime"&gt;Wed, 17 Sep 2025 - 13:46&lt;/time&gt;
+&lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;Drupal&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Wed, 17 Sep 2025 20:46:57 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">11 at https://brookemahoney.com</guid>
+    </item>
+<item>
   <title>Blog</title>
   <link>https://brookemahoney.com/blog</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Blog&lt;/span&gt;
