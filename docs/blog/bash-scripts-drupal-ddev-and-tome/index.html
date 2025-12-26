@@ -73,7 +73,7 @@
   
   <div class="node__content">
     
-            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>This website is made with <a href="https://drupal.org">Drupal</a>. It uses <a href="https://tome.fyi/">Tome</a> to export the dynamic site to a static site. I'm using some custom bash code to build and preview the static site. It use <a href="https://www.npmjs.com/package/concurrently">Concurrently</a> to run two processes in one terminal session.</p><pre><code class="language-bash language-plaintext">alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>This website is made with <a href="https://drupal.org">Drupal</a>. Local development is done with <a href="https://ddev.com/">DDEV</a> configured to use Orbstack for container management. The <a href="https://tome.fyi/">Tome</a> Drupal module exports the dynamic site to a static site. Python is used to preview the site locally. Public hosting is provided free by Github.</p><p>Here are some custom bash aliases and functions I use to make common local tasks easy. <a href="https://www.npmjs.com/package/concurrently">Concurrently</a> is used to run two processes in one terminal session.</p><pre><code class="language-bash language-plaintext">alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
 brookemahoneycomLaunch () {
   # Starts Orbstack if it isn't running.
   orb
