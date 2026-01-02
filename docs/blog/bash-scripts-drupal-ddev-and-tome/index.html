@@ -93,15 +93,18 @@ brookemahoneycomBuild() {
   orb
   # Changes to the drupal directory.
   cd ~/Sites/brookemahoneycom/drupal
+  # Clears caches.
+  ddev drush cr
   # Exports the site with Tome.
   ddev drush tome:static --uri=https://brookemahoney.com
   # Removes old docs directory.
   rm -rf ~/Sites/brookemahoneycom/docs
   # Copies the Tome build directory to docs for Github hosting.
   cp -R ~/Sites/brookemahoneycom/drupal/html ~/Sites/brookemahoneycom/docs
-  # Copies CNAME file for Github hosting.
-  cp ~/projects/brookemahoneycom/sync/CNAME ~/Sites/brookemahoneycom/docs/CNAME
+  # Copies over static files, such as CNAME for Github hosting.
+  cp -R ~/projects/brookemahoneycom/sync/ ~/Sites/brookemahoneycom/docs
 }
+
 </code></pre><p>All the code for the Drupal install is in <a href="https://github.com/brookemahoney/brookmahoneycom">this site's Github repo</a>.</p></div>
       
   <div class="field field--name-field-tags field--type-entity-reference field--label-above">

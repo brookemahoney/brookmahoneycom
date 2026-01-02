@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Minecraft Angles | Brooke Mahoney</title>
+</head>
+<body>
+  <label>
+    CurrentX
+    <input id="currentX" type="number" />
+  </label>
+  <br>
+  <label>
+    CurrentZ
+    <input id="currentZ" type="number" />
+  </label>
+  <br>
+  <label>
+    DestX
+    <input id="destX" type="number" />
+  </label>
+  <br>
+  <label>
+    DestZ
+    <input id="destZ" type="number" />
+  </label>
+  <br>
+  <p>
+    Degrees:
+    <br>
+    <span id="degrees">0</span>
+  </p>
+  <script>
+    (() => {
+      const currentElementX = document.getElementById('currentX');
+      const currentElementZ = document.getElementById('currentZ');
+      const destElementX = document.getElementById('destX');
+      const destElementZ = document.getElementById('destZ');
+      const degreesElement = document.getElementById('degrees');
+      const setDegrees = () => {
+        const currentX = currentElementX.value || 0;
+        const currentZ = currentElementZ.value || 0;
+        const destX = destElementX.value || 0;
+        const destZ = destElementZ.value || 0;
+        const angle = Math.atan(Math.abs((destX - currentX)/(destZ - currentZ))) * 180 / Math.PI;
+        let degrees = 0;
+        if (destX - currentX > 0) {
+          if (destZ - currentZ > 0) {
+            degrees = angle * (-1)
+          } else {
+            degrees = angle - 180;
+          }
+        } else {
+          if (destZ - currentZ < 0) {
+            degrees = 180 - angle;
+          }
+        }
+        degreesElement.innerHTML = degrees;
+      };
+      setDegrees();
+      document.addEventListener('change', setDegrees)
+      
+      
+    })();
+  </script>
+</body>
+</html>
