@@ -5,66 +5,124 @@
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Minecraft Angles | Brooke Mahoney</title>
+<title>Minecraft | Brooke Mahoney</title>
 </head>
 <body>
-  <label>
-    CurrentX
-    <input id="currentX" type="number" />
-  </label>
-  <br>
-  <label>
-    CurrentZ
-    <input id="currentZ" type="number" />
-  </label>
-  <br>
-  <label>
-    DestX
-    <input id="destX" type="number" />
-  </label>
-  <br>
-  <label>
-    DestZ
-    <input id="destZ" type="number" />
-  </label>
-  <br>
-  <p>
-    Degrees:
+  <h1>Minecraft Calculations</h1>
+  <h2>Angles</h2>
+  <div style="border: 1px solid purple; padding: 20px;">
+    <label>
+      CurrentX
+      <input id="currentX" type="number" value="0" />
+    </label>
     <br>
-    <span id="degrees">0</span>
-  </p>
-  <script>
-    (() => {
-      const currentElementX = document.getElementById('currentX');
-      const currentElementZ = document.getElementById('currentZ');
-      const destElementX = document.getElementById('destX');
-      const destElementZ = document.getElementById('destZ');
-      const degreesElement = document.getElementById('degrees');
-      const setDegrees = () => {
-        const currentX = currentElementX.value || 0;
-        const currentZ = currentElementZ.value || 0;
-        const destX = destElementX.value || 0;
-        const destZ = destElementZ.value || 0;
-        const angle = Math.atan(Math.abs((destX - currentX)/(destZ - currentZ))) * 180 / Math.PI;
-        let degrees = 0;
-        if (destX - currentX > 0) {
-          if (destZ - currentZ > 0) {
-            degrees = angle * (-1)
+    <label>
+      CurrentZ
+      <input id="currentZ" type="number" value="0" />
+    </label>
+    <br>
+    <label>
+      DestX
+      <input id="destX" type="number" value="0" />
+    </label>
+    <br>
+    <label>
+      DestZ
+      <input id="destZ" type="number" value="0" />
+    </label>
+    <br>
+    <p>
+      Degrees:
+      <br>
+      <span id="degrees">0</span>
+    </p>
+    <script>
+      (() => {
+        const currentElementX = document.getElementById('currentX');
+        const currentElementZ = document.getElementById('currentZ');
+        const destElementX = document.getElementById('destX');
+        const destElementZ = document.getElementById('destZ');
+        const degreesElement = document.getElementById('degrees');
+        const setDegrees = () => {
+          const currentX = currentElementX.value || 0;
+          const currentZ = currentElementZ.value || 0;
+          const destX = destElementX.value || 0;
+          const destZ = destElementZ.value || 0;
+          const angle = Math.atan(Math.abs((destX - currentX)/(destZ - currentZ))) * 180 / Math.PI;
+          let degrees = 0;
+          if (destX - currentX > 0) {
+            if (destZ - currentZ > 0) {
+              degrees = angle * (-1)
+            } else {
+              degrees = angle - 180;
+            }
           } else {
-            degrees = angle - 180;
+            if (destZ - currentZ < 0) {
+              degrees = 180 - angle;
+            }
           }
-        } else {
-          if (destZ - currentZ < 0) {
-            degrees = 180 - angle;
+          degreesElement.innerHTML = degrees;
+        };
+        setDegrees();
+        document.addEventListener('change', setDegrees)
+        
+        
+      })();
+    </script>  
+  </div>
+  <h2>Overworld and Nether Conversion</h2>
+  <div style="border: 1px solid purple; padding: 20px;">
+    <label>
+      OverworldX
+      <input id="overworldX" type="number" value="0" />
+    </label>
+    <br>
+    <label>
+      OverworldZ
+      <input id="overworldZ" type="number" value="0" />
+    </label>
+    <br>
+    <label>
+      NetherX
+      <input id="netherX" type="number" value="0" />
+    </label>
+    <br>
+    <label>
+      NetherZ
+      <input id="netherZ" type="number" value="0" />
+    </label>
+    <br>
+    <script>
+      (() => {
+        const overworldElementX = document.getElementById('overworldX');
+        const overworldElementZ = document.getElementById('overworldZ');
+        const netherElementX = document.getElementById('netherX');
+        const netherElementZ = document.getElementById('netherZ');
+        const setValues = (event) => {
+          const overworldX = overworldElementX.value || 0;
+          const overworldZ = overworldElementZ.value || 0;
+          const netherX = netherElementX.value || 0;
+          const netherZ = netherElementZ.value || 0;
+          const id = event.target.id;
+
+          if (id === 'overworldX') {
+            netherElementX.value = event.target.value / 8;
           }
-        }
-        degreesElement.innerHTML = degrees;
-      };
-      setDegrees();
-      document.addEventListener('change', setDegrees)
-      
-      
-    })();
-  </script>
+          if (id === 'overworldZ') {
+            netherElementZ.value = event.target.value / 8;
+          }
+          if (id === 'netherX') {
+            overworldElementX.value = event.target.value * 8;
+          }
+          if (id === 'netherZ') {
+            overworldElementZ.value = event.target.value * 8;
+          }
+        };
+        document.addEventListener('change', setValues)
+        
+        
+      })();
+    </script>  
+  </div>
 </body>
 </html>
