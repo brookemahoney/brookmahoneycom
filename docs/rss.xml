@@ -7,11 +7,39 @@
     <language>en</language>
     
     <item>
+  <title>About</title>
+  <link>https://brookemahoney.com/about</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;About&lt;/span&gt;
+
+            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;How does a person describe themselves? I don't know.&lt;/p&gt;&lt;p&gt;I am a human that loves the basic stuff about Earth, especially plants and animals (even the human animals.)&lt;/p&gt;&lt;p&gt;I think about the suffering of beings a lot and how I can act to change things for peace.&lt;/p&gt;&lt;p&gt;I make mistakes. I try to be good and sometimes I've been bad. I remember this when I feel an urge to judge others.&lt;/p&gt;&lt;p&gt;I carry multiple medical diagnoses that affect my ability to relate to others: Dissociative Identity Disorder, Obsessive Compulsive Disorder, Autism Spectrum Disorder, Attention-Deficit Hyperactivity Disorder, Major Depressive Disorder, and Tourette's Syndrome.&lt;/p&gt;&lt;p&gt;I spend a lot of time reading peer-reviewed journal articles. I love science. My current favorite topic of study is canine behavior management.&lt;/p&gt;&lt;p&gt;I was born in 1977 in Wisconsin and moved to California in 1988, where I live today.&lt;/p&gt;&lt;h2&gt;Mission&lt;/h2&gt;&lt;p&gt;May I help all beings to coexist and flourish.&lt;/p&gt;&lt;h2&gt;Vision&lt;/h2&gt;&lt;p&gt;May all beings be safe, healthy, happy, and at peace.&lt;/p&gt;&lt;h2&gt;Values&lt;/h2&gt;&lt;p&gt;Compassion, Perseverance, Indominable Spirit&lt;/p&gt;&lt;h2&gt;My past&lt;/h2&gt;&lt;p&gt;I used to work a lot of construction jobs, then work for big companies as a computer programmer, ride dirt bikes, play musical instruments, read tons of books, watch tons of comedy videos, snowboard and ski, mountain bike, fish, disc golf, practice Tae Kwon Do, ponder existence, mix and master for a record label I co-founded, swim laps, dive into bodies of water from high places, bungee jump, skateboard (street and some ramps), shoot guns, pick up any animal I find and try to be friends, meditate, camp, study Taoism and Buddhism and Christianity, follow Bernie Sanders, work in a factory doing science stuff, drive taxi, work at a automotive transaxle shop, work in a VHS movie rental store, work at In-N-Out Burger, work as a barista, be married, be divorced, care for an elderly woman with dementia, work as an activities coordinator for autistic adults, run cross-country, surf (boards and body), sing solos in choir, tutor Trigonometry, beatbox, be bullied a lot, be a victim of attempted murder multiple times, almost die from Pneumonia from COVID, be on over twelve medications at once (now I take none), hide that I am transgender, let fear cloud my judgement and beliefs, not know anything about myself, cry a lot, scream a lot, laugh a lot, watch my roommate play a video game for hours, play video games myself for hours, read every Terry Goodkind fantasy book and thank him every day (RIP), read a lot of dystopian books (1984, Brave New World, We, etc.), use medical imaging software to visualize my brain, do 3D animation, code for the web since 1995, study at University of California Santa Barbara and a dozen other community colleges but graduate from none of them, take everything apart as a kid to find out how stuff works, get in trouble in elementary school more than any other kid, get the best grades in elementary school than any other kid, wake up grumpy every single day (still do), hang out at coffee shops, almost die while rock climbing on way too many occasions, make armpit fart noises, and other stuff and things and junk and whatnot and what have you.&lt;/p&gt;&lt;/div&gt;
+      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-03-20T12:43:42-07:00" title="Friday, 20 March 2026 - 12:43" class="datetime"&gt;Fri, 20 Mar 2026 - 12:43&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Fri, 20 Mar 2026 19:43:42 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">146 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Animals and Outer Space Beings</title>
+  <link>https://brookemahoney.com/blog/animals-and-outer-space-beings</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Animals and Outer Space Beings&lt;/span&gt;
+
+            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;Humans are one kind of animal.&lt;/p&gt;&lt;p&gt;How do humans treat non-human animals?&lt;/p&gt;&lt;p&gt;Animals are what I imagine outer space beings might be like.&lt;/p&gt;&lt;p&gt;What would outer space beings think about how humans treat other animals?&lt;/p&gt;&lt;/div&gt;
+      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-03-20T11:29:02-07:00" title="Friday, 20 March 2026 - 11:29" class="datetime"&gt;Fri, 20 Mar 2026 - 11:29&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Fri, 20 Mar 2026 18:29:02 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">142 at https://brookemahoney.com</guid>
+    </item>
+<item>
   <title>Contact</title>
   <link>https://brookemahoney.com/contact</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Contact&lt;/span&gt;
 
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;Please contact me using my &lt;a href="https://www.drupal.org/user/717290/contact"&gt;personal contact form at Drupal.org&lt;/a&gt;, or on &lt;a href="https://www.linkedin.com/in/brooke-marie-mahoney/"&gt;LinkedIn&lt;/a&gt;, or &lt;a href="https://github.com/brookemahoney"&gt;Github&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;&lt;a href="https://www.drupal.org/user/717290/contact"&gt;Drupal.org&lt;/a&gt;, &lt;a href="https://www.linkedin.com/in/brooke-marie-mahoney/"&gt;LinkedIn&lt;/a&gt;, &lt;a href="https://github.com/brookemahoney"&gt;Github&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
       &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-10-07T12:26:04-07:00" title="Tuesday, 7 October 2025 - 12:26" class="datetime"&gt;Tue, 7 Oct 2025 - 12:26&lt;/time&gt;
 &lt;/span&gt;
@@ -19,90 +47,6 @@
   <pubDate>Tue, 07 Oct 2025 19:26:04 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
     <guid isPermaLink="false">137 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>Running Tests Locally for Drupal Contributed Modules</title>
-  <link>https://brookemahoney.com/blog/running-tests-locally-drupal-contributed-modules</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Running Tests Locally for Drupal Contributed Modules&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;Let's take a look at the &lt;a href="https://www.drupal.org/project/easy_breadcrumb"&gt;Easy Breadcrumb&lt;/a&gt; module's &lt;a href="https://www.drupal.org/project/issues/easy_breadcrumb?categories=All"&gt;issue queue&lt;/a&gt;. This looks like an interesting one: &lt;a href="https://www.drupal.org/project/easy_breadcrumb/issues/3500483"&gt;10.4+: Cache issue (BreadcrumbBuilderInterface::applies() now takes a second $cacheable_metadata argument)&lt;/a&gt; . It involves failing tests. I'll use the &lt;a href="https://addons.ddev.com/addons/ddev/ddev-drupal-contrib"&gt;ddev addon for drupal contrib&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;When using that addon, I can easily run tests, like PHPUnit and PHP Code Sniffer (PHPcs). One of the issues that Easy Breadcrumb has is that it's failing PHPcs tests. I want to make changes but ignore all the stuff that was added by .ddev and drupal core when I look at the git diff. So, I add a .gitignore to the root folder with these contents:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;.ddev
-vendor
-web
-recipes
-.editorconfig
-.gitattributes
-.gitignore
-phpcs.xml.dist
-phpstan.neon
-phpstan-baseline.neon
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Alright, added a &lt;a href="https://git.drupalcode.org/project/easy_breadcrumb/-/merge_requests/156/diffs"&gt;merge request&lt;/a&gt; for that one. It took awhile to understand what the correct code fix was. It was nice to be able to use VS Code and the Drupal extension to be able to navigate Drupal Core code so intuitively.&lt;/p&gt;&lt;p&gt;OK, added &lt;a href="https://git.drupalcode.org/project/easy_breadcrumb/-/merge_requests/157"&gt;another merge request&lt;/a&gt;, this time for &lt;a href="https://www.drupal.org/project/easy_breadcrumb/issues/3501555"&gt;Address PHPCS errors in gitlab-ci jobs&lt;/a&gt;. I really like the new Gitlab workflow for Drupal Contrib.&lt;/p&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-17T20:31:40-07:00" title="Wednesday, 17 September 2025 - 20:31" class="datetime"&gt;Wed, 17 Sep 2025 - 20:31&lt;/time&gt;
-&lt;/span&gt;
-
-  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
-    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
-          &lt;div class="field__items"&gt;
-              &lt;div class="field__item"&gt;Drupal&lt;/div&gt;
-              &lt;/div&gt;
-      &lt;/div&gt;
-</description>
-  <pubDate>Thu, 18 Sep 2025 03:31:40 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">13 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>Bash scripts for Drupal, DDEV, and Tome</title>
-  <link>https://brookemahoney.com/blog/bash-scripts-drupal-ddev-and-tome</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Bash scripts for Drupal, DDEV, and Tome&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;This website is made with &lt;a href="https://drupal.org"&gt;Drupal&lt;/a&gt;. Local development is done with &lt;a href="https://ddev.com/"&gt;DDEV&lt;/a&gt; configured to use Orbstack for container management. The &lt;a href="https://tome.fyi/"&gt;Tome&lt;/a&gt; Drupal module exports the dynamic site to a static site. Python is used to preview the site locally. Public hosting is provided free by Github.&lt;/p&gt;&lt;p&gt;Here are some custom bash aliases and functions I use to make common local tasks easy. &lt;a href="https://www.npmjs.com/package/concurrently"&gt;Concurrently&lt;/a&gt; is used to run two processes in one terminal session.&lt;/p&gt;&lt;pre&gt;&lt;code class="language-bash language-plaintext"&gt;alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
-brookemahoneycomLaunch () {
-  # Starts Orbstack if it isn't running.
-  orb
-  brookemahoneycomCd
-  cd drupal
-  ddev launch
-}
-
-brookemahoneycomPreview () {
-  brookemahoneycomCd
-  cd docs
-  concurrently 'python -m http.server' 'open "http://localhost:8000"'
-}
-
-brookemahoneycomBuild() {
-  # Starts Orbstack if it isn't running.
-  orb
-  # Changes to the drupal directory.
-  cd ~/Sites/brookemahoneycom/drupal
-  # Clears caches.
-  ddev drush cr
-  # Exports the site with Tome.
-  ddev drush tome:static --uri=https://brookemahoney.com
-  # Removes old docs directory.
-  rm -rf ~/Sites/brookemahoneycom/docs
-  # Copies the Tome build directory to docs for Github hosting.
-  cp -R ~/Sites/brookemahoneycom/drupal/html ~/Sites/brookemahoneycom/docs
-  # Copies over static files, such as CNAME for Github hosting.
-  cp -R ~/projects/brookemahoneycom/sync/ ~/Sites/brookemahoneycom/docs
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All the code for the Drupal install is in &lt;a href="https://github.com/brookemahoney/brookmahoneycom"&gt;this site's Github repo&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-17T13:46:57-07:00" title="Wednesday, 17 September 2025 - 13:46" class="datetime"&gt;Wed, 17 Sep 2025 - 13:46&lt;/time&gt;
-&lt;/span&gt;
-
-  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
-    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
-          &lt;div class="field__items"&gt;
-              &lt;div class="field__item"&gt;Drupal&lt;/div&gt;
-              &lt;/div&gt;
-      &lt;/div&gt;
-</description>
-  <pubDate>Wed, 17 Sep 2025 20:46:57 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">11 at https://brookemahoney.com</guid>
     </item>
 <item>
   <title>Blog</title>
@@ -117,11 +61,11 @@ brookemahoneycomBuild() {
     <guid isPermaLink="false">4 at https://brookemahoney.com</guid>
     </item>
 <item>
-  <title>Welcome to Brooke Mahoney's Website</title>
+  <title>Home</title>
   <link>https://brookemahoney.com/content/welcome</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Welcome to Brooke Mahoney's Website&lt;/span&gt;
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Home&lt;/span&gt;
 
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;img src="https://brookemahoney.com/sites/default/files/inline-images/brooke.jpg" data-entity-uuid="cffdc7f6-7c39-4aba-aa2b-0c8d3cc771e3" data-entity-type="file" alt="A picture of Brooke smiling, standing in the sun with a palm tree in the background." width="460" height="460" loading="lazy" class="align-center"&gt;&lt;/div&gt;
+            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p class="text-align-center"&gt;All Beings Welcome&lt;/p&gt;&lt;/div&gt;
       &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-14T14:50:57-07:00" title="Sunday, 14 September 2025 - 14:50" class="datetime"&gt;Sun, 14 Sep 2025 - 14:50&lt;/time&gt;
 &lt;/span&gt;

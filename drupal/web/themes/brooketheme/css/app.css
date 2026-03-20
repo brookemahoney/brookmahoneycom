@@ -83,7 +83,6 @@ h1 {
 
 h1, .site-name {
   margin: 40px 0;
-  text-align: center;
   text-shadow:
     0.04em 0.04em 0.02em #2e002e,
     -0.04em -0.04em 0.04em #9348c8;
@@ -103,10 +102,10 @@ img {
 }
 
 main {
-  background-image: url('/themes/brooketheme/images/misc/purpleFadedOval5.svg');
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: var(--border-radius);
   margin-bottom: calc(var(--padding) * 2);
+  padding: calc(var(--padding) * 2) var(--padding);
 }
 
 pre {
@@ -116,7 +115,13 @@ pre {
   padding: var(--padding);
 }
 
+.page-title {
+  margin-top: 0;
+}
+
 .site-name {
+  text-align: center;
+
   a {
     font-size: 48px;
     text-decoration: none;
