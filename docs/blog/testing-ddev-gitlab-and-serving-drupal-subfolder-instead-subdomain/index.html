@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/brooketheme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://brookemahoney.com/blog/testing-ddev-gitlab-and-serving-drupal-subfolder-instead-subdomain" />
+<link rel="shortlink" href="https://brookemahoney.com/node/148" />
+
+    <title>Testing with DDev, Gitlab, and serving Drupal from a subfolder instead of a subdomain | Brooke Mahoney</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_KfvVqyZ7UHTHI0o2VaDbjUhZ073zhzlyUttskVMksdM.css?delta=0&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/3024.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_8_ozQll1MTsl_5c4cpUC0A3KRwE2bnAK04IvFgR4wpo.css?delta=2&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
+
+    
+  </head>
+  <body class="path-node page-node-type-blog-post">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container">
+
+  <header role="banner">
+      <div class="region region-header">
+    <div id="block-brooketheme-site-branding" class="block block-system block-system-branding-block">
+  
+    
+          <div class="site-name">
+      <a href="/" rel="home">Brooke Mahoney</a>
+    </div>
+    </div>
+
+  </div>
+
+  </header>
+
+  
+  
+
+  
+
+  
+
+  
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-brooketheme-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Testing with DDev, Gitlab, and serving Drupal from a subfolder instead of a subdomain</span>
+</h1>
+
+
+  </div>
+<div id="block-brooketheme-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article class="node node--type-blog-post node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>While working on the Easy Breadcrumb module for Drupal, I came across a situation where a test was failling on Gitlab but was passing with DDev: <a href="https://www.drupal.org/project/easy_breadcrumb/issues/3615550">https://www.drupal.org/project/easy_breadcrumb/issues/3615550</a></p><p>The difference that mattered was that Gitlab serves the site from <em>http://localhost/web</em> for testing and locally it gets served from a fully qualified domain name, ie. <em>http://ddev.site.example.com</em>.</p><h2>Getting the test to fail locally</h2><h3>Using firecow/gitlab-ci-local</h3><p>To get the test to fail locally, I used the suggestions at <a href="https://project.pages.drupalcode.org/gitlab_templates/info/test-locally/">https://project.pages.drupalcode.org/gitlab_templates/info/test-locally/</a> , which suggested <a href="https://github.com/firecow/gitlab-ci-local">firecow/gitlab-ci-local</a> . I did get that working but I ran into a hitch. My work computer is a Mac with an ARM64 chip and gitlab-ci-local tries to install <em>selenium/standalone-chrome:127.0</em>, which doesn't support ARM64. I dug around and figured out that I could use <em>selenium/standalone-chromium:latest</em> instead by adding a few lines in <em>.gitlab-ci.yml:</em></p><pre><code class="language-plaintext">phpunit:
+  services:
+    - !reference [.with-database]
+    - name: selenium/standalone-chromium:latest
+      alias: selenium
+      
+# The lines below are to filter which tests run. In this case, only tests in the
+# "redirect" group.
+variables:
+  _PHPUNIT_TESTGROUPS: "redirect"</code></pre><p>Then, on the command line, to just run PHPUnit and not most of the other steps, I used the --stage flag to just run jobs in the test stage, which by default is just PHPUnit:</p><pre><code class="language-bash">$ drupal-ci-local --stage=test</code></pre><p>That worked and I was able to reproduce locally. But, it took about a minute to run the test instead of 2 or 3 seconds with DDev.</p><h3>Using DDEV to serve a Drupal site from a subdirectory instead of a subdomain</h3><p>This way is not perfect, but it worked well enough for me to use Xdebug when running tests and when browing the site in a browser.</p><p>The code below results in the site being served from a subdirectory named <em>easy</em>, ie. <em>http://example.com/easy</em>.</p><p>First, cd to root of project, then:</p><pre><code class="language-bash">mkdir router
+ls -s ./web ./router/easy</code></pre><p>Then, in .<em>ddev/config.yaml</em></p><pre><code class="language-plaintext">docroot: router</code></pre><p>Next, in <em>settings.php</em></p><pre><code class="language-php">if (isset($GLOBALS['request'])) {
+ $request = $GLOBALS['request'];
+ $script_name = $request-&gt;server-&gt;get('SCRIPT_NAME');
+ if ($script_name === '/easy/index.php' || $script_name === '/index.php') {
+   $request-&gt;server-&gt;set('SCRIPT_NAME', '/easy/index.php');
+ }
+}</code></pre><p>Then, in .<em>ddev/nginx_full/nginx-site.conf</em>, replace the section that starts with 'location /' to be like this instead:</p><pre><code class="language-plaintext">   # 1. CSS/JS caches
+   location ~* ^/easy/sites/.*/files/(css|js)/ {
+       try_files $uri @rewrite;
+       expires max;
+       log_not_found off;
+   }
+   # 2. Image styles
+   location ~* ^/easy/sites/.*/files/styles/ {
+       try_files $uri @rewrite;
+   }
+   # 3. Clean URLs
+   location /easy {
+       try_files $uri $uri/ /easy/index.php?$query_string;
+   }
+   # 4. Fallback
+   location @rewrite {
+       rewrite ^/easy/(.*)$ /easy/index.php?$query_string;
+   }</code></pre><p>To run phpunit tests, pass in SIMPLETEST_BASE_URL.<br>Example which just runs ones test:</p><pre><code class="language-plaintext">ddev exec SIMPLETEST_BASE_URL=http://localhost/easy vendor/bin/phpunit --bootstrap web/core/tests/bootstrap.php --filter testEasyBreadcrumbFollowRedirects web/modules/custom/easy_breadcrumb
+</code></pre><p>&nbsp;</p></div>
+      
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+      <footer role="contentinfo">
+        <div class="region region-footer">
+    <nav role="navigation" aria-labelledby="block-brooketheme-footer-menu" id="block-brooketheme-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-brooketheme-footer-menu">Footer</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/tags/drupal" data-drupal-link-system-path="taxonomy/term/1">Drupal</a>
+              </li>
+                <li class="menu-item menu-item--active-trail">
+        <a href="/about" data-drupal-link-system-path="node/146">About</a>
+              </li>
+                <li class="menu-item">
+        <a href="/contact" data-drupal-link-system-path="node/137">Contact</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+    </footer>
+  
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/148","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"button_data":{"copy_enable":false,"copy_bg_transparent":false,"copy_bg_color":"#661eaa","copy_txt_color":"#ffffff","copy_btn_text":"Copy","copy_success_text":"Copied","success_txt_color":"#4caf50"},"user":{"uid":0,"permissionsHash":"2cfcdc45117054f2578ef0f31781981156300e7511e12a3596143f48b7a7dc3c"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0-rc.1"></script>
+<script src="/sites/default/files/js/js_yteYYo_KEKnYK1TbK8CsF01y2bHZKAJn5c6j42TMsYw.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=brooketheme&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script src="/sites/default/files/js/js_C2TiAkMC0xQPh06ur1W-pS0B90gh3GxjtyV0IWMH3Mo.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=brooketheme&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+
+  </body>
+</html>
