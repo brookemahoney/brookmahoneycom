@@ -72,9 +72,7 @@ ls -s ./web ./router/easy&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, in .&lt;em&gt;d
   <title>About</title>
   <link>https://brookemahoney.com/about</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;About&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;h2 class="text-align-center"&gt;May we cultivate an attitude of peaceful confidence and a desire for happy community work.&lt;/h2&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-03-20T12:43:42-07:00" title="Friday, 20 March 2026 - 12:43" class="datetime"&gt;Fri, 20 Mar 2026 - 12:43&lt;/time&gt;
 &lt;/span&gt;
 </description>
