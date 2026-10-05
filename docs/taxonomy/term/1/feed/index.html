@@ -7,6 +7,54 @@
     <language>en</language>
     
     <item>
+  <title>Drupal Headless Code Components Notes</title>
+  <link>https://brookemahoney.com/blog/drupal-headless-code-components-notes</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Drupal Headless Code Components Notes&lt;/span&gt;
+
+            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;h2 data-heading="Overview"&gt;Overview&lt;/h2&gt;&lt;p&gt;This document is an overview of my current local setup for working with Drupal Code Components and headless Next.js.&lt;/p&gt;&lt;p&gt;See &lt;a class="external-link" href="https://project.pages.drupalcode.org/canvas/headless/setup/" target="_blank" rel="noopener nofollow"&gt;https://project.pages.drupalcode.org/canvas/headless/setup/&lt;/a&gt; .&lt;/p&gt;&lt;h2 data-heading="Outline of Setup Steps"&gt;Outline of Setup Steps&lt;/h2&gt;&lt;ul&gt;&lt;li data-list-item-id="e089191652e035327fa56b2d289c08f4b"&gt;Create a folder for the project and cd into it.&lt;/li&gt;&lt;li data-list-item-id="e52d4d1d598ec2c6b4fbead3eb1f6e91e"&gt;Configure DDEV for Drupal with some extra modules needed for the Canvas Headless (canvas_headless) module&lt;/li&gt;&lt;li data-list-item-id="e5b003fe07fe12c8d9079cf7bdfaf19fc"&gt;Create a folder to store OAuth keys.&lt;/li&gt;&lt;li data-list-item-id="ee011d9ac3237a4570e8facc1763b5585"&gt;Install the Haven recipe&lt;/li&gt;&lt;li data-list-item-id="ede5359f7e8f41d4343383049561a37a0"&gt;Disable the Trash module because of a weird bug. There be dragons if you leave it enabled.&lt;/li&gt;&lt;li data-list-item-id="e487ad8d1232e834b567afc1513415234"&gt;Enable the Canvas Headless and the Canvas OAuth modules&lt;/li&gt;&lt;li data-list-item-id="ec87330201b9abf2178da71b8d4dc5688"&gt;Log in with Chrome over http - &lt;a class="external-link" href="https://project.pages.drupalcode.org/canvas/headless/setup/#prerequisites" target="_blank" rel="noopener nofollow" aria-label="https://project.pages.drupalcode.org/canvas/headless/setup/#prerequisites" data-tooltip-position="top"&gt;the docs say to use Chrome and http&lt;/a&gt;.&lt;/li&gt;&lt;li data-list-item-id="eda3af523bd7cb59c30123766708a0c30"&gt;Scaffold the Canvas Headless code, in a new folder called &lt;code&gt;headless&lt;/code&gt;, with support for Next.js&lt;/li&gt;&lt;li data-list-item-id="ec27c2f7f24ec47fc4cfc296ee65def33"&gt;Get Vercel AI skills to help your agents understand the Next/React conventions.&lt;/li&gt;&lt;li data-list-item-id="e40771c706311d3914e08938170ce7eeb"&gt;Install Canvas CLI&lt;/li&gt;&lt;li data-list-item-id="e97ff31b6356f6cefde8273c910244dc9"&gt;Start the Canvas Headless server.&lt;/li&gt;&lt;li data-list-item-id="ed905a874a5c2d8d473fecad30f850468"&gt;Generate OAuth keys&lt;/li&gt;&lt;li data-list-item-id="e6f180dcb94fece7b80c6cc8b8fca717b"&gt;Setup a consumer&lt;/li&gt;&lt;li data-list-item-id="e19a4bffa078761dda609306dee18e3f7"&gt;Add the Frontend in the Canvas editor&lt;/li&gt;&lt;li data-list-item-id="ec1f48cd43040717194079c2f5a36935c"&gt;Login with OAuth using Canvas CLI&lt;/li&gt;&lt;/ul&gt;&lt;h2 data-heading="Detailed Setup Steps"&gt;Detailed Setup Steps&lt;/h2&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;cd ~/Sites
+mkdir headless
+cd headless
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;
+ddev config --project-type=drupal11 --docroot=web
+ddev start
+
+ddev composer create-project drupal/recommended-project
+ddev composer require --dev 'drush/drush'
+ddev composer require 'drupal/haven' 'drupal/canvas' 'drupal/consumers' 'drupal/custom_elements' 'drupal/simple_oauth'
+
+ddev restart
+
+mkdir keys
+ddev drush si -y recipes/haven
+ddev drush un trash -y
+ddev drush en canvas_headless, canvas_oauth -y
+open -a "Google Chrome" $(ddev drush uli | sed 's/https:/http:/')
+
+npx @drupal-canvas/create@latest headless \
+  --template nextjs \
+  --site-url https://headless.ddev.site \
+  --agents none
+
+cd headless
+npx skills add vercel-labs/agent-skills --yes
+npm install @drupal-canvas/cli
+npm run dev
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open &lt;a class="external-link" href="https://headless.ddev.site/admin/config/people/simple_oauth" target="_blank" rel="noopener nofollow"&gt;https://headless.ddev.site/admin/config/people/simple_oauth&lt;/a&gt; and click "Generate keys" button, then enter the folder that was created in the steps above:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;/var/www/html/keys
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open &lt;a class="external-link" href="http://headless.ddev.site/admin/config/services/consumer" target="_blank" rel="noopener nofollow"&gt;http://headless.ddev.site/admin/config/services/consumer&lt;/a&gt; and click "+ Add Consumer", then set the following field values:&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="edc13febe3254c080438bda38df6fea05"&gt;Label: Code Components&lt;/li&gt;&lt;li data-list-item-id="e24be230e35df3b7d6b29b2456f34599f"&gt;Client ID: code-components&lt;/li&gt;&lt;li data-list-item-id="e3040a94eea47693604c1097cee025afe"&gt;Grant types (enable both):&lt;ul&gt;&lt;li data-list-item-id="e65e5e2906f31cd3b9d42f11d40eb6daf"&gt;JWT bearer (preview assertion)&lt;/li&gt;&lt;li data-list-item-id="e8510dacd5c13fc4213e34a58bfd56635"&gt;Authorization Code&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-list-item-id="e717deff68e3513847708a1ae5277e376"&gt;Authorization Code settings&lt;ul&gt;&lt;li data-list-item-id="e10309903abf8c06b9f8cdbb79124c7df"&gt;Enable all scopes&lt;/li&gt;&lt;li data-list-item-id="e5c9d0c29fb672d239b51e2071aa9d167"&gt;Enable "Automatic authorization", "Remember previous approval", "Use PKCE?"&lt;/li&gt;&lt;li data-list-item-id="ebaf9522165551ffde5ceb3e25bc00b2a"&gt;Redirect URIs: &lt;code&gt;http://localhost:4444/callback&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Open the Canvas editor and click the icon in the left rail for "Headless frontends" and click "Add frontend". For the Frontend URL field, use the following (no trailing slash, no query, and no fragment):&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;http://localhost:3000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If everything went as expected, the "Frontends" section will show &lt;code&gt;http://localhost:3000&lt;/code&gt; as being Ready.&lt;/p&gt;&lt;p&gt;Change the default OS browser to Chrome; the Canvas CLI login command will open a browser and it needs to be the browser you are developing in, which in this case needs to be Chrome.&lt;/p&gt;&lt;p&gt;In a new terminal window (the original one should still have the Node server running), use Canvas CLI to login. Make sure to cd into the &lt;code&gt;headless&lt;/code&gt; folder in the directory of your site. In this example, the site and the folder are both named &lt;code&gt;headless&lt;/code&gt;.&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;cd ~/Sites/headless/headless
+npx canvas login
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That will open a browser window to a link on your site, which redirects you to a localhost page that shows you a success/failure message. If everything went well, you can now use npx canvas to push and pull components from Drupal Canvas.&lt;/p&gt;&lt;h2 data-heading="Notes"&gt;Notes&lt;/h2&gt;&lt;p&gt;The example above doesn't use Astro, but if you do use Astro:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;npx astro telemetry disable
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-10-05T12:53:33-07:00" title="Monday, 5 October 2026 - 12:53" class="datetime"&gt;Mon, 5 Oct 2026 - 12:53&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Mon, 05 Oct 2026 19:53:33 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">150 at https://brookemahoney.com</guid>
+    </item>
+<item>
   <title>Testing with DDev, Gitlab, and serving Drupal from a subfolder instead of a subdomain</title>
   <link>https://brookemahoney.com/blog/testing-ddev-gitlab-and-serving-drupal-subfolder-instead-subdomain</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Testing with DDev, Gitlab, and serving Drupal from a subfolder instead of a subdomain&lt;/span&gt;
