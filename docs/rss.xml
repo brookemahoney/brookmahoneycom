@@ -69,54 +69,6 @@ npx canvas login
     <guid isPermaLink="false">149 at https://brookemahoney.com</guid>
     </item>
 <item>
-  <title>Testing with DDev, Gitlab, and serving Drupal from a subfolder instead of a subdomain</title>
-  <link>https://brookemahoney.com/blog/testing-ddev-gitlab-and-serving-drupal-subfolder-instead-subdomain</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Testing with DDev, Gitlab, and serving Drupal from a subfolder instead of a subdomain&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;While working on the Easy Breadcrumb module for Drupal, I came across a situation where a test was failling on Gitlab but was passing with DDev: &lt;a href="https://www.drupal.org/project/easy_breadcrumb/issues/3615550"&gt;https://www.drupal.org/project/easy_breadcrumb/issues/3615550&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The difference that mattered was that Gitlab serves the site from &lt;em&gt;http://localhost/web&lt;/em&gt; for testing and locally it gets served from a fully qualified domain name, ie. &lt;em&gt;http://ddev.site.example.com&lt;/em&gt;.&lt;/p&gt;&lt;h2&gt;Getting the test to fail locally&lt;/h2&gt;&lt;h3&gt;Using firecow/gitlab-ci-local&lt;/h3&gt;&lt;p&gt;To get the test to fail locally, I used the suggestions at &lt;a href="https://project.pages.drupalcode.org/gitlab_templates/info/test-locally/"&gt;https://project.pages.drupalcode.org/gitlab_templates/info/test-locally/&lt;/a&gt; , which suggested &lt;a href="https://github.com/firecow/gitlab-ci-local"&gt;firecow/gitlab-ci-local&lt;/a&gt; . I did get that working but I ran into a hitch. My work computer is a Mac with an ARM64 chip and gitlab-ci-local tries to install &lt;em&gt;selenium/standalone-chrome:127.0&lt;/em&gt;, which doesn't support ARM64. I dug around and figured out that I could use &lt;em&gt;selenium/standalone-chromium:latest&lt;/em&gt; instead by adding a few lines in &lt;em&gt;.gitlab-ci.yml:&lt;/em&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;phpunit:
-  services:
-    - !reference [.with-database]
-    - name: selenium/standalone-chromium:latest
-      alias: selenium
-      
-# The lines below are to filter which tests run. In this case, only tests in the
-# "redirect" group.
-variables:
-  _PHPUNIT_TESTGROUPS: "redirect"&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, on the command line, to just run PHPUnit and not most of the other steps, I used the --stage flag to just run jobs in the test stage, which by default is just PHPUnit:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-bash"&gt;$ drupal-ci-local --stage=test&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That worked and I was able to reproduce locally. But, it took about a minute to run the test instead of 2 or 3 seconds with DDev.&lt;/p&gt;&lt;h3&gt;Using DDEV to serve a Drupal site from a subdirectory instead of a subdomain&lt;/h3&gt;&lt;p&gt;This way is not perfect, but it worked well enough for me to use Xdebug when running tests and when browing the site in a browser.&lt;/p&gt;&lt;p&gt;The code below results in the site being served from a subdirectory named &lt;em&gt;easy&lt;/em&gt;, ie. &lt;em&gt;http://example.com/easy&lt;/em&gt;.&lt;/p&gt;&lt;p&gt;First, cd to root of project, then:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-bash"&gt;mkdir router
-ls -s ./web ./router/easy&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, in .&lt;em&gt;ddev/config.yaml&lt;/em&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;docroot: router&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next, in &lt;em&gt;settings.php&lt;/em&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class="language-php"&gt;if (isset($GLOBALS['request'])) {
- $request = $GLOBALS['request'];
- $script_name = $request-&amp;gt;server-&amp;gt;get('SCRIPT_NAME');
- if ($script_name === '/easy/index.php' || $script_name === '/index.php') {
-   $request-&amp;gt;server-&amp;gt;set('SCRIPT_NAME', '/easy/index.php');
- }
-}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, in .&lt;em&gt;ddev/nginx_full/nginx-site.conf&lt;/em&gt;, replace the section that starts with 'location /' to be like this instead:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;   # 1. CSS/JS caches
-   location ~* ^/easy/sites/.*/files/(css|js)/ {
-       try_files $uri @rewrite;
-       expires max;
-       log_not_found off;
-   }
-   # 2. Image styles
-   location ~* ^/easy/sites/.*/files/styles/ {
-       try_files $uri @rewrite;
-   }
-   # 3. Clean URLs
-   location /easy {
-       try_files $uri $uri/ /easy/index.php?$query_string;
-   }
-   # 4. Fallback
-   location @rewrite {
-       rewrite ^/easy/(.*)$ /easy/index.php?$query_string;
-   }&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To run phpunit tests, pass in SIMPLETEST_BASE_URL.&lt;br&gt;Example which just runs ones test:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;ddev exec SIMPLETEST_BASE_URL=http://localhost/easy vendor/bin/phpunit --bootstrap web/core/tests/bootstrap.php --filter testEasyBreadcrumbFollowRedirects web/modules/custom/easy_breadcrumb
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-08-10T11:42:10-07:00" title="Monday, 10 August 2026 - 11:42" class="datetime"&gt;Mon, 10 Aug 2026 - 11:42&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Mon, 10 Aug 2026 18:42:10 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">148 at https://brookemahoney.com</guid>
-    </item>
-<item>
   <title>About</title>
   <link>https://brookemahoney.com/about</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;About&lt;/span&gt;
@@ -187,6 +139,18 @@ brookemahoneycomBuild() {
   <pubDate>Wed, 17 Sep 2025 20:46:57 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
     <guid isPermaLink="false">11 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Blog</title>
+  <link>https://brookemahoney.com/blog</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Blog&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-14T15:10:00-07:00" title="Sunday, 14 September 2025 - 15:10" class="datetime"&gt;Sun, 14 Sep 2025 - 15:10&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Sun, 14 Sep 2025 22:10:00 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">4 at https://brookemahoney.com</guid>
     </item>
 <item>
   <title>Home</title>
