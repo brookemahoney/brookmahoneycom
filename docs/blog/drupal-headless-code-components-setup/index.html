@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/brooketheme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://brookemahoney.com/blog/drupal-headless-code-components-setup" />
+<link rel="shortlink" href="https://brookemahoney.com/node/150" />
+
+    <title>Drupal Headless Code Components Setup | Brooke Mahoney</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_nG0qk1b5-33Ri5NTdHONNa3frkmjAcQubB60s9ssHc8.css?delta=0&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/3024.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_F6H4dJ9x67F7Ll1WyMFg_N6RzVlJYwvNY7n1B2ONE9Q.css?delta=2&amp;language=en&amp;theme=brooketheme&amp;include=eJx9jjsOhTAQAy8UPuJxH5SARYAsK8VLAafnQQUNhaXxyIVDVl1gEYIqeMKFhxCQfgRfctUBrtd8URafpgMuTmNM_1g3s3qWst9oKh8D2p5Q_OqmddxpkPvGCYo7OlI" />
+
+    
+  </head>
+  <body class="path-node page-node-type-blog-post">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container">
+
+  <header role="banner">
+      <div class="region region-header">
+    <div id="block-brooketheme-site-branding" class="block block-system block-system-branding-block">
+  
+    
+          <div class="site-name">
+      <a href="/" rel="home">Brooke Mahoney</a>
+    </div>
+    </div>
+
+  </div>
+
+  </header>
+
+  
+  
+
+  
+
+  
+
+  
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-brooketheme-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Drupal Headless Code Components Setup</span>
+</h1>
+
+
+  </div>
+<div id="block-brooketheme-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article class="node node--type-blog-post node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2 data-heading="Overview">Overview</h2><p>This document is an overview of my current local setup for working with Drupal Code Components and headless Next.js.</p><p>See <a class="external-link" href="https://project.pages.drupalcode.org/canvas/headless/setup/" target="_blank" rel="noopener nofollow">https://project.pages.drupalcode.org/canvas/headless/setup/</a> .</p><h2 data-heading="Outline of Setup Steps">Outline of Setup Steps</h2><ul><li data-list-item-id="e1972ba046464d8007c844263986637cd">Create a folder for the project and cd into it.</li><li data-list-item-id="eabaf03319563870c41cfb43b8af134d9">Configure DDEV for Drupal with some extra modules needed for the Canvas Headless (canvas_headless) module</li><li data-list-item-id="e07dddc779763a04e7fe0ecf24a330aca">Create a folder to store OAuth keys.</li><li data-list-item-id="ed17fda4dd985950a750c2a85772e921e">Enable the Canvas Headless and the Canvas OAuth modules</li><li data-list-item-id="e3c78a4c3e794625f8993ba9c03c30574">Log in with Chrome (<a class="external-link" href="https://project.pages.drupalcode.org/canvas/headless/setup/#prerequisites" target="_blank" rel="noopener nofollow" aria-label="https://project.pages.drupalcode.org/canvas/headless/setup/#prerequisites" data-tooltip-position="top">the docs say you have to use a Chromium-based browser, so no Firefox of Safari.</a>.)</li><li data-list-item-id="e358a8f8c75b5365e7d00efcafb406829">Scaffold the Canvas Headless code, in a new folder called <code>headless</code>, with support for Next.js</li><li data-list-item-id="e69c6496acf6f50ea55417234d28146c7">Get Vercel AI agent skills to help your agents understand the Next/React conventions.</li><li data-list-item-id="ef161b7d6693e777484eef12f79aff6c9">Get Drupal Canvas AI agent skills</li><li data-list-item-id="e97142275a5bcdc3f0a7c5c1717e5e357">Install Canvas CLI</li><li data-list-item-id="e36b0ce36c8a6fee6bae5fd1ed5997726">Start the Canvas Headless Next.js server.</li><li data-list-item-id="e342b8ab6dfd6cc06ca0eaa6dbabab220">Initialize a git repo with a default .gitignore</li><li data-list-item-id="ee0f4bc78cce1474dc7e3bd912803b3cf">Generate OAuth keys</li><li data-list-item-id="e5224a5e9976411ee3628eb0061aa8701">Setup a consumer</li><li data-list-item-id="e96e3aeb57c9be5561b5ec5b3f28decad">Add the Frontend in the Canvas editor</li><li data-list-item-id="eb47aaa3ffe891892bbf894185f4fe12d">Login with Canvas CLI</li><li data-list-item-id="e80878e4a8566fedf6ba10e78b3a416a5">Push the default Code Components to Drupal</li><li data-list-item-id="e789922d680c1a60e3aea26bf37679d38">Edit a page in the Canvas editor in Drupal</li><li data-list-item-id="e2727c0302f41f1a3019b10b4233026d2">View the site in the Next.js app in the browser</li></ul><h2 data-heading="Detailed Setup Steps">Detailed Setup Steps</h2><pre><code class="language-plaintext">cd ~/Sites
+mkdir headless
+cd headless
+</code></pre><pre><code class="language-plaintext">
+ddev config --project-type=drupal11 --docroot=web
+ddev start
+
+ddev composer create-project drupal/recommended-project
+ddev composer require --dev 'drush/drush'
+ddev composer require 'drupal/canvas' 'drupal/consumers' 'drupal/custom_elements' 'drupal/simple_oauth'
+
+ddev restart
+
+mkdir keys
+ddev drush si -y
+ddev drush en canvas_headless, canvas_oauth -y
+open -a "Google Chrome" "$(ddev drush uli)"
+
+npx @drupal-canvas/create@latest headless \
+  --template nextjs \
+  --site-url https://headless.ddev.site \
+  --agents none
+
+cd headless
+npx skills add vercel-labs/agent-skills --yes
+npx skills add drupal-canvas/skills
+npm install @drupal-canvas/cli
+npm run dev
+
+</code></pre><p>Open up a new terminal window.</p><ul><li data-list-item-id="e4f74fd1608d32e6af81313080f7fc72d">Remove the newly added <code>.git</code> folder that the scaffolding added (<code>~/Sites/headless/headless/.git</code>).</li><li data-list-item-id="e64994deceee03bcd20168e464c018a72">Init a git repo for the whole project instead.</li><li data-list-item-id="ee7231161c91ece3922695e46882a55e2">Make an initial commit so that later, you can get a clear picture of what Canvas CLI creates or pulls in.</li></ul><pre><code class="language-plaintext">rm -rf ~/Sites/headless/headless/.git
+cd ~/Sites/headless/
+git init .
+echo "web/sites/default/files" &gt;&gt; .gitignore
+echo "vendor" &gt;&gt; .gitignore
+git add . &amp;&amp; git commit -m 'initial commit'
+</code></pre><p>Open <a class="external-link" href="http://headless.ddev.site/admin/config/people/simple_oauth" target="_blank" rel="noopener nofollow">http://headless.ddev.site/admin/config/people/simple_oauth</a> and click "Generate keys" button, then enter the folder that was created in the steps above:</p><pre><code class="language-plaintext">/var/www/html/keys
+</code></pre><p>Make sure to click the "Save configuration" button.</p><p>Open <a class="external-link" href="http://headless.ddev.site/admin/config/services/consumer" target="_blank" rel="noopener nofollow">http://headless.ddev.site/admin/config/services/consumer</a> and click "+ Add Consumer", then set the following field values:</p><ul><li data-list-item-id="e036806b85fd2b417d4c6174ae5e2f4f1">Label: Code Components</li><li data-list-item-id="e0650fdd3c000778a49fcdfa76fbfbffa">Client ID: code-components</li><li data-list-item-id="e160791cc7822df840b453e466ef8fe72">Grant types (enable both):<ul><li data-list-item-id="e90986bbb25a5ab446aa23b0dbcc1c002">JWT bearer (preview assertion)</li><li data-list-item-id="e4e077c93c5fb9be864eece41d28dde1a">Authorization Code</li></ul></li><li data-list-item-id="eb6d91684cc5d8f544d869002102e8950">Authorization Code settings<ul><li data-list-item-id="e94d0179cbfd98feb9eb62341fccf9966">Enable all scopes</li><li data-list-item-id="ef9a5c42f16133e378596557deef1fe08">Enable "Automatic authorization", "Remember previous approval", "Use PKCE?"</li><li data-list-item-id="e1caeb3a6cf5a91128974e4bd323b4a51">Redirect URIs:</li></ul></li></ul><pre><code class="language-plaintext">http://localhost:4444/callback
+</code></pre><ul><li data-list-item-id="e0131fa3a204f2516ad98097f7ac227ca">Disable "Is this consumer 3rd party?"</li><li data-list-item-id="e63de9e27666bedc92dea5bdcd3c3eb92">Disable "Is Confidential?"</li><li data-list-item-id="e2b04b75c1131407b7358994842fffb46">Set "Access token expiration time" to 86400 (one day)</li><li data-list-item-id="e870638a5b7ae9d1243f5dfbf630fe429">Click Save</li><li data-list-item-id="ec1b626748a0ab55411d77047d15305ca">Open <a class="external-link" href="http://headless.ddev.site/admin/content/pages" target="_blank" rel="noopener nofollow">http://headless.ddev.site/admin/content/pages</a> and click "Add Page", which opens up a new Canvas editing screen at <code>canvas/editor/canvas_page/1</code></li><li data-list-item-id="ef380b50d04a41c9ade0a4a4d7a2fd3e6">Click the icon in the left rail for "Headless frontends"</li><li data-list-item-id="ed50cdccbd7f34c4eb79d55de88f31060">Click "Add frontend".<ul><li data-list-item-id="e4346e0d15d787425c47278b4c096febe">For the Frontend URL field, use the following (no trailing slash, no query, and no fragment):</li></ul></li></ul><pre><code class="language-plaintext">http://localhost:3000
+</code></pre><p>If everything went as expected, the "Frontends" section will show <code>http://localhost:3000</code> as being "Ready".</p><p>Change the default OS browser to Chrome; the Canvas CLI login command will open a browser and it needs to be the browser you are developing in, which in this case needs to be Chrome.</p><ul><li data-list-item-id="eb3c224504c18578bbee068e2cce96b93">Cd into the <code>headless</code> folder in the directory of your site.<ul><li data-list-item-id="efbee8fc8a278cf049931abbf61a8b8da">In this example, the site and the folder are both named <code>headless</code>.</li></ul></li><li data-list-item-id="ec680510b878da493bdeaab3faca3417c">Login with Canvas CLI using the OAuth consumer client id from the step above (<code>code-components</code>).</li></ul><pre><code class="language-plaintext">cd ~/Sites/headless/headless
+npx canvas login --client-id code-components
+</code></pre><p>That will open a browser window to a link on the Drupal site, which redirects you to a localhost page that shows you a success/failure message. If everything went well, you can now use Canvas CLI (<code>npx canvas</code>) to push and pull components between Drupal and Next. Since the scaffolding created some new components, use the push command to get them to the Drupal site:</p><pre><code class="language-plaintext">npx canvas push
+</code></pre><p>Now, you can create a page in Drupal and the components from the Next.js app should appear there. Build out a page, change some css in the code if you want (<code>headless/app/globals.css</code> for example, maybe change the body background color), and watch things change in the edit screen in realtime. Then, save your changes in Canvas, just like when you are in regular non-headless mode, and view your site at <code>http://localhost:3000</code>.</p><p>Now wasn't that easy.... yeah right.</p><h2 data-heading="Notes">Notes</h2><p>The example above doesn't use Astro, but if you do use Astro:</p><pre><code class="language-plaintext">npx astro telemetry disable
+</code></pre></div>
+      
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+      <footer role="contentinfo">
+        <div class="region region-footer">
+    <nav role="navigation" aria-labelledby="block-brooketheme-footer-menu" id="block-brooketheme-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-brooketheme-footer-menu">Footer</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+              </li>
+                <li class="menu-item menu-item--active-trail">
+        <a href="/contact" data-drupal-link-system-path="node/137">Contact</a>
+              </li>
+                <li class="menu-item">
+        <a href="/resume" data-drupal-link-system-path="node/149">Resume</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+    </footer>
+  
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/150","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"button_data":{"copy_enable":true,"copy_bg_transparent":false,"copy_bg_color":"#661eaa","copy_txt_color":"#ffffff","copy_btn_text":"Copy","success_bg_transparent":true,"success_bg_color":"#4243b1","success_txt_color":"#4caf50","copy_success_text":"Copied"},"user":{"uid":0,"permissionsHash":"2cfcdc45117054f2578ef0f31781981156300e7511e12a3596143f48b7a7dc3c"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0"></script>
+<script src="/sites/default/files/js/js_6N_LPgVDd9eHLAEAlRnLtCWmrMofVm5lzPaDKOICkc4.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=brooketheme&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script src="/sites/default/files/js/js_KVWI1w2JgFwP2j5f3KcdiDsMqcv4RrfhXlnzcY5lGu4.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=brooketheme&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+
+  </body>
+</html>
