@@ -7,62 +7,6 @@
     <language>en</language>
     
     <item>
-  <title>Drupal Headless Code Components Setup</title>
-  <link>https://brookemahoney.com/blog/drupal-headless-code-components-setup</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Drupal Headless Code Components Setup&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;h2 data-heading="Overview"&gt;Overview&lt;/h2&gt;&lt;p&gt;This document is an overview of my current local setup for working with Drupal Code Components and headless Next.js.&lt;/p&gt;&lt;p&gt;See &lt;a class="external-link" href="https://project.pages.drupalcode.org/canvas/headless/setup/" target="_blank" rel="noopener nofollow"&gt;https://project.pages.drupalcode.org/canvas/headless/setup/&lt;/a&gt; .&lt;/p&gt;&lt;h2 data-heading="Outline of Setup Steps"&gt;Outline of Setup Steps&lt;/h2&gt;&lt;ul&gt;&lt;li data-list-item-id="e380ff679f58638f8520ecd6e703560bd"&gt;Create a folder for the project and cd into it.&lt;/li&gt;&lt;li data-list-item-id="eccf5125973286850741f44448a191e96"&gt;Configure DDEV for Drupal with some extra modules needed for the Canvas Headless (canvas_headless) module&lt;/li&gt;&lt;li data-list-item-id="e2efb13ff70788842eade998e433a6e88"&gt;Create a folder to store OAuth keys.&lt;/li&gt;&lt;li data-list-item-id="e1e3979a27aa8b91407e50774a3187e19"&gt;Enable the Canvas Headless and the Canvas OAuth modules&lt;/li&gt;&lt;li data-list-item-id="e971e806d54fe5c9f2f1a60af5f7f6d19"&gt;Log in with Chrome (&lt;a class="external-link" href="https://project.pages.drupalcode.org/canvas/headless/setup/#prerequisites" target="_blank" rel="noopener nofollow" aria-label="https://project.pages.drupalcode.org/canvas/headless/setup/#prerequisites" data-tooltip-position="top"&gt;the docs say you have to use a Chromium-based browser, so no Firefox of Safari.&lt;/a&gt;.)&lt;/li&gt;&lt;li data-list-item-id="e17888cb5d46b4c3f134748a4561fb533"&gt;Scaffold the Canvas Headless code, in a new folder called &lt;code&gt;headless&lt;/code&gt;, with support for Next.js&lt;/li&gt;&lt;li data-list-item-id="e3fe16d877258bb9f30dfd9ff9daf9786"&gt;Get Vercel AI agent skills to help your agents understand the Next/React conventions.&lt;/li&gt;&lt;li data-list-item-id="e6ea9f890dffb3ee14f67a639908ef6ee"&gt;Get Drupal Canvas AI agent skills&lt;/li&gt;&lt;li data-list-item-id="e7d7d6b458cb7504d84f90ae0c72c0624"&gt;Install Canvas CLI&lt;/li&gt;&lt;li data-list-item-id="e0884aa0230b719750dfcc699a275f0da"&gt;Start the Canvas Headless Next.js server.&lt;/li&gt;&lt;li data-list-item-id="e592b6e08cd32fb9229cb700d0e94c3be"&gt;Initialize a git repo with a default .gitignore&lt;/li&gt;&lt;li data-list-item-id="e6afca5163bab06c13e5277ea71b56ee0"&gt;Generate OAuth keys&lt;/li&gt;&lt;li data-list-item-id="e2fb90d3c56c1cab87cb3e74178a8c0de"&gt;Setup a consumer&lt;/li&gt;&lt;li data-list-item-id="ee4f4332be46e86129d932e960132015e"&gt;Add the Frontend in the Canvas editor&lt;/li&gt;&lt;li data-list-item-id="e49a0e11920e977afffce39ab9ce373d1"&gt;Login with Canvas CLI&lt;/li&gt;&lt;li data-list-item-id="e8d8bece8be3073882d7ab8f5edc2b592"&gt;Push the default Code Components to Drupal&lt;/li&gt;&lt;li data-list-item-id="e9d087b449c6e8c74a89ea9bb565537ef"&gt;Edit a page in the Canvas editor in Drupal&lt;/li&gt;&lt;li data-list-item-id="eeb12dcb9b3de0e1e56a6770699bfe69d"&gt;View the site in the Next.js app in the browser&lt;/li&gt;&lt;/ul&gt;&lt;h2 data-heading="Detailed Setup Steps"&gt;Detailed Setup Steps&lt;/h2&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;cd ~/Sites
-mkdir headless
-cd headless
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;
-ddev config --project-type=drupal11 --docroot=web
-ddev start
-
-ddev composer create-project drupal/recommended-project
-ddev composer require --dev 'drush/drush'
-ddev composer require 'drupal/canvas' 'drupal/consumers' 'drupal/custom_elements' 'drupal/simple_oauth'
-
-ddev restart
-
-mkdir keys
-ddev drush si -y
-ddev drush en canvas_headless, canvas_oauth -y
-open -a "Google Chrome" "$(ddev drush uli)"
-
-npx @drupal-canvas/create@latest headless \
-  --template nextjs \
-  --site-url https://headless.ddev.site \
-  --agents none
-
-cd headless
-npx skills add vercel-labs/agent-skills --yes
-npx skills add drupal-canvas/skills --yes
-npm install @drupal-canvas/cli
-npm run dev
-
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open up a new terminal window.&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="e1f9ed96547694e04e11509d5078a5d0d"&gt;Remove the newly added &lt;code&gt;.git&lt;/code&gt; folder that the scaffolding added (&lt;code&gt;~/Sites/headless/headless/.git&lt;/code&gt;).&lt;/li&gt;&lt;li data-list-item-id="e89598ba515cf5990faefe444f314b6db"&gt;Init a git repo for the whole project instead.&lt;/li&gt;&lt;li data-list-item-id="e7b465cfdc07b53894d213900ea9667c6"&gt;Make an initial commit so that later, you can get a clear picture of what Canvas CLI creates or pulls in.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;rm -rf ~/Sites/headless/headless/.git
-cd ~/Sites/headless/
-git init .
-echo "web/sites/default/files" &amp;gt;&amp;gt; .gitignore
-echo "vendor" &amp;gt;&amp;gt; .gitignore
-git add . &amp;amp;&amp;amp; git commit -m 'initial commit'
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open &lt;a class="external-link" href="http://headless.ddev.site/admin/config/people/simple_oauth" target="_blank" rel="noopener nofollow"&gt;http://headless.ddev.site/admin/config/people/simple_oauth&lt;/a&gt; and click "Generate keys" button, then enter the folder that was created in the steps above:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;/var/www/html/keys
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Make sure to click the "Save configuration" button.&lt;/p&gt;&lt;p&gt;Open &lt;a class="external-link" href="http://headless.ddev.site/admin/config/services/consumer" target="_blank" rel="noopener nofollow"&gt;http://headless.ddev.site/admin/config/services/consumer&lt;/a&gt; and click "+ Add Consumer", then set the following field values:&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="eb4015809ec3dd9abc72155f7667fe9da"&gt;Label: Code Components&lt;/li&gt;&lt;li data-list-item-id="ea3d8e4eb780463261d085736f609ac7d"&gt;Client ID: code-components&lt;/li&gt;&lt;li data-list-item-id="ed24bc11cd161d5130ee67e19202902dd"&gt;Grant types (enable both):&lt;ul&gt;&lt;li data-list-item-id="e5ea457461a79414727ad2a0fdf5285f5"&gt;JWT bearer (preview assertion)&lt;/li&gt;&lt;li data-list-item-id="e147e4d6152b101f9be02dd4ba7719d03"&gt;Authorization Code&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-list-item-id="e1da84f08356b464968ea92882808b476"&gt;Authorization Code settings&lt;ul&gt;&lt;li data-list-item-id="ee00f27ed4edd11621581f0c52679fa15"&gt;Enable all scopes&lt;/li&gt;&lt;li data-list-item-id="e6a947fc2c00f2442ba013df927f7d470"&gt;Enable "Automatic authorization", "Remember previous approval", "Use PKCE?"&lt;/li&gt;&lt;li data-list-item-id="eefade9eb6b5c66ff57e64cba9be71dea"&gt;Redirect URIs:&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;http://localhost:4444/callback
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&lt;li data-list-item-id="e8cc263dd3e58ac0fc20a23d30c46eeca"&gt;Disable "Is this consumer 3rd party?"&lt;/li&gt;&lt;li data-list-item-id="e1617103256f33b9e9e0d23281516bb2d"&gt;Disable "Is Confidential?"&lt;/li&gt;&lt;li data-list-item-id="eb5a2cc6b6010ce4df90c59daf85e18aa"&gt;Set "Access token expiration time" to 86400 (one day)&lt;/li&gt;&lt;li data-list-item-id="e4cc9be60e30ccd4da23210e02c6d3e19"&gt;Click Save&lt;/li&gt;&lt;li data-list-item-id="e01f1abdbf7c538a484667e8775bf5202"&gt;Open &lt;a class="external-link" href="http://headless.ddev.site/admin/content/pages" target="_blank" rel="noopener nofollow"&gt;http://headless.ddev.site/admin/content/pages&lt;/a&gt; and click "Add Page", which opens up a new Canvas editing screen at &lt;code&gt;canvas/editor/canvas_page/1&lt;/code&gt;&lt;/li&gt;&lt;li data-list-item-id="ed25053f01b23146fcbde8c11afd0d35a"&gt;Click the icon in the left rail for "Headless frontends"&lt;/li&gt;&lt;li data-list-item-id="e4e720dbcc09d1cbe9d12e5461ca9d177"&gt;Click "Add frontend".&lt;ul&gt;&lt;li data-list-item-id="ea3bb57aefc06b473949c0c5f602560fb"&gt;For the Frontend URL field, use the following (no trailing slash, no query, and no fragment):&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;http://localhost:3000
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If everything went as expected, the "Frontends" section will show &lt;code&gt;http://localhost:3000&lt;/code&gt; as being "Ready".&lt;/p&gt;&lt;p&gt;Change the default OS browser to Chrome; the Canvas CLI login command will open a browser and it needs to be Chrome (or &lt;code&gt;Chromium-based&lt;/code&gt;).&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="e0ac6bfe2bdf958cdcbba13ae8b47730b"&gt;Cd into the &lt;code&gt;headless&lt;/code&gt; folder in the directory of the site.&lt;ul&gt;&lt;li data-list-item-id="e2a83f9ed3adb9ccef4ace031ffd3ff1c"&gt;In this example, the site and the folder are both named &lt;code&gt;headless&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-list-item-id="e865819432ee310b9ca968ab6cb176810"&gt;Login with Canvas CLI using the OAuth consumer client id from the step above (&lt;code&gt;code-components&lt;/code&gt;).&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;cd ~/Sites/headless/headless
-npx canvas login --client-id code-components
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That will open a browser window to a link on the Drupal site, which redirects you to a localhost page that shows you a success/failure message. If everything went well, you can now use Canvas CLI (&lt;code&gt;npx canvas&lt;/code&gt;) to push and pull components between Drupal and Next. Since the scaffolding created some new components, use the push command to get them to the Drupal site:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;npx canvas push
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, you can create a page in Drupal and the components from the Next.js app should appear there. Build out a page, change some css in the code if you want (&lt;code&gt;headless/app/globals.css&lt;/code&gt; for example, maybe change the body background color), and watch things change in the edit screen in realtime. Then, save your changes in Canvas, just like when you are in regular non-headless mode, and view your site at &lt;code&gt;http://localhost:3000&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;Now wasn't that easy? yeah right! :3&lt;/p&gt;&lt;h2 data-heading="Notes"&gt;Notes&lt;/h2&gt;&lt;p&gt;The example above doesn't use Astro, but if you do use Astro:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;npx astro telemetry disable
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-10-06T18:06:33-07:00" title="Tuesday, 6 October 2026 - 18:06" class="datetime"&gt;Tue, 6 Oct 2026 - 18:06&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Wed, 07 Oct 2026 01:06:33 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">150 at https://brookemahoney.com</guid>
-    </item>
-<item>
   <title>Resume</title>
   <link>https://brookemahoney.com/resume</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Resume&lt;/span&gt;
