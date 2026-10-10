@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Hover Hamster">
+  <title>Bizarro Hover Hamster</title>
+  <desc>A bizarro cute hover hamster floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .hov-shine { animation: hovShine 3.0s ease-in-out infinite; }
+    @keyframes hovShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .hov-glowpulse { animation: hovGlow 2.2s ease-in-out infinite; }
+    @keyframes hovGlow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.5; }
+}
+    .hov-float { animation: hovFloat 4.6s ease-in-out infinite; }
+    @keyframes hovFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-11px) rotate(0.7deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: hovTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes hovTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  hov-float, hov-glowpulse, hov-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="206" r="172" fill="#ffe3fa"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#ffd0f4" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="hov-float">
+<circle cx="146" cy="154" r="16" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><circle cx="146" cy="154" r="8" fill="#ffd6f7"/><circle cx="254" cy="154" r="16" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><circle cx="254" cy="154" r="8" fill="#ffd6f7"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#ffd6f7" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#8b5cf6"/>
+<circle cx="148" cy="212" r="8" fill="#5b21b6"/>
+<circle class="hov-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#8b5cf6"/>
+<circle cx="252" cy="212" r="8" fill="#5b21b6"/>
+<circle class="hov-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="112" cy="246" rx="17" ry="11" fill="#f368e0" opacity="0.4"/><ellipse cx="288" cy="246" rx="17" ry="11" fill="#f368e0" opacity="0.4"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/>
+<ellipse class="hov-glowpulse" cx="200" cy="368" rx="72" ry="7" fill="#f368e0"/><rect x="116" y="340" width="168" height="18" rx="9" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><rect x="128" y="344" width="40" height="6" rx="3" fill="#ffffff" opacity="0.6"/><rect x="232" y="344" width="40" height="6" rx="3" fill="#ffffff" opacity="0.6"/>
+</g>
+<g transform="translate(110,118) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(296,58) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(150,64) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

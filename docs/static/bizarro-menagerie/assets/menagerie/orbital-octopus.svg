@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Orbital Octopus">
+  <title>Bizarro Orbital Octopus</title>
+  <desc>A bizarro cute orbital octopus drifting in a sea of sparkle, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .orb-tent { animation: orbTent 3.0s ease-in-out infinite; transform-box: fill-box; transform-origin: top center; }
+    @keyframes orbTent {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(7deg); }
+}
+    .orb-shine { animation: orbShine 3.0s ease-in-out infinite; }
+    @keyframes orbShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .orb-float { animation: orbFloat 4.5s ease-in-out infinite; }
+    @keyframes orbFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(0.8deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: orbTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes orbTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  orb-float, orb-shine, orb-tent, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f3f2ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e7e5ff"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#c9c5ff" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="orb-float">
+<path class="orb-tent" style="animation-delay:-0.00s" d="M128,246 C118,292 138,318 128,348" fill="none" stroke="#a5b4fc" stroke-width="15" stroke-linecap="round"/>
+<path class="orb-tent" style="animation-delay:-0.35s" d="M157,246 C147,292 167,318 157,348" fill="none" stroke="#a5b4fc" stroke-width="15" stroke-linecap="round"/>
+<path class="orb-tent" style="animation-delay:-0.70s" d="M186,246 C176,292 196,318 186,348" fill="none" stroke="#a5b4fc" stroke-width="15" stroke-linecap="round"/>
+<path class="orb-tent" style="animation-delay:-1.05s" d="M215,246 C205,292 225,318 215,348" fill="none" stroke="#a5b4fc" stroke-width="15" stroke-linecap="round"/>
+<path class="orb-tent" style="animation-delay:-1.40s" d="M244,246 C234,292 254,318 244,348" fill="none" stroke="#a5b4fc" stroke-width="15" stroke-linecap="round"/>
+<path class="orb-tent" style="animation-delay:-1.75s" d="M273,246 C263,292 283,318 273,348" fill="none" stroke="#a5b4fc" stroke-width="15" stroke-linecap="round"/><circle cx="200" cy="186" r="80" fill="#a5b4fc" stroke="#3730a3" stroke-width="3"/><path d="M120,222 C160,244 240,244 280,222 L280,236 C240,258 160,258 120,236 Z" fill="#a5b4fc" stroke="#3730a3" stroke-width="3"/><circle cx="166" cy="180" r="22" fill="#ffffff"/>
+<circle cx="166" cy="180" r="13" fill="#6366f1"/>
+<circle cx="166" cy="180" r="7" fill="#3730a3"/>
+<circle class="orb-shine" cx="161" cy="175" r="5" fill="#ffffff"/>
+<circle cx="234" cy="180" r="22" fill="#ffffff"/>
+<circle cx="234" cy="180" r="13" fill="#6366f1"/>
+<circle cx="234" cy="180" r="7" fill="#3730a3"/>
+<circle class="orb-shine" cx="229" cy="175" r="5" fill="#ffffff"/>
+<ellipse cx="146" cy="206" rx="13" ry="8" fill="#818cf8" opacity="0.35"/>
+<ellipse cx="254" cy="206" rx="13" ry="8" fill="#818cf8" opacity="0.35"/>
+<path d="M186,216 Q200,227 214,216" fill="none" stroke="#3730a3" stroke-width="3.5" stroke-linecap="round"/><path d="M184,212 Q200,224 216,212" fill="none" stroke="#3730a3" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="200" cy="238" rx="154" ry="37" fill="none" stroke="#818cf8" stroke-width="7" opacity="0.85" transform="rotate(-14 200 238)"/>
+</g>
+<g transform="translate(48,292) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(322,332) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(356,150) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(252,342) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

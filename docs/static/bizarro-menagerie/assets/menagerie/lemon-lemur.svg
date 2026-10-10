@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Lemon Lemur">
+  <title>Bizarro Lemon Lemur</title>
+  <desc>A bizarro cute lemon lemur floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .lem-tail { animation: lemTail 2.9s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes lemTail {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-11deg); }
+}
+    .lem-shine { animation: lemShine 3.0s ease-in-out infinite; }
+    @keyframes lemShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .lem-float { animation: lemFloat 4.5s ease-in-out infinite; }
+    @keyframes lemFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.2deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: lemTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes lemTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  lem-float, lem-shine, lem-tail, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fffdf4"/>
+  <circle cx="200" cy="206" r="172" fill="#fef6d8"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f5e3a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="lem-float">
+<g class="lem-tail"><path d="M296,244 C332,232 350,198 334,176 C324,162 304,172 312,192 C322,214 310,232 288,238 Z" fill="#fde047" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/><path d="M318,214 C328,208 334,198 334,188" fill="none" stroke="#713f12" stroke-width="6" stroke-linecap="round" opacity="0.5"/><path d="M326,228 C334,222 338,214 338,206" fill="none" stroke="#713f12" stroke-width="6" stroke-linecap="round" opacity="0.5"/></g>
+<circle cx="138" cy="150" r="24" fill="#fde047" stroke="#713f12" stroke-width="3"/><circle cx="138" cy="150" r="12" fill="#fef08a"/><circle cx="262" cy="150" r="24" fill="#fde047" stroke="#713f12" stroke-width="3"/><circle cx="262" cy="150" r="12" fill="#fef08a"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#fde047" stroke="#713f12" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#fef08a" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#eab308"/>
+<circle cx="148" cy="212" r="8" fill="#713f12"/>
+<circle class="lem-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#eab308"/>
+<circle cx="252" cy="212" r="8" fill="#713f12"/>
+<circle class="lem-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#713f12" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#facc15" stroke="#713f12" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#facc15" stroke="#713f12" stroke-width="3"/>
+<path d="M268,144 A34,34 0 0 1 336,144 Z" fill="#fde047" stroke="#713f12" stroke-width="3"/><path d="M268,144 A34,34 0 0 1 336,144 Z" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.35"/><path d="M274,144 A28,28 0 0 1 330,144 Z" fill="#fde047"/><path d="M302,144 L323,132" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/><path d="M302,144 L314,123" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/><path d="M302,144 L302,120" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/><path d="M302,144 L290,123" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/><path d="M302,144 L281,132" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/>
+</g>
+<g transform="translate(356,150) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(352,222) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(322,332) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(48,292) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(88,204) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

@@ -1,0 +1,199 @@
+/* The Bizarro Menagerie — single stylesheet. */
+
+:root {
+  --pink: #ff9ff3;
+  --pink-deep: #f368e0;
+  --lavender: #c8a2ff;
+  --purple: #8b5cf6;
+  --purple-deep: #5b21b6;
+  --sparkle: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--purple-deep);
+  background-color: var(--lavender);
+  background-image:
+    radial-gradient(circle at 12% 18%, var(--sparkle) 0 2px, transparent 3px),
+    radial-gradient(circle at 78% 8%, var(--sparkle) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 32% 64%, var(--sparkle) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 88% 52%, var(--sparkle) 0 2px, transparent 3px),
+    radial-gradient(circle at 55% 88%, var(--sparkle) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 8% 82%, var(--sparkle) 0 1.5px, transparent 2.5px),
+    linear-gradient(160deg, var(--lavender) 0%, var(--pink) 50%, var(--purple) 100%);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 1rem;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: var(--sparkle);
+  text-shadow: 0 2px 14px var(--purple-deep);
+}
+
+.sparkle-motif {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: none;
+  fill: var(--sparkle);
+  filter: drop-shadow(0 0 6px var(--pink-deep));
+  animation: twinkle 2.4s ease-in-out infinite;
+}
+
+.sparkle-motif--small {
+  width: 1rem;
+  height: 1rem;
+  animation-delay: .6s;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: .55; transform: scale(.85); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.intro {
+  max-width: 42rem;
+  margin: 0 auto 1rem;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 1rem;
+}
+
+.gallery {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+.gallery h2 {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  color: var(--sparkle);
+  text-shadow: 0 1px 10px var(--purple-deep);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-slot {
+  margin: 0;
+  padding: .75rem;
+  background: rgb(255 255 255 / .85);
+  border: 2px solid var(--pink-deep);
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 18px rgb(91 33 182 / .25);
+  text-align: center;
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.gallery-slot:hover {
+  transform: translateY(-4px) rotate(-1deg);
+  box-shadow: 0 10px 24px rgb(91 33 182 / .35);
+}
+
+.gallery-slot:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 4px;
+}
+
+.gallery-slot.swap-pop {
+  animation: swapPop .38s ease;
+}
+
+@keyframes swapPop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.05) rotate(1.2deg); }
+  100% { transform: scale(1); }
+}
+
+.gallery-slot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: .75rem;
+  background: var(--sparkle);
+}
+
+.gallery-slot figcaption {
+  margin-top: .5rem;
+  font-weight: 600;
+  color: var(--purple-deep);
+}
+
+.site-footer {
+  padding: 0 1rem 2.5rem;
+  text-align: center;
+  color: var(--sparkle);
+  text-shadow: 0 1px 8px var(--purple-deep);
+}
+
+@media (max-width: 720px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 460px) {
+  .gallery-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@keyframes galleryPulse {
+  from { background-color: rgba(255,255,255,0.05); }
+  to { background-color: rgba(255,255,255,0.18); }
+}
+.gallery.pulsing {
+  animation: galleryPulse 1.6s ease-in-out infinite alternate;
+  border-radius: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sparkle-motif {
+    animation: none;
+  }
+
+  .gallery-slot {
+    transition: none;
+  }
+
+  .gallery-slot:hover {
+    transform: none;
+  }
+
+  .gallery-slot.swap-pop {
+    animation: none;
+  }
+
+  .gallery.pulsing {
+    animation: none;
+  }
+}

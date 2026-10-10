@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Xylophone Xerus">
+  <title>Bizarro Xylophone Xerus</title>
+  <desc>A bizarro cute xylophone xerus floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .xyl-tail { animation: xylTail 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes xylTail {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-11deg); }
+}
+    .xyl-shine { animation: xylShine 3.0s ease-in-out infinite; }
+    @keyframes xylShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .xyl-float { animation: xylFloat 3.6s ease-in-out infinite; }
+    @keyframes xylFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.6deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: xylTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes xylTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  twinkle, xyl-float, xyl-shine, xyl-tail { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="206" r="172" fill="#ffe3fa"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#ffd0f4" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="xyl-float">
+<g transform="translate(292,252) scale(1.25) translate(-292,-252)" class="xyl-tail"><path d="M296,244 C332,232 350,198 334,176 C324,162 304,172 312,192 C322,214 310,232 288,238 Z" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3" stroke-linejoin="round"/></g>
+<circle cx="138" cy="150" r="24" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><circle cx="138" cy="150" r="12" fill="#ffd6f7"/><circle cx="262" cy="150" r="24" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><circle cx="262" cy="150" r="12" fill="#ffd6f7"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#ffd6f7" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#8b5cf6"/>
+<circle cx="148" cy="212" r="8" fill="#5b21b6"/>
+<circle class="xyl-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#8b5cf6"/>
+<circle cx="252" cy="212" r="8" fill="#5b21b6"/>
+<circle class="xyl-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/>
+<g transform="rotate(-10 96 282)"><rect x="62" y="262" width="12" height="38" rx="5" fill="#ff9ff3" stroke="#5b21b6" stroke-width="2.5"/><circle cx="68" cy="278" r="2.2" fill="#5b21b6"/><rect x="76" y="258" width="12" height="38" rx="5" fill="#f368e0" stroke="#5b21b6" stroke-width="2.5"/><circle cx="82" cy="274" r="2.2" fill="#5b21b6"/><rect x="90" y="254" width="12" height="38" rx="5" fill="#8b5cf6" stroke="#5b21b6" stroke-width="2.5"/><circle cx="96" cy="270" r="2.2" fill="#5b21b6"/><rect x="104" y="250" width="12" height="38" rx="5" fill="#ffd6f7" stroke="#5b21b6" stroke-width="2.5"/><circle cx="110" cy="266" r="2.2" fill="#5b21b6"/><rect x="118" y="246" width="12" height="38" rx="5" fill="#ffffff" stroke="#5b21b6" stroke-width="2.5"/><circle cx="124" cy="262" r="2.2" fill="#5b21b6"/><line x1="120" y1="230" x2="104" y2="262" stroke="#5b21b6" stroke-width="4" stroke-linecap="round"/><circle cx="122" cy="226" r="7" fill="#f368e0" stroke="#5b21b6" stroke-width="2.5"/></g>
+</g>
+<g transform="translate(150,64) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(88,204) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(58,78) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(296,58) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(252,342) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

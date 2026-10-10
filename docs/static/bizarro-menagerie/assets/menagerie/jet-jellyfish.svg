@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Jet Jellyfish">
+  <title>Bizarro Jet Jellyfish</title>
+  <desc>A bizarro cute jet jellyfish drifting in a sea of sparkle, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .jet-tent { animation: jetTent 2.7s ease-in-out infinite; transform-box: fill-box; transform-origin: top center; }
+    @keyframes jetTent {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(6deg); }
+}
+    .jet-shine { animation: jetShine 3.0s ease-in-out infinite; }
+    @keyframes jetShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .jet-flicker { animation: jetFlicker 0.9s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes jetFlicker {
+  0%, 100% { transform: scaleY(1); opacity: 0.9; }
+  50% { transform: scaleY(1.18); opacity: 1; }
+}
+    .jet-float { animation: jetFloat 3.8s ease-in-out infinite; }
+    @keyframes jetFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-13px) rotate(0.9deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: jetTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes jetTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  jet-flicker, jet-float, jet-shine, jet-tent, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f2f9ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e0f2fe"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#aedffa" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="jet-float">
+<g><path d="M112,222 A88,88 0 0 1 288,222 Z" fill="#7dd3fc" stroke="#075985" stroke-width="3"/><ellipse cx="170" cy="196" rx="18" ry="12" fill="#ffffff" opacity="0.35"/><ellipse cx="232" cy="186" rx="14" ry="10" fill="#ffffff" opacity="0.3"/><circle cx="164" cy="178" r="20" fill="#ffffff"/>
+<circle cx="164" cy="178" r="12" fill="#0ea5e9"/>
+<circle cx="164" cy="178" r="6.5" fill="#075985"/>
+<circle class="jet-shine" cx="160" cy="173" r="4.5" fill="#ffffff"/>
+<circle cx="236" cy="178" r="20" fill="#ffffff"/>
+<circle cx="236" cy="178" r="12" fill="#0ea5e9"/>
+<circle cx="236" cy="178" r="6.5" fill="#075985"/>
+<circle class="jet-shine" cx="232" cy="173" r="4.5" fill="#ffffff"/>
+<ellipse cx="144" cy="204" rx="13" ry="8" fill="#38bdf8" opacity="0.35"/>
+<ellipse cx="256" cy="204" rx="13" ry="8" fill="#38bdf8" opacity="0.35"/>
+<path d="M186,212 Q200,223 214,212" fill="none" stroke="#075985" stroke-width="3.5" stroke-linecap="round"/><path d="M188,206 Q200,216 212,206" fill="none" stroke="#075985" stroke-width="3.5" stroke-linecap="round"/></g><path class="jet-tent" d="M140,228 C132,268 148,298 140,332" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+<path class="jet-tent" d="M170,228 C162,268 178,298 170,332" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+<path class="jet-tent" d="M200,228 C192,268 208,298 200,332" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+<path class="jet-tent" d="M230,228 C222,268 238,298 230,332" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+<path class="jet-tent" d="M260,228 C252,268 268,298 260,332" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+<rect x="92" y="196" width="26" height="64" rx="10" fill="#38bdf8" stroke="#075985" stroke-width="3"/><rect x="282" y="196" width="26" height="64" rx="10" fill="#38bdf8" stroke="#075985" stroke-width="3"/><circle cx="105" cy="212" r="5" fill="#ffffff" opacity="0.7"/><circle cx="295" cy="212" r="5" fill="#ffffff" opacity="0.7"/><g class="jet-flicker"><path d="M103,262 C97,272 98,280 105,286 C112,280 113,272 107,262 Z" fill="#38bdf8"/></g><g class="jet-flicker" style="animation-delay:-0.4s"><path d="M293,262 C287,272 288,280 295,286 C302,280 303,272 297,262 Z" fill="#38bdf8"/></g>
+</g>
+<g transform="translate(200,50) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(252,342) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(58,78) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

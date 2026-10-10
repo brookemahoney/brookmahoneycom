@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Fizzy Flamingo">
+  <title>Bizarro Fizzy Flamingo</title>
+  <desc>A bizarro cute fizzy flamingo bobbing among sparkles, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .fiz-shine { animation: fizShine 3.0s ease-in-out infinite; }
+    @keyframes fizShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .fiz-rise { animation: fizRise 2.9s ease-in-out infinite; }
+    @keyframes fizRise {
+  0% { transform: translateY(0); opacity: 0; }
+  25% { opacity: 0.85; }
+  100% { transform: translateY(-34px); opacity: 0; }
+}
+    .fiz-float { animation: fizFloat 3.9s ease-in-out infinite; }
+    @keyframes fizFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-13px) rotate(0.8deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: fizTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes fizTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  fiz-float, fiz-rise, fiz-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="206" r="172" fill="#ffe3fa"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#ffd0f4" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="fiz-float">
+<ellipse cx="200" cy="302" rx="78" ry="56" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><path d="M184,296 C182,242 184,192 186,158 L214,158 C216,192 218,242 216,296 Z" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><circle cx="200" cy="138" r="34" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><path d="M196,148 C216,150 226,162 218,176 C210,186 194,182 192,170 Z" fill="#fb923c" stroke="#5b21b6" stroke-width="3" stroke-linejoin="round"/><circle cx="214" cy="174" r="4" fill="#5b21b6"/><circle cx="184" cy="136" r="19" fill="#ffffff"/>
+<circle cx="184" cy="136" r="11.5" fill="#8b5cf6"/>
+<circle cx="184" cy="136" r="6" fill="#5b21b6"/>
+<circle class="fiz-shine" cx="180" cy="131" r="4" fill="#ffffff"/>
+<circle cx="216" cy="136" r="19" fill="#ffffff"/>
+<circle cx="216" cy="136" r="11.5" fill="#8b5cf6"/>
+<circle cx="216" cy="136" r="6" fill="#5b21b6"/>
+<circle class="fiz-shine" cx="212" cy="131" r="4" fill="#ffffff"/>
+<path d="M186,169 Q200,180 214,169" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/><path d="M200,352 L200,384" stroke="#5b21b6" stroke-width="4" stroke-linecap="round"/><path d="M190,386 L212,386" stroke="#5b21b6" stroke-width="4" stroke-linecap="round"/>
+<circle class="fiz-rise" style="animation-delay:-0.0s" cx="302" cy="130" r="11" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+<circle class="fiz-rise" style="animation-delay:-0.7s" cx="322" cy="100" r="8" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+<circle class="fiz-rise" style="animation-delay:-1.4s" cx="284" cy="96" r="9" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+<circle class="fiz-rise" style="animation-delay:-2.1s" cx="314" cy="158" r="6" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+</g>
+<g transform="translate(322,332) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(296,58) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(150,64) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(200,50) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(352,222) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Cotton Candy Crane">
+  <title>Bizarro Cotton Candy Crane</title>
+  <desc>A bizarro cute cotton candy crane bobbing among sparkles, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .cot-shine { animation: cotShine 3.0s ease-in-out infinite; }
+    @keyframes cotShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .cot-float { animation: cotFloat 4.4s ease-in-out infinite; }
+    @keyframes cotFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.3deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: cotTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes cotTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  cot-float, cot-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fdf2fb"/>
+  <circle cx="200" cy="206" r="172" fill="#fbe0f3"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f3c2e3" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="cot-float">
+<ellipse cx="200" cy="302" rx="78" ry="56" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><path d="M184,296 C182,242 184,192 186,158 L214,158 C216,192 218,242 216,296 Z" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><circle cx="200" cy="138" r="34" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><path d="M200,148 L213,159 L187,159 Z" fill="#fbbf24" stroke="#5b21b6" stroke-width="3" stroke-linejoin="round"/><circle cx="184" cy="136" r="19" fill="#ffffff"/>
+<circle cx="184" cy="136" r="11.5" fill="#a855f7"/>
+<circle cx="184" cy="136" r="6" fill="#5b21b6"/>
+<circle class="cot-shine" cx="180" cy="131" r="4" fill="#ffffff"/>
+<circle cx="216" cy="136" r="19" fill="#ffffff"/>
+<circle cx="216" cy="136" r="11.5" fill="#a855f7"/>
+<circle cx="216" cy="136" r="6" fill="#5b21b6"/>
+<circle class="cot-shine" cx="212" cy="131" r="4" fill="#ffffff"/>
+<path d="M186,169 Q200,180 214,169" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/><path d="M186,352 L186,384 M214,352 L214,384" stroke="#5b21b6" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M178,386 L194,386 M206,386 L222,386" stroke="#5b21b6" stroke-width="4" stroke-linecap="round"/>
+<line x1="302" y1="152" x2="302" y2="120" stroke="#5b21b6" stroke-width="4"/><circle cx="286" cy="108" r="17" fill="#f368e0"/><circle cx="318" cy="108" r="17" fill="#f368e0"/><circle cx="302" cy="94" r="21" fill="#f368e0"/><circle cx="302" cy="116" r="19" fill="#f368e0"/><circle cx="302" cy="106" r="24" fill="none" stroke="#ffc9ef" stroke-width="2" opacity="0.7"/>
+</g>
+<g transform="translate(150,64) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(356,150) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(48,292) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(342,82) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

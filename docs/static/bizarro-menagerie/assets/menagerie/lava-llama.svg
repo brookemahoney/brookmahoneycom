@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Lava Llama">
+  <title>Bizarro Lava Llama</title>
+  <desc>A bizarro cute lava llama floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .lav-shine { animation: lavShine 3.0s ease-in-out infinite; }
+    @keyframes lavShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .lav-flicker { animation: lavFlicker 0.9s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes lavFlicker {
+  0%, 100% { transform: scaleY(1); opacity: 0.9; }
+  50% { transform: scaleY(1.14); opacity: 1; }
+}
+    .lav-float { animation: lavFloat 4.7s ease-in-out infinite; }
+    @keyframes lavFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-11px) rotate(1.0deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: lavTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes lavTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  lav-flicker, lav-float, lav-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f2f9ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e0f2fe"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#aedffa" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="lav-float">
+<path d="M184,264 C182,222 184,182 186,152 L214,152 C216,182 218,222 216,264 Z" fill="#7dd3fc" stroke="#075985" stroke-width="3"/><ellipse cx="200" cy="302" rx="86" ry="58" fill="#7dd3fc" stroke="#075985" stroke-width="3"/><circle cx="200" cy="140" r="36" fill="#7dd3fc" stroke="#075985" stroke-width="3"/><g transform="translate(0,62)"><ellipse cx="200" cy="252" rx="62" ry="46" fill="#bae6fd" opacity="0.85"/></g><circle cx="184" cy="138" r="19" fill="#ffffff"/>
+<circle cx="184" cy="138" r="11.5" fill="#0ea5e9"/>
+<circle cx="184" cy="138" r="6" fill="#075985"/>
+<circle class="lav-shine" cx="180" cy="133" r="4" fill="#ffffff"/>
+<circle cx="216" cy="138" r="19" fill="#ffffff"/>
+<circle cx="216" cy="138" r="11.5" fill="#0ea5e9"/>
+<circle cx="216" cy="138" r="6" fill="#075985"/>
+<circle class="lav-shine" cx="212" cy="133" r="4" fill="#ffffff"/>
+<path d="M186,171 Q200,182 214,171" fill="none" stroke="#075985" stroke-width="3.5" stroke-linecap="round"/><ellipse cx="152" cy="352" rx="17" ry="9" fill="#38bdf8" stroke="#075985" stroke-width="3"/><ellipse cx="248" cy="352" rx="17" ry="9" fill="#38bdf8" stroke="#075985" stroke-width="3"/>
+<g class="lav-flicker" transform="translate(308,128)"><path d="M0,24 C-13,12 -13,-2 0,-18 C13,-2 13,12 0,24 Z" fill="#38bdf8"/><path d="M0,17 C-6,9 -5,1 0,-7 C5,1 6,9 0,17 Z" fill="#fde047"/></g>
+</g>
+<g transform="translate(342,82) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(58,78) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(110,118) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(296,58) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(150,64) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

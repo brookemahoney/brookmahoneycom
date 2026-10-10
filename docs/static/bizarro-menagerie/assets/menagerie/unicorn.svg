@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro cute unicorn with swaying rainbow mane">
+  <title>Bizarro Unicorn</title>
+  <desc>A cute bizarro unicorn with a swaying five-band rainbow mane, giant eyes, and twinkling sparkles, floating gently.</desc>
+  <style>
+    .uni-float { animation: uniFloat 4s ease-in-out infinite; }
+    @keyframes uniFloat {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(1deg); }
+    }
+    .mane-sway {
+      transform-box: fill-box;
+      transform-origin: right center;
+      animation: maneSway 2.9s ease-in-out infinite;
+    }
+    @keyframes maneSway {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(7deg); }
+    }
+    .tail-sway {
+      transform-box: fill-box;
+      transform-origin: left center;
+      animation: tailSway 3.4s ease-in-out infinite;
+    }
+    @keyframes tailSway {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-10deg); }
+    }
+    .hoof-tap {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: hoofTap 2.2s ease-in-out infinite;
+    }
+    @keyframes hoofTap {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(4px); }
+    }
+    .eye-shine { animation: eyeShine 3s ease-in-out infinite; }
+    @keyframes eyeShine {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .twinkle {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: twinkle 2.6s ease-in-out infinite;
+    }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -2s; }
+    .twinkle.d4 { animation-delay: -1s; }
+    @keyframes twinkle {
+      0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+      50% { transform: scale(1.1) rotate(12deg); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .uni-float, .mane-sway, .tail-sway, .hoof-tap, .eye-shine, .twinkle { animation: none !important; }
+    }
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="206" r="172" fill="#ffe3fa"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#ffd0f4" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+  <g class="uni-float">
+    <g class="tail-sway">
+      <path d="M300,268 C336,262 348,238 338,220 C332,209 320,214 324,226 C330,240 324,250 308,254 Z" fill="#c8a2ff"/>
+      <path d="M302,272 C330,270 340,252 332,240 C327,232 317,236 320,246 C325,256 320,262 308,262 Z" fill="#f368e0" opacity="0.7"/>
+    </g>
+    <g class="mane-sway">
+      <path d="M128,108 C104,96 92,70 100,50 C106,36 120,42 122,56 C124,72 136,84 148,90 Z" fill="#5b21b6"/>
+      <path d="M132,122 C106,114 94,88 102,68 C108,54 122,60 124,74 C126,90 138,102 150,108 Z" fill="#8b5cf6"/>
+      <path d="M138,136 C112,132 100,108 108,90 C114,76 128,82 130,96 C132,112 144,122 156,128 Z" fill="#c8a2ff"/>
+      <path d="M146,150 C120,150 108,128 116,112 C122,98 136,104 138,118 C140,134 152,142 164,148 Z" fill="#f368e0"/>
+      <path d="M156,164 C130,168 118,148 126,134 C132,120 146,126 148,140 C150,156 162,162 174,168 Z" fill="#ff9ff3"/>
+    </g>
+    <path d="M120,168 C100,150 96,120 112,104 C124,92 142,98 146,114 C150,130 144,152 132,164 Z" fill="#f8f0ff"/>
+    <path d="M200,84 L214,128 L186,128 Z" fill="#ffffff"/>
+    <path d="M200,84 L214,128 L186,128 Z" fill="none" stroke="#f368e0" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M194,100 L206,100 M191,112 L209,112" stroke="#f368e0" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="196" cy="196" rx="92" ry="76" fill="#f8f0ff"/>
+    <ellipse cx="196" cy="196" rx="92" ry="76" fill="none" stroke="#e9d5ff" stroke-width="3"/>
+    <path d="M150,150 C158,128 186,124 200,140 C214,124 242,128 250,150 C254,164 246,176 232,178 C220,180 208,174 200,166 C192,174 180,180 168,178 C154,176 146,164 150,150 Z" fill="#f8f0ff"/>
+    <path d="M146,152 C152,134 174,130 184,142 C192,132 208,132 214,142 C224,132 244,136 248,152 C250,162 242,170 230,170 C218,170 210,164 200,158 C190,164 182,170 170,170 C158,170 148,162 146,152 Z" fill="#ffffff"/>
+    <circle cx="168" cy="196" r="30" fill="#ffffff"/>
+    <circle cx="224" cy="196" r="30" fill="#ffffff"/>
+    <circle cx="170" cy="200" r="17" fill="#8b5cf6"/>
+    <circle cx="222" cy="200" r="17" fill="#8b5cf6"/>
+    <circle cx="170" cy="200" r="8" fill="#5b21b6"/>
+    <circle cx="222" cy="200" r="8" fill="#5b21b6"/>
+    <circle class="eye-shine" cx="163" cy="192" r="6" fill="#ffffff"/>
+    <circle class="eye-shine" cx="215" cy="192" r="6" fill="#ffffff"/>
+    <ellipse cx="197" cy="228" rx="14" ry="10" fill="#ff9ff3"/>
+    <path d="M190,240 Q197,246 204,240" fill="none" stroke="#5b21b6" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="188" cy="226" r="2.5" fill="#f368e0" opacity="0.7"/>
+    <circle cx="206" cy="226" r="2.5" fill="#f368e0" opacity="0.7"/>
+    <path d="M150,252 L138,286 L162,286 Z" fill="#c8a2ff"/>
+    <path d="M236,252 L224,286 L248,286 Z" fill="#c8a2ff"/>
+    <g class="hoof-tap">
+      <ellipse cx="150" cy="288" rx="16" ry="8" fill="#f368e0"/>
+    </g>
+    <g class="hoof-tap">
+      <ellipse cx="236" cy="288" rx="16" ry="8" fill="#f368e0"/>
+    </g>
+    <path d="M128,214 C112,236 112,262 126,278 C136,289 150,285 150,272 C150,258 140,244 140,232 C140,222 136,216 128,214 Z" fill="#e9d5ff"/>
+  </g>
+  <g transform="translate(62,76) scale(1.1)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(338,70) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+  <g transform="translate(348,210) scale(0.9)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+  <g transform="translate(50,296) scale(0.85)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(316,326) scale(1)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Lighthouse Lion">
+  <title>Bizarro Lighthouse Lion</title>
+  <desc>A bizarro cute lighthouse lion floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .lig-shine { animation: ligShine 3.0s ease-in-out infinite; }
+    @keyframes ligShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .lig-float { animation: ligFloat 4.7s ease-in-out infinite; }
+    @keyframes ligFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(0.7deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: ligTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes ligTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  lig-float, lig-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="206" r="172" fill="#ffe3fa"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#ffd0f4" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="lig-float">
+<circle cx="146" cy="203" r="19" fill="#f368e0"/>
+<circle cx="138" cy="178" r="19" fill="#f368e0"/>
+<circle cx="146" cy="153" r="19" fill="#f368e0"/>
+<circle cx="169" cy="135" r="19" fill="#f368e0"/>
+<circle cx="200" cy="128" r="19" fill="#f368e0"/>
+<circle cx="231" cy="135" r="19" fill="#f368e0"/>
+<circle cx="254" cy="153" r="19" fill="#f368e0"/>
+<circle cx="262" cy="178" r="19" fill="#f368e0"/>
+<circle cx="254" cy="203" r="19" fill="#f368e0"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#ffd6f7" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#8b5cf6"/>
+<circle cx="148" cy="212" r="8" fill="#5b21b6"/>
+<circle class="lig-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#8b5cf6"/>
+<circle cx="252" cy="212" r="8" fill="#5b21b6"/>
+<circle class="lig-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/>
+<path d="M176,134 L186,58 L214,58 L224,134 Z" fill="#ffffff" stroke="#5b21b6" stroke-width="3" stroke-linejoin="round"/><path d="M181,96 L219,96 L217,78 L183,78 Z" fill="#f368e0"/><path d="M184,118 L216,118 L215,104 L185,104 Z" fill="#f368e0"/><circle cx="200" cy="50" r="12" fill="#fde047" stroke="#5b21b6" stroke-width="3"/><path d="M186,48 L172,40 M214,48 L228,40" stroke="#fde047" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g transform="translate(322,332) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(342,82) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(356,150) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(48,292) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

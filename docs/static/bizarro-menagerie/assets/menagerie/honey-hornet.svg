@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Honey Hornet">
+  <title>Bizarro Honey Hornet</title>
+  <desc>A bizarro cute honey hornet hovering on fluttering wings, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .hon-flutter { animation: honFlutter 2.1s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes honFlutter {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(-8deg) scale(1.05); }
+}
+    .hon-flutter-r { animation: honFlutterR 1.7s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes honFlutterR {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(8deg) scale(1.05); }
+}
+    .hon-shine { animation: honShine 3.0s ease-in-out infinite; }
+    @keyframes honShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .hon-float { animation: honFloat 4.3s ease-in-out infinite; }
+    @keyframes honFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(0.8deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: honTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes honTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  hon-float, hon-flutter, hon-flutter-r, hon-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fffdf4"/>
+  <circle cx="200" cy="206" r="172" fill="#fef6d8"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f5e3a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="hon-float">
+<g class="hon-flutter"><ellipse cx="166" cy="238" rx="20" ry="36" transform="rotate(-28 166 238)" fill="#ffffff" opacity="0.8" stroke="#fef08a" stroke-width="2.5"/></g><g class="hon-flutter-r"><ellipse cx="234" cy="238" rx="20" ry="36" transform="rotate(28 234 238)" fill="#ffffff" opacity="0.8" stroke="#fef08a" stroke-width="2.5"/></g><ellipse cx="200" cy="280" rx="54" ry="52" fill="#fde047" stroke="#713f12" stroke-width="3"/><path d="M152,262 C176,270 224,270 248,262" fill="none" stroke="#713f12" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+<path d="M152,288 C176,296 224,296 248,288" fill="none" stroke="#713f12" stroke-width="7" stroke-linecap="round" opacity="0.45"/><circle cx="200" cy="192" r="40" fill="#fde047" stroke="#713f12" stroke-width="3"/><path d="M188,160 C182,144 174,138 166,136" fill="none" stroke="#713f12" stroke-width="4" stroke-linecap="round"/><circle cx="165" cy="135" r="5" fill="#facc15"/><path d="M212,160 C218,144 226,138 234,136" fill="none" stroke="#713f12" stroke-width="4" stroke-linecap="round"/><circle cx="235" cy="135" r="5" fill="#facc15"/><path d="M150,258 L124,250" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M146,278 L118,278" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M150,298 L126,308" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M250,258 L276,250" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M254,278 L282,278" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M250,298 L274,308" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="180" cy="188" r="18" fill="#ffffff"/>
+<circle cx="180" cy="188" r="11" fill="#eab308"/>
+<circle cx="180" cy="188" r="6" fill="#713f12"/>
+<circle class="hon-shine" cx="176" cy="184" r="4" fill="#ffffff"/>
+<circle cx="220" cy="188" r="18" fill="#ffffff"/>
+<circle cx="220" cy="188" r="11" fill="#eab308"/>
+<circle cx="220" cy="188" r="6" fill="#713f12"/>
+<circle class="hon-shine" cx="216" cy="184" r="4" fill="#ffffff"/>
+<ellipse cx="175" cy="214" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<ellipse cx="225" cy="214" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<path d="M186,220 Q200,231 214,220" fill="none" stroke="#713f12" stroke-width="3.5" stroke-linecap="round"/>
+<g transform="rotate(20 296 142)"><rect x="291" y="120" width="11" height="48" rx="5.5" fill="#713f12"/><ellipse cx="296" cy="112" rx="13" ry="7" fill="#facc15" stroke="#713f12" stroke-width="2.5"/><ellipse cx="296" cy="104" rx="11" ry="6" fill="#facc15" stroke="#713f12" stroke-width="2.5"/><ellipse cx="296" cy="97" rx="9" ry="5" fill="#facc15" stroke="#713f12" stroke-width="2.5"/><circle cx="286" cy="126" r="3.5" fill="#facc15"/><circle cx="307" cy="134" r="2.8" fill="#facc15"/></g>
+</g>
+<g transform="translate(352,222) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(322,332) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(342,82) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(88,204) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(252,342) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

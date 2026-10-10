@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro cyber elephant with a curled trunk, circuit traces, antenna, and glowing heart accent">
+  <title>Bizarro Cyber Elephant</title>
+  <desc>An original bizarro cyber elephant: a chubby lavender elephant with pink ears, a curled trunk, circuit-trace linework, a glowing antenna tip and pulsing heart accent, floating among twinkling sparkles.</desc>
+  <style>
+    .ele-bob { animation: eleBob 3.8s ease-in-out infinite; }
+    @keyframes eleBob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .glow-pulse {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: glowPulse 2.2s ease-in-out infinite;
+    }
+    @keyframes glowPulse {
+      0%, 100% { transform: scale(1); opacity: 0.75; }
+      50% { transform: scale(1.18); opacity: 1; }
+    }
+    .eye-blink {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: eyeBlink 4.6s ease-in-out infinite;
+    }
+    @keyframes eyeBlink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      96% { transform: scaleY(0.08); }
+    }
+    .eye-shine { animation: eyeShine 3s ease-in-out infinite; }
+    @keyframes eyeShine {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .twinkle {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: twinkle 2.6s ease-in-out infinite;
+    }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    @keyframes twinkle {
+      0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+      50% { transform: scale(1.1) rotate(12deg); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .ele-bob, .glow-pulse, .eye-blink, .eye-shine, .twinkle { animation: none !important; }
+    }
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="200" r="170" fill="#ffe3fa"/>
+  <g class="ele-bob">
+    <g transform="translate(200,68)">
+      <line x1="0" y1="8" x2="0" y2="38" stroke="#8b5cf6" stroke-width="4" stroke-linecap="round"/>
+      <circle class="glow-pulse" cx="0" cy="0" r="7" fill="#f368e0"/>
+    </g>
+    <ellipse cx="120" cy="164" rx="40" ry="48" fill="#ff9ff3"/>
+    <ellipse cx="120" cy="164" rx="24" ry="32" fill="#f368e0" opacity="0.55"/>
+    <ellipse cx="280" cy="164" rx="40" ry="48" fill="#ff9ff3"/>
+    <ellipse cx="280" cy="164" rx="24" ry="32" fill="#f368e0" opacity="0.55"/>
+    <rect x="152" y="326" width="30" height="24" rx="12" fill="#8b5cf6"/>
+    <rect x="218" y="326" width="30" height="24" rx="12" fill="#8b5cf6"/>
+    <ellipse cx="200" cy="292" rx="72" ry="50" fill="#c8a2ff"/>
+    <path d="M168,296 L168,312 L184,312" fill="none" stroke="#5b21b6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+    <circle cx="184" cy="312" r="2.5" fill="#5b21b6" opacity="0.5"/>
+    <path d="M232,296 L232,312 L216,312" fill="none" stroke="#5b21b6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+    <circle cx="216" cy="312" r="2.5" fill="#5b21b6" opacity="0.5"/>
+    <ellipse cx="200" cy="168" rx="80" ry="66" fill="#c8a2ff"/>
+    <path d="M152,118 L152,132 L164,132" fill="none" stroke="#5b21b6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+    <circle cx="164" cy="132" r="2.5" fill="#5b21b6" opacity="0.5"/>
+    <path d="M248,118 L248,132 L236,132" fill="none" stroke="#5b21b6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+    <circle cx="236" cy="132" r="2.5" fill="#5b21b6" opacity="0.5"/>
+    <g class="eye-blink">
+      <circle cx="172" cy="160" r="15" fill="#ffffff"/>
+      <circle cx="172" cy="160" r="8" fill="#8b5cf6"/>
+      <circle cx="172" cy="160" r="3.5" fill="#5b21b6"/>
+    </g>
+    <circle class="eye-shine" cx="167" cy="155" r="4" fill="#ffffff"/>
+    <g class="eye-blink">
+      <circle cx="228" cy="160" r="15" fill="#ffffff"/>
+      <circle cx="228" cy="160" r="8" fill="#8b5cf6"/>
+      <circle cx="228" cy="160" r="3.5" fill="#5b21b6"/>
+    </g>
+    <circle class="eye-shine" cx="223" cy="155" r="4" fill="#ffffff"/>
+    <path d="M200,198 L200,282 Q200,304 182,300" fill="none" stroke="#8b5cf6" stroke-width="32" stroke-linecap="round"/>
+    <path d="M200,198 L200,282 Q200,304 182,300" fill="none" stroke="#c8a2ff" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="176" cy="293" r="2.5" fill="#8b5cf6"/>
+    <circle cx="189" cy="299" r="2.5" fill="#8b5cf6"/>
+    <g transform="translate(200,128) scale(1.6)">
+      <path class="glow-pulse" d="M0,6 C-1,2 -6,2 -6,-2 C-6,-6 -1,-7 0,-3 C1,-7 6,-6 6,-2 C6,2 1,2 0,6 Z" fill="#f368e0"/>
+    </g>
+  </g>
+  <g transform="translate(52,72) scale(1.05)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(344,84) scale(0.9)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+  <g transform="translate(348,290) scale(1)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+  <g transform="translate(48,286) scale(0.8)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

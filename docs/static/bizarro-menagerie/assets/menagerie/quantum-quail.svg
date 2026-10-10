@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Quantum Quail">
+  <title>Bizarro Quantum Quail</title>
+  <desc>A bizarro cute quantum quail bobbing among sparkles, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .qua-tail { animation: quaTail 2.9s ease-in-out infinite; transform-box: fill-box; transform-origin: top center; }
+    @keyframes quaTail {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(6deg); }
+}
+    .qua-wing-l { animation: quaWingL 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: right center; }
+    @keyframes quaWingL {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-13deg); }
+}
+    .qua-wing-r { animation: quaWingR 2.0s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes quaWingR {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(13deg); }
+}
+    .qua-shine { animation: quaShine 3.0s ease-in-out infinite; }
+    @keyframes quaShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .qua-float { animation: quaFloat 4.5s ease-in-out infinite; }
+    @keyframes quaFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(0.6deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: quaTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes quaTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  qua-float, qua-shine, qua-tail, qua-wing-l, qua-wing-r, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f3f2ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e7e5ff"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#c9c5ff" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="qua-float">
+<g class="qua-tail"><ellipse cx="176" cy="318" rx="10" ry="26" transform="rotate(-24 176 318)" fill="#818cf8" stroke="#3730a3" stroke-width="2.5"/><ellipse cx="200" cy="326" rx="10" ry="28" fill="#818cf8" stroke="#3730a3" stroke-width="2.5"/><ellipse cx="224" cy="318" rx="10" ry="26" transform="rotate(24 224 318)" fill="#818cf8" stroke="#3730a3" stroke-width="2.5"/></g>
+<g class="qua-wing-l"><path d="M128,214 C98,222 84,252 98,282 C114,264 124,244 130,226 Z" fill="#818cf8" stroke="#3730a3" stroke-width="3" stroke-linejoin="round"/></g><g class="qua-wing-r"><path d="M272,214 C302,222 316,252 302,282 C286,264 276,244 270,226 Z" fill="#818cf8" stroke="#3730a3" stroke-width="3" stroke-linejoin="round"/></g>
+<ellipse cx="200" cy="246" rx="88" ry="70" fill="#a5b4fc" stroke="#3730a3" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#c7d2fe" opacity="0.85"/>
+<path d="M200,230 L214,241 L186,241 Z" fill="#fbbf24" stroke="#3730a3" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="158" cy="212" r="23" fill="#ffffff"/>
+<circle cx="158" cy="212" r="14" fill="#6366f1"/>
+<circle cx="158" cy="212" r="7" fill="#3730a3"/>
+<circle class="qua-shine" cx="153" cy="206" r="5" fill="#ffffff"/>
+<circle cx="242" cy="212" r="23" fill="#ffffff"/>
+<circle cx="242" cy="212" r="14" fill="#6366f1"/>
+<circle cx="242" cy="212" r="7" fill="#3730a3"/>
+<circle class="qua-shine" cx="237" cy="206" r="5" fill="#ffffff"/>
+<ellipse cx="137" cy="238" rx="13" ry="8" fill="#818cf8" opacity="0.35"/>
+<ellipse cx="263" cy="238" rx="13" ry="8" fill="#818cf8" opacity="0.35"/>
+<path d="M186,249 Q200,260 214,249" fill="none" stroke="#3730a3" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M184,310 L184,330 M216,310 L216,330" stroke="#3730a3" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M176,332 L192,332 M208,332 L224,332" stroke="#3730a3" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="200" cy="238" rx="154" ry="37" fill="none" stroke="#818cf8" stroke-width="7" opacity="0.85" transform="rotate(-14 200 238)"/>
+</g>
+<g transform="translate(200,50) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(150,64) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(342,82) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Solar Snail">
+  <title>Bizarro Solar Snail</title>
+  <desc>A bizarro cute solar snail drifting in a sea of sparkle, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .sol-shine { animation: solShine 3.0s ease-in-out infinite; }
+    @keyframes solShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .sol-stalk { animation: solStalk 2.9s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes solStalk {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+    .sol-float { animation: solFloat 4.1s ease-in-out infinite; }
+    @keyframes solFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-13px) rotate(1.0deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: solTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes solTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  sol-float, sol-shine, sol-stalk, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fffdf4"/>
+  <circle cx="200" cy="206" r="172" fill="#fef6d8"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f5e3a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="sol-float">
+<ellipse cx="216" cy="302" rx="106" ry="30" fill="#fde047" stroke="#713f12" stroke-width="3"/><circle cx="118" cy="282" r="25" fill="#fde047" stroke="#713f12" stroke-width="3"/><g class="sol-stalk"><path d="M112,264 L102,224" stroke="#fde047" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="101" cy="219" r="12" fill="#ffffff" stroke="#713f12" stroke-width="3"/><circle cx="101" cy="220" r="6.5" fill="#eab308"/><circle cx="101" cy="220" r="3.2" fill="#713f12"/><circle class="sol-shine" cx="98" cy="216" r="2.8" fill="#ffffff"/></g><g class="sol-stalk" style="animation-delay:-1.2s"><path d="M128,264 L138,224" stroke="#fde047" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="139" cy="219" r="12" fill="#ffffff" stroke="#713f12" stroke-width="3"/><circle cx="139" cy="220" r="6.5" fill="#eab308"/><circle cx="139" cy="220" r="3.2" fill="#713f12"/><circle class="sol-shine" cx="136" cy="216" r="2.8" fill="#ffffff"/></g><path d="M104,292 Q112,298 120,292" fill="none" stroke="#713f12" stroke-width="3.5" stroke-linecap="round"/><circle cx="246" cy="228" r="68" fill="#facc15" stroke="#713f12" stroke-width="3"/><path d="M246,228 m0,-46 a46,46 0 1 1 -32,14 a32,32 0 1 0 22,-10 a18,18 0 1 1 -12,6" fill="none" stroke="#713f12" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+<g transform="translate(60,40)"><g transform="rotate(-16 160 158)"><rect x="118" y="136" width="84" height="46" rx="5" fill="#713f12"/><path d="M146,136 L146,182 M174,136 L174,182 M118,159 L202,159" stroke="#eab308" stroke-width="3"/><rect x="118" y="136" width="84" height="46" rx="5" fill="none" stroke="#713f12" stroke-width="3"/></g></g>
+</g>
+<g transform="translate(200,50) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(342,82) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(352,222) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(356,150) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

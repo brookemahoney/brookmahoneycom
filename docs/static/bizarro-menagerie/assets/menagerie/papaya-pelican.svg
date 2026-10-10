@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Papaya Pelican">
+  <title>Bizarro Papaya Pelican</title>
+  <desc>A bizarro cute papaya pelican bobbing among sparkles, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .pap-tail { animation: papTail 3.0s ease-in-out infinite; transform-box: fill-box; transform-origin: top center; }
+    @keyframes papTail {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(6deg); }
+}
+    .pap-wing-l { animation: papWingL 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: right center; }
+    @keyframes papWingL {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-13deg); }
+}
+    .pap-wing-r { animation: papWingR 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes papWingR {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(13deg); }
+}
+    .pap-shine { animation: papShine 3.0s ease-in-out infinite; }
+    @keyframes papShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .pap-float { animation: papFloat 3.9s ease-in-out infinite; }
+    @keyframes papFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(0.6deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: papTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes papTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  pap-float, pap-shine, pap-tail, pap-wing-l, pap-wing-r, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f2f9ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e0f2fe"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#aedffa" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="pap-float">
+<g class="pap-tail"><ellipse cx="176" cy="318" rx="10" ry="26" transform="rotate(-24 176 318)" fill="#38bdf8" stroke="#075985" stroke-width="2.5"/><ellipse cx="200" cy="326" rx="10" ry="28" fill="#38bdf8" stroke="#075985" stroke-width="2.5"/><ellipse cx="224" cy="318" rx="10" ry="26" transform="rotate(24 224 318)" fill="#38bdf8" stroke="#075985" stroke-width="2.5"/></g>
+<g class="pap-wing-l"><path d="M128,214 C98,222 84,252 98,282 C114,264 124,244 130,226 Z" fill="#38bdf8" stroke="#075985" stroke-width="3" stroke-linejoin="round"/></g><g class="pap-wing-r"><path d="M272,214 C302,222 316,252 302,282 C286,264 276,244 270,226 Z" fill="#38bdf8" stroke="#075985" stroke-width="3" stroke-linejoin="round"/></g>
+<ellipse cx="200" cy="246" rx="88" ry="70" fill="#7dd3fc" stroke="#075985" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#bae6fd" opacity="0.85"/>
+<path d="M200,224 C232,226 250,244 246,262 C242,278 214,280 200,270 C186,280 158,278 154,262 C150,244 168,226 200,224 Z" fill="#fb923c" stroke="#075985" stroke-width="3" stroke-linejoin="round"/><ellipse cx="200" cy="258" rx="40" ry="17" fill="#bae6fd" opacity="0.85"/><circle cx="240" cy="242" r="5" fill="#075985"/>
+<circle cx="158" cy="212" r="23" fill="#ffffff"/>
+<circle cx="158" cy="212" r="14" fill="#0ea5e9"/>
+<circle cx="158" cy="212" r="7" fill="#075985"/>
+<circle class="pap-shine" cx="153" cy="206" r="5" fill="#ffffff"/>
+<circle cx="242" cy="212" r="23" fill="#ffffff"/>
+<circle cx="242" cy="212" r="14" fill="#0ea5e9"/>
+<circle cx="242" cy="212" r="7" fill="#075985"/>
+<circle class="pap-shine" cx="237" cy="206" r="5" fill="#ffffff"/>
+<ellipse cx="137" cy="238" rx="13" ry="8" fill="#38bdf8" opacity="0.35"/>
+<ellipse cx="263" cy="238" rx="13" ry="8" fill="#38bdf8" opacity="0.35"/>
+<path d="M186,249 Q200,260 214,249" fill="none" stroke="#075985" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M184,310 L184,330 M216,310 L216,330" stroke="#075985" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M176,332 L192,332 M208,332 L224,332" stroke="#075985" stroke-width="4" stroke-linecap="round"/>
+<path d="M268,144 A34,34 0 0 1 336,144 Z" fill="#38bdf8" stroke="#075985" stroke-width="3"/><path d="M275,144 A27,27 0 0 1 329,144 Z" fill="#fb7185"/><path d="M275,144 A27,27 0 0 1 329,144 Z" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.5"/><path d="M292,122 c2,3 2,5 0,7 c-2,-2 -2,-4 0,-7 Z" fill="#075985"/><path d="M308,120 c2,3 2,5 0,7 c-2,-2 -2,-4 0,-7 Z" fill="#075985"/><path d="M300,134 c2,3 2,5 0,7 c-2,-2 -2,-4 0,-7 Z" fill="#075985"/><path d="M288,134 c2,3 2,5 0,7 c-2,-2 -2,-4 0,-7 Z" fill="#075985"/><path d="M312,132 c2,3 2,5 0,7 c-2,-2 -2,-4 0,-7 Z" fill="#075985"/>
+</g>
+<g transform="translate(342,82) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(356,150) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(296,58) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(352,222) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

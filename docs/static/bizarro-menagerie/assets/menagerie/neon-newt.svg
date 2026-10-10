@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Neon Newt">
+  <title>Bizarro Neon Newt</title>
+  <desc>A bizarro cute neon newt floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .neo-tail { animation: neoTail 3.3s ease-in-out infinite; transform-box: fill-box; transform-origin: top center; }
+    @keyframes neoTail {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(8deg); }
+}
+    .neo-neon { animation: neoNeon 1.7s ease-in-out infinite; }
+    @keyframes neoNeon {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+    .neo-shine { animation: neoShine 3.0s ease-in-out infinite; }
+    @keyframes neoShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .neo-float { animation: neoFloat 4.2s ease-in-out infinite; }
+    @keyframes neoFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(0.7deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: neoTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes neoTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  neo-float, neo-neon, neo-shine, neo-tail, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f7f1ff"/>
+  <circle cx="200" cy="206" r="172" fill="#eee2ff"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#d9c9ff" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="neo-float">
+<path class="neo-tail" d="M298,256 C332,276 322,318 294,338" fill="none" stroke="#c8a2ff" stroke-width="18" stroke-linecap="round"/>
+
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#c8a2ff" stroke="#5b21b6" stroke-width="3"/>
+<path class="neo-neon" d="M124,192 C162,202 238,202 276,192" fill="none" stroke="#8b5cf6" stroke-width="7" stroke-linecap="round"/>
+<path class="neo-neon" d="M124,232 C162,242 238,242 276,232" fill="none" stroke="#8b5cf6" stroke-width="7" stroke-linecap="round"/>
+<path class="neo-neon" d="M124,272 C162,282 238,282 276,272" fill="none" stroke="#8b5cf6" stroke-width="7" stroke-linecap="round"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#7c3aed"/>
+<circle cx="148" cy="212" r="8" fill="#5b21b6"/>
+<circle class="neo-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#7c3aed"/>
+<circle cx="252" cy="212" r="8" fill="#5b21b6"/>
+<circle class="neo-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#8b5cf6" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#8b5cf6" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#8b5cf6" stroke="#5b21b6" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#8b5cf6" stroke="#5b21b6" stroke-width="3"/>
+</g>
+<g transform="translate(88,204) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(110,118) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(296,58) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

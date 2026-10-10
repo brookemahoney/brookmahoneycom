@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro cute laser blaster firing a pulsing pink beam">
+  <title>Bizarro Laser Blast</title>
+  <desc>A giant-eyed purple blaster firing a pulsing pink laser beam with a sparkling impact starburst.</desc>
+  <style>
+    .blaster-bob { animation: blasterBob 3.8s ease-in-out infinite; }
+    @keyframes blasterBob {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(-1.5deg); }
+    }
+    .laser-beam {
+      transform-box: fill-box;
+      transform-origin: left center;
+      animation: laserPulse 0.9s ease-in-out infinite;
+    }
+    @keyframes laserPulse {
+      0%, 100% { transform: scaleX(0.82); opacity: 0.55; }
+      50% { transform: scaleX(1); opacity: 1; }
+    }
+    .beam-glow { animation: beamGlow 0.9s ease-in-out infinite; }
+    @keyframes beamGlow {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.6; }
+    }
+    .impact-flash {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: impactFlash 1.2s ease-in-out infinite;
+    }
+    @keyframes impactFlash {
+      0%, 100% { transform: scale(0.8); opacity: 0.6; }
+      50% { transform: scale(1.25); opacity: 1; }
+    }
+    .eye-shine { animation: eyeShine 3s ease-in-out infinite; }
+    @keyframes eyeShine {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .twinkle {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: twinkle 2.6s ease-in-out infinite;
+    }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    @keyframes twinkle {
+      0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+      50% { transform: scale(1.1) rotate(12deg); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .blaster-bob, .laser-beam, .beam-glow, .impact-flash, .eye-shine, .twinkle { animation: none !important; }
+    }
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="206" r="172" fill="#ffe3fa"/>
+  <g class="blaster-bob">
+    <rect x="70" y="150" width="150" height="74" rx="26" fill="#8b5cf6"/>
+    <rect x="70" y="150" width="150" height="74" rx="26" fill="none" stroke="#5b21b6" stroke-width="4"/>
+    <rect x="205" y="168" width="64" height="38" rx="14" fill="#c8a2ff"/>
+    <rect x="205" y="168" width="64" height="38" rx="14" fill="none" stroke="#5b21b6" stroke-width="4"/>
+    <rect x="86" y="224" width="42" height="66" rx="16" fill="#5b21b6"/>
+    <rect x="112" y="176" width="30" height="14" rx="7" fill="#c8a2ff"/>
+    <circle cx="128" cy="187" r="26" fill="#ffffff"/>
+    <circle cx="128" cy="187" r="15" fill="#8b5cf6"/>
+    <circle cx="128" cy="187" r="7" fill="#5b21b6"/>
+    <circle class="eye-shine" cx="121" cy="180" r="5.5" fill="#ffffff"/>
+    <circle cx="96" cy="158" r="7" fill="#f368e0"/>
+    <circle cx="96" cy="158" r="3" fill="#ffffff"/>
+  </g>
+  <ellipse class="beam-glow" cx="300" cy="187" rx="118" ry="30" fill="#f368e0"/>
+  <g class="laser-beam">
+    <rect x="262" y="172" width="132" height="30" rx="15" fill="#ff9ff3"/>
+    <rect x="262" y="181" width="132" height="12" rx="6" fill="#ffffff"/>
+  </g>
+  <g class="impact-flash" transform="translate(368,187)">
+    <path d="M0,-34 C3,-10 10,-3 34,0 C10,3 3,10 0,34 C-3,10 -10,3 -34,0 C-10,-3 -3,-10 0,-34 Z" fill="#ffffff"/>
+    <path d="M0,-22 C2,-7 7,-2 22,0 C7,2 2,7 0,22 C-2,7 -7,2 -22,0 C-7,-2 -2,-7 0,-22 Z" fill="#ff9ff3"/>
+  </g>
+  <g transform="translate(58,108) scale(1.1)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(330,72) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+  <g transform="translate(352,300) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+  <g transform="translate(52,306) scale(0.85)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

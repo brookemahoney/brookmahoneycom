@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Astronaut Axolotl">
+  <title>Bizarro Astronaut Axolotl</title>
+  <desc>A bizarro cute astronaut axolotl floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .ast-shine { animation: astShine 3.0s ease-in-out infinite; }
+    @keyframes astShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .ast-gill-l { animation: astGillL 2.7s ease-in-out infinite; transform-box: fill-box; transform-origin: right center; }
+    @keyframes astGillL {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+}
+    .ast-gill-r { animation: astGillR 2.7s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes astGillR {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+}
+    .ast-float { animation: astFloat 4.0s ease-in-out infinite; }
+    @keyframes astFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1.4deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: astTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes astTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  ast-float, ast-gill-l, ast-gill-r, ast-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="206" r="172" fill="#ffe3fa"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#ffd0f4" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="ast-float">
+
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#ffd6f7" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#8b5cf6"/>
+<circle cx="148" cy="212" r="8" fill="#5b21b6"/>
+<circle class="ast-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#8b5cf6"/>
+<circle cx="252" cy="212" r="8" fill="#5b21b6"/>
+<circle class="ast-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/>
+<g class="ast-gill-l"><path d="M152,190 C136,182 128,164 136,148" fill="none" stroke="#f368e0" stroke-width="7" stroke-linecap="round"/><path d="M152,206 C136,198 128,180 136,164" fill="none" stroke="#f368e0" stroke-width="7" stroke-linecap="round"/><path d="M152,222 C136,214 128,196 136,180" fill="none" stroke="#f368e0" stroke-width="7" stroke-linecap="round"/></g><g class="ast-gill-r"><path d="M248,190 C264,182 272,164 264,148" fill="none" stroke="#f368e0" stroke-width="7" stroke-linecap="round"/><path d="M248,206 C264,198 272,180 264,164" fill="none" stroke="#f368e0" stroke-width="7" stroke-linecap="round"/><path d="M248,222 C264,214 272,196 264,180" fill="none" stroke="#f368e0" stroke-width="7" stroke-linecap="round"/></g>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/>
+<circle cx="200" cy="202" r="98" fill="#ffffff" opacity="0.16"/><circle cx="200" cy="202" r="98" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.6"/><path d="M146,150 A82,82 0 0 1 218,106" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+</g>
+<g transform="translate(200,50) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(88,204) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(110,118) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(352,222) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

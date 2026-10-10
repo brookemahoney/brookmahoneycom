@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Gummy Giraffe">
+  <title>Bizarro Gummy Giraffe</title>
+  <desc>A bizarro cute gummy giraffe floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .gum-shine { animation: gumShine 3.0s ease-in-out infinite; }
+    @keyframes gumShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .gum-float { animation: gumFloat 4.5s ease-in-out infinite; }
+    @keyframes gumFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(0.5deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: gumTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes gumTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  gum-float, gum-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fffdf4"/>
+  <circle cx="200" cy="206" r="172" fill="#fef6d8"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f5e3a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="gum-float">
+<path d="M184,264 C182,222 184,182 186,152 L214,152 C216,182 218,222 216,264 Z" fill="#fde047" stroke="#713f12" stroke-width="3"/><ellipse cx="200" cy="302" rx="86" ry="58" fill="#fde047" stroke="#713f12" stroke-width="3"/><circle cx="200" cy="140" r="36" fill="#fde047" stroke="#713f12" stroke-width="3"/><g transform="translate(0,62)"><circle cx="150" cy="190" r="11" fill="#713f12" opacity="0.32"/>
+<circle cx="225" cy="205" r="9" fill="#713f12" opacity="0.32"/>
+<circle cx="190" cy="285" r="12" fill="#713f12" opacity="0.32"/>
+<circle cx="130" cy="250" r="8" fill="#713f12" opacity="0.32"/>
+<circle cx="260" cy="245" r="10" fill="#713f12" opacity="0.32"/>
+<circle cx="245" cy="185" r="9" fill="#713f12" opacity="0.32"/></g><circle cx="184" cy="138" r="19" fill="#ffffff"/>
+<circle cx="184" cy="138" r="11.5" fill="#eab308"/>
+<circle cx="184" cy="138" r="6" fill="#713f12"/>
+<circle class="gum-shine" cx="180" cy="133" r="4" fill="#ffffff"/>
+<circle cx="216" cy="138" r="19" fill="#ffffff"/>
+<circle cx="216" cy="138" r="11.5" fill="#eab308"/>
+<circle cx="216" cy="138" r="6" fill="#713f12"/>
+<circle class="gum-shine" cx="212" cy="133" r="4" fill="#ffffff"/>
+<path d="M186,171 Q200,182 214,171" fill="none" stroke="#713f12" stroke-width="3.5" stroke-linecap="round"/><ellipse cx="152" cy="352" rx="17" ry="9" fill="#facc15" stroke="#713f12" stroke-width="3"/><ellipse cx="248" cy="352" rx="17" ry="9" fill="#facc15" stroke="#713f12" stroke-width="3"/>
+</g>
+<g transform="translate(296,58) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(356,150) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(48,292) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(58,78) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

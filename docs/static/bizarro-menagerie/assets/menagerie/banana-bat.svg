@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Banana Bat">
+  <title>Bizarro Banana Bat</title>
+  <desc>A bizarro cute banana bat floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .ban-wing-l { animation: banWingL 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: right center; }
+    @keyframes banWingL {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-16deg); }
+}
+    .ban-wing-r { animation: banWingR 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes banWingR {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(16deg); }
+}
+    .ban-shine { animation: banShine 3.0s ease-in-out infinite; }
+    @keyframes banShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .ban-float { animation: banFloat 4.4s ease-in-out infinite; }
+    @keyframes banFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(1.0deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: banTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes banTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  ban-float, ban-shine, ban-wing-l, ban-wing-r, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fffdf4"/>
+  <circle cx="200" cy="206" r="172" fill="#fef6d8"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f5e3a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="ban-float">
+<g class="ban-wing-l"><path d="M126,208 C92,186 66,190 56,212 C72,206 78,218 68,232 C86,228 94,240 88,254 C106,250 120,240 132,230 Z" fill="#facc15" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/></g><g class="ban-wing-r"><path d="M274,208 C308,186 334,190 344,212 C328,206 322,218 332,232 C314,228 306,240 312,254 C294,250 280,240 268,230 Z" fill="#facc15" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/></g>
+<path d="M138,170 L120,100 L174,144 Z" fill="#fde047" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/><path d="M144,154 L134,122 L162,142 Z" fill="#fef08a"/><path d="M262,170 L280,100 L226,144 Z" fill="#fde047" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/><path d="M256,154 L266,122 L238,142 Z" fill="#fef08a"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#fde047" stroke="#713f12" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#fef08a" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#eab308"/>
+<circle cx="148" cy="212" r="8" fill="#713f12"/>
+<circle class="ban-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#eab308"/>
+<circle cx="252" cy="212" r="8" fill="#713f12"/>
+<circle class="ban-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#713f12" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#facc15" stroke="#713f12" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#facc15" stroke="#713f12" stroke-width="3"/>
+<circle cx="96" cy="86" r="25" fill="#fde047"/><circle cx="107" cy="79" r="21" fill="#fef6d8"/>
+</g>
+<g transform="translate(88,204) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(150,64) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(296,58) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

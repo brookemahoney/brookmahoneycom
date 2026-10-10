@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Bubble Bee">
+  <title>Bizarro Bubble Bee</title>
+  <desc>A bizarro cute bubble bee hovering on fluttering wings, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .bub-flutter { animation: bubFlutter 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes bubFlutter {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(-8deg) scale(1.05); }
+}
+    .bub-flutter-r { animation: bubFlutterR 2.3s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes bubFlutterR {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(8deg) scale(1.05); }
+}
+    .bub-shine { animation: bubShine 3.0s ease-in-out infinite; }
+    @keyframes bubShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .bub-rise { animation: bubRise 3.2s ease-in-out infinite; }
+    @keyframes bubRise {
+  0% { transform: translateY(0); opacity: 0; }
+  25% { opacity: 0.85; }
+  100% { transform: translateY(-34px); opacity: 0; }
+}
+    .bub-float { animation: bubFloat 4.6s ease-in-out infinite; }
+    @keyframes bubFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(0.7deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: bubTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes bubTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  bub-float, bub-flutter, bub-flutter-r, bub-rise, bub-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fffdf4"/>
+  <circle cx="200" cy="206" r="172" fill="#fef6d8"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f5e3a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="bub-float">
+<g class="bub-flutter"><ellipse cx="166" cy="238" rx="20" ry="36" transform="rotate(-28 166 238)" fill="#ffffff" opacity="0.8" stroke="#fef08a" stroke-width="2.5"/></g><g class="bub-flutter-r"><ellipse cx="234" cy="238" rx="20" ry="36" transform="rotate(28 234 238)" fill="#ffffff" opacity="0.8" stroke="#fef08a" stroke-width="2.5"/></g><ellipse cx="200" cy="280" rx="54" ry="52" fill="#fde047" stroke="#713f12" stroke-width="3"/><circle cx="200" cy="192" r="40" fill="#fde047" stroke="#713f12" stroke-width="3"/><path d="M188,160 C182,144 174,138 166,136" fill="none" stroke="#713f12" stroke-width="4" stroke-linecap="round"/><circle cx="165" cy="135" r="5" fill="#facc15"/><path d="M212,160 C218,144 226,138 234,136" fill="none" stroke="#713f12" stroke-width="4" stroke-linecap="round"/><circle cx="235" cy="135" r="5" fill="#facc15"/><path d="M150,258 L124,250" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M146,278 L118,278" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M150,298 L126,308" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M250,258 L276,250" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M254,278 L282,278" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M250,298 L274,308" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="180" cy="188" r="18" fill="#ffffff"/>
+<circle cx="180" cy="188" r="11" fill="#eab308"/>
+<circle cx="180" cy="188" r="6" fill="#713f12"/>
+<circle class="bub-shine" cx="176" cy="184" r="4" fill="#ffffff"/>
+<circle cx="220" cy="188" r="18" fill="#ffffff"/>
+<circle cx="220" cy="188" r="11" fill="#eab308"/>
+<circle cx="220" cy="188" r="6" fill="#713f12"/>
+<circle class="bub-shine" cx="216" cy="184" r="4" fill="#ffffff"/>
+<ellipse cx="175" cy="214" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<ellipse cx="225" cy="214" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<path d="M186,220 Q200,231 214,220" fill="none" stroke="#713f12" stroke-width="3.5" stroke-linecap="round"/>
+<circle class="bub-rise" style="animation-delay:-0.0s" cx="302" cy="130" r="11" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+<circle class="bub-rise" style="animation-delay:-0.7s" cx="322" cy="100" r="8" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+<circle class="bub-rise" style="animation-delay:-1.4s" cx="284" cy="96" r="9" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+<circle class="bub-rise" style="animation-delay:-2.1s" cx="314" cy="158" r="6" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+</g>
+<g transform="translate(342,82) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(88,204) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(200,50) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(110,118) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

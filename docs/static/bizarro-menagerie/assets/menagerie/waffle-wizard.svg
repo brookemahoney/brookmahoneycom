@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Waffle Wizard">
+  <title>Bizarro Waffle Wizard</title>
+  <desc>A bizarro cute waffle wizard floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .waf-shine { animation: wafShine 3.0s ease-in-out infinite; }
+    @keyframes wafShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .waf-float { animation: wafFloat 4.3s ease-in-out infinite; }
+    @keyframes wafFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-11px) rotate(1.2deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: wafTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes wafTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  twinkle, waf-float, waf-shine { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fffdf4"/>
+  <circle cx="200" cy="206" r="172" fill="#fef6d8"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f5e3a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="waf-float">
+<path d="M138,170 L120,100 L174,144 Z" fill="#fde047" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/><path d="M144,154 L134,122 L162,142 Z" fill="#fef08a"/><path d="M262,170 L280,100 L226,144 Z" fill="#fde047" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/><path d="M256,154 L266,122 L238,142 Z" fill="#fef08a"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#fde047" stroke="#713f12" stroke-width="3"/>
+<path d="M160,190 L160,282" stroke="#713f12" stroke-width="4" opacity="0.22"/>
+<path d="M185,190 L185,282" stroke="#713f12" stroke-width="4" opacity="0.22"/>
+<path d="M210,190 L210,282" stroke="#713f12" stroke-width="4" opacity="0.22"/>
+<path d="M235,190 L235,282" stroke="#713f12" stroke-width="4" opacity="0.22"/>
+<path d="M130,205 C170,211 230,211 270,205" fill="none" stroke="#713f12" stroke-width="4" opacity="0.22"/>
+<path d="M130,235 C170,241 230,241 270,235" fill="none" stroke="#713f12" stroke-width="4" opacity="0.22"/>
+<path d="M130,265 C170,271 230,271 270,265" fill="none" stroke="#713f12" stroke-width="4" opacity="0.22"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#eab308"/>
+<circle cx="148" cy="212" r="8" fill="#713f12"/>
+<circle class="waf-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#eab308"/>
+<circle cx="252" cy="212" r="8" fill="#713f12"/>
+<circle class="waf-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#713f12" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#facc15" stroke="#713f12" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#facc15" stroke="#713f12" stroke-width="3"/>
+<ellipse cx="200" cy="142" rx="64" ry="13" fill="#713f12"/><path d="M156,140 L200,42 L244,140 Z" fill="#facc15" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/><path d="M168,116 L232,116 L228,98 L172,98 Z" fill="#fde047"/><g transform="translate(200,80) scale(0.6)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</g>
+<g transform="translate(88,204) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(48,292) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(356,150) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

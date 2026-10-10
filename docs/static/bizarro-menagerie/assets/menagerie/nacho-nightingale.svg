@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Nacho Nightingale">
+  <title>Bizarro Nacho Nightingale</title>
+  <desc>A bizarro cute nacho nightingale bobbing among sparkles, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .nac-tail { animation: nacTail 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: top center; }
+    @keyframes nacTail {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(6deg); }
+}
+    .nac-wing-l { animation: nacWingL 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: right center; }
+    @keyframes nacWingL {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-13deg); }
+}
+    .nac-wing-r { animation: nacWingR 2.0s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes nacWingR {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(13deg); }
+}
+    .nac-shine { animation: nacShine 3.0s ease-in-out infinite; }
+    @keyframes nacShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .nac-float { animation: nacFloat 4.1s ease-in-out infinite; }
+    @keyframes nacFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(0.6deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: nacTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes nacTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  nac-float, nac-shine, nac-tail, nac-wing-l, nac-wing-r, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fffdf4"/>
+  <circle cx="200" cy="206" r="172" fill="#fef6d8"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f5e3a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="nac-float">
+<g class="nac-tail"><ellipse cx="176" cy="318" rx="10" ry="26" transform="rotate(-24 176 318)" fill="#facc15" stroke="#713f12" stroke-width="2.5"/><ellipse cx="200" cy="326" rx="10" ry="28" fill="#facc15" stroke="#713f12" stroke-width="2.5"/><ellipse cx="224" cy="318" rx="10" ry="26" transform="rotate(24 224 318)" fill="#facc15" stroke="#713f12" stroke-width="2.5"/></g>
+<g class="nac-wing-l"><path d="M128,214 C98,222 84,252 98,282 C114,264 124,244 130,226 Z" fill="#facc15" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/></g><g class="nac-wing-r"><path d="M272,214 C302,222 316,252 302,282 C286,264 276,244 270,226 Z" fill="#facc15" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/></g>
+<ellipse cx="200" cy="246" rx="88" ry="70" fill="#fde047" stroke="#713f12" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#fef08a" opacity="0.85"/>
+<path d="M200,230 L214,241 L186,241 Z" fill="#fbbf24" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="158" cy="212" r="23" fill="#ffffff"/>
+<circle cx="158" cy="212" r="14" fill="#eab308"/>
+<circle cx="158" cy="212" r="7" fill="#713f12"/>
+<circle class="nac-shine" cx="153" cy="206" r="5" fill="#ffffff"/>
+<circle cx="242" cy="212" r="23" fill="#ffffff"/>
+<circle cx="242" cy="212" r="14" fill="#eab308"/>
+<circle cx="242" cy="212" r="7" fill="#713f12"/>
+<circle class="nac-shine" cx="237" cy="206" r="5" fill="#ffffff"/>
+<ellipse cx="137" cy="238" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<ellipse cx="263" cy="238" rx="13" ry="8" fill="#facc15" opacity="0.35"/>
+<path d="M186,249 Q200,260 214,249" fill="none" stroke="#713f12" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M184,310 L184,330 M216,310 L216,330" stroke="#713f12" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M176,332 L192,332 M208,332 L224,332" stroke="#713f12" stroke-width="4" stroke-linecap="round"/>
+<path d="M270,152 L326,152 L298,102 Z" fill="#fbbf24" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/><circle cx="290" cy="138" r="3.5" fill="#f97316" opacity="0.85"/><circle cx="306" cy="132" r="3.5" fill="#f97316" opacity="0.85"/><circle cx="300" cy="146" r="3.5" fill="#f97316" opacity="0.85"/><circle cx="312" cy="144" r="3.5" fill="#f97316" opacity="0.85"/><circle cx="284" cy="146" r="3.5" fill="#f97316" opacity="0.85"/>
+</g>
+<g transform="translate(48,292) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(150,64) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(58,78) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(252,342) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

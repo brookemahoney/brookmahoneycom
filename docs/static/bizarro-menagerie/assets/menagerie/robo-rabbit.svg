@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Robo Rabbit">
+  <title>Bizarro Robo Rabbit</title>
+  <desc>A bizarro cute robo rabbit glowing softly, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .rob-ear-twitch { animation: robEarTwitch 3.1s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes robEarTwitch {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(4deg); }
+}
+    .rob-pulse { animation: robPulse 1.8s ease-in-out infinite; }
+    @keyframes robPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+    .rob-arm-sway { animation: robArmSway 3.1s ease-in-out infinite; transform-box: fill-box; transform-origin: top center; }
+    @keyframes robArmSway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(6deg); }
+}
+    .rob-shine { animation: robShine 3.0s ease-in-out infinite; }
+    @keyframes robShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .rob-float { animation: robFloat 3.9s ease-in-out infinite; }
+    @keyframes robFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1.2deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: robTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes robTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  rob-arm-sway, rob-ear-twitch, rob-float, rob-pulse, rob-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f7f1ff"/>
+  <circle cx="200" cy="206" r="172" fill="#eee2ff"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#d9c9ff" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="rob-float">
+<rect x="166" y="66" width="22" height="102" rx="11" fill="#c8a2ff" stroke="#5b21b6" stroke-width="3"/><rect x="170" y="74" width="14" height="80" rx="7" fill="#e9d5ff"/><rect x="212" y="66" width="22" height="102" rx="11" fill="#c8a2ff" stroke="#5b21b6" stroke-width="3"/><rect x="216" y="74" width="14" height="80" rx="7" fill="#e9d5ff"/><g class="rob-ear-twitch"><rect x="166" y="66" width="22" height="102" rx="11" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/></g><line x1="200" y1="178" x2="200" y2="142" stroke="#5b21b6" stroke-width="4"/><circle class="rob-pulse" cx="200" cy="134" r="11" fill="#8b5cf6" stroke="#5b21b6" stroke-width="3"/><rect x="138" y="178" width="124" height="132" rx="26" fill="#c8a2ff" stroke="#5b21b6" stroke-width="3"/><rect x="120" y="212" width="18" height="52" rx="9" fill="#8b5cf6" stroke="#5b21b6" stroke-width="3"/><rect x="262" y="212" width="18" height="52" rx="9" fill="#8b5cf6" stroke="#5b21b6" stroke-width="3"/><rect x="156" y="310" width="36" height="17" rx="8" fill="#8b5cf6" stroke="#5b21b6" stroke-width="3"/><rect x="208" y="310" width="36" height="17" rx="8" fill="#8b5cf6" stroke="#5b21b6" stroke-width="3"/><circle cx="172" cy="224" r="18" fill="#ffffff"/>
+<circle cx="172" cy="224" r="11" fill="#7c3aed"/>
+<circle cx="172" cy="224" r="6" fill="#5b21b6"/>
+<circle class="rob-shine" cx="168" cy="220" r="4" fill="#ffffff"/>
+<circle cx="228" cy="224" r="18" fill="#ffffff"/>
+<circle cx="228" cy="224" r="11" fill="#7c3aed"/>
+<circle cx="228" cy="224" r="6" fill="#5b21b6"/>
+<circle class="rob-shine" cx="224" cy="220" r="4" fill="#ffffff"/><rect x="188" y="252" width="24" height="9" rx="4.5" fill="#5b21b6"/><rect x="160" y="268" width="80" height="26" rx="8" fill="#ffffff" opacity="0.55" stroke="#5b21b6" stroke-width="2.5"/><circle cx="180" cy="281" r="4" fill="#8b5cf6"/><circle cx="200" cy="281" r="4" fill="#8b5cf6"/><circle cx="220" cy="281" r="4" fill="#8b5cf6"/>
+</g>
+<g transform="translate(200,50) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(48,292) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(110,118) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(352,222) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(58,78) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Candy Caterpillar">
+  <title>Bizarro Candy Caterpillar</title>
+  <desc>A bizarro cute candy caterpillar hovering on fluttering wings, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .can-flutter { animation: canFlutter 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes canFlutter {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(-8deg) scale(1.05); }
+}
+    .can-flutter-r { animation: canFlutterR 2.1s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes canFlutterR {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(8deg) scale(1.05); }
+}
+    .can-shine { animation: canShine 3.0s ease-in-out infinite; }
+    @keyframes canShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .can-float { animation: canFloat 4.3s ease-in-out infinite; }
+    @keyframes canFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(0.5deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: canTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes canTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  can-float, can-flutter, can-flutter-r, can-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fdf2fb"/>
+  <circle cx="200" cy="206" r="172" fill="#fbe0f3"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f3c2e3" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="can-float">
+<g class="can-flutter"><ellipse cx="158" cy="248" rx="30" ry="50" transform="rotate(-24 158 248)" fill="#ffffff" opacity="0.75" stroke="#ffc9ef" stroke-width="2.5"/></g><g class="can-flutter-r"><ellipse cx="242" cy="248" rx="30" ry="50" transform="rotate(24 242 248)" fill="#ffffff" opacity="0.75" stroke="#ffc9ef" stroke-width="2.5"/></g><circle cx="120" cy="268" r="27" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/>
+<circle cx="160" cy="276" r="27" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/>
+<circle cx="200" cy="278" r="27" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/>
+<circle cx="240" cy="276" r="27" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/>
+<circle cx="280" cy="268" r="27" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><circle cx="120" cy="262" r="7" fill="#c8a2ff" stroke="#5b21b6" stroke-width="2"/>
+<circle cx="160" cy="270" r="7" fill="#fde047" stroke="#5b21b6" stroke-width="2"/>
+<circle cx="200" cy="272" r="7" fill="#ffffff" stroke="#5b21b6" stroke-width="2"/>
+<circle cx="240" cy="270" r="7" fill="#a855f7" stroke="#5b21b6" stroke-width="2"/>
+<circle cx="280" cy="262" r="7" fill="#c8a2ff" stroke="#5b21b6" stroke-width="2"/><circle cx="200" cy="192" r="38" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><path d="M188,160 C182,144 174,138 166,136" fill="none" stroke="#5b21b6" stroke-width="4" stroke-linecap="round"/><circle cx="165" cy="135" r="5" fill="#c8a2ff"/><path d="M212,160 C218,144 226,138 234,136" fill="none" stroke="#5b21b6" stroke-width="4" stroke-linecap="round"/><circle cx="235" cy="135" r="5" fill="#c8a2ff"/><path d="M120,292 L114,304 M130,292 L136,304" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<path d="M160,300 L154,312 M170,300 L176,312" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<path d="M200,302 L194,314 M210,302 L216,314" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<path d="M240,300 L234,312 M250,300 L256,312" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<path d="M280,292 L274,304 M290,292 L296,304" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round" fill="none"/><circle cx="180" cy="188" r="18" fill="#ffffff"/>
+<circle cx="180" cy="188" r="11" fill="#a855f7"/>
+<circle cx="180" cy="188" r="6" fill="#5b21b6"/>
+<circle class="can-shine" cx="176" cy="184" r="4" fill="#ffffff"/>
+<circle cx="220" cy="188" r="18" fill="#ffffff"/>
+<circle cx="220" cy="188" r="11" fill="#a855f7"/>
+<circle cx="220" cy="188" r="6" fill="#5b21b6"/>
+<circle class="can-shine" cx="216" cy="184" r="4" fill="#ffffff"/>
+<ellipse cx="175" cy="214" rx="13" ry="8" fill="#c8a2ff" opacity="0.35"/>
+<ellipse cx="225" cy="214" rx="13" ry="8" fill="#c8a2ff" opacity="0.35"/>
+<path d="M186,220 Q200,231 214,220" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(58,78) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(48,292) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(342,82) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

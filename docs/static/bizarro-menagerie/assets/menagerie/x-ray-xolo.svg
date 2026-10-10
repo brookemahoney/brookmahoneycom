@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro X Ray Xolo">
+  <title>Bizarro X Ray Xolo</title>
+  <desc>A bizarro cute x ray xolo floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .xra-shine { animation: xraShine 3.0s ease-in-out infinite; }
+    @keyframes xraShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .xra-float { animation: xraFloat 4.2s ease-in-out infinite; }
+    @keyframes xraFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(0.9deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: xraTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes xraTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  twinkle, xra-float, xra-shine { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f2fdf8"/>
+  <circle cx="200" cy="206" r="172" fill="#dcf7ec"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#b3e9cf" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="xra-float">
+<path d="M144,156 C106,142 86,168 98,206 C110,240 146,228 154,194 Z" fill="#6ee7b7" stroke="#065f46" stroke-width="3" stroke-linejoin="round"/><path d="M256,156 C294,142 314,168 302,206 C290,240 254,228 246,194 Z" fill="#6ee7b7" stroke="#065f46" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#6ee7b7" stroke="#065f46" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#a7f3d0" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#10b981"/>
+<circle cx="148" cy="212" r="8" fill="#065f46"/>
+<circle class="xra-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#10b981"/>
+<circle cx="252" cy="212" r="8" fill="#065f46"/>
+<circle class="xra-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#34d399" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#34d399" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#065f46" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#34d399" stroke="#065f46" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#34d399" stroke="#065f46" stroke-width="3"/>
+<g transform="rotate(22 298 126)"><rect x="270" y="119" width="56" height="15" rx="7.5" fill="#ffffff" stroke="#065f46" stroke-width="3"/><circle cx="270" cy="119" r="9.5" fill="#ffffff" stroke="#065f46" stroke-width="3"/><circle cx="270" cy="134" r="9.5" fill="#ffffff" stroke="#065f46" stroke-width="3"/><circle cx="326" cy="119" r="9.5" fill="#ffffff" stroke="#065f46" stroke-width="3"/><circle cx="326" cy="134" r="9.5" fill="#ffffff" stroke="#065f46" stroke-width="3"/></g>
+</g>
+<g transform="translate(58,78) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(252,342) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(110,118) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(200,50) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

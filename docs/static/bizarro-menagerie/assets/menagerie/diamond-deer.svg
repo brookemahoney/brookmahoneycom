@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Diamond Deer">
+  <title>Bizarro Diamond Deer</title>
+  <desc>A bizarro cute diamond deer floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .dia-shine { animation: diaShine 3.0s ease-in-out infinite; }
+    @keyframes diaShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .dia-float { animation: diaFloat 4.3s ease-in-out infinite; }
+    @keyframes diaFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(0.9deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: diaTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes diaTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  dia-float, dia-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f3f2ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e7e5ff"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#c9c5ff" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="dia-float">
+<g fill="none" stroke="#3730a3" stroke-width="6" stroke-linecap="round"><path d="M172,158 C164,128 154,116 140,106"/><path d="M164,132 L148,124"/><path d="M158,116 L150,100"/><path d="M228,158 C236,128 246,116 260,106"/><path d="M236,132 L252,124"/><path d="M242,116 L250,100"/></g>
+<path d="M138,170 L120,100 L174,144 Z" fill="#a5b4fc" stroke="#3730a3" stroke-width="3" stroke-linejoin="round"/><path d="M144,154 L134,122 L162,142 Z" fill="#c7d2fe"/><path d="M262,170 L280,100 L226,144 Z" fill="#a5b4fc" stroke="#3730a3" stroke-width="3" stroke-linejoin="round"/><path d="M256,154 L266,122 L238,142 Z" fill="#c7d2fe"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#a5b4fc" stroke="#3730a3" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#c7d2fe" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#6366f1"/>
+<circle cx="148" cy="212" r="8" fill="#3730a3"/>
+<circle class="dia-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#6366f1"/>
+<circle cx="252" cy="212" r="8" fill="#3730a3"/>
+<circle class="dia-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#818cf8" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#818cf8" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#3730a3" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#818cf8" stroke="#3730a3" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#818cf8" stroke="#3730a3" stroke-width="3"/>
+<path d="M298,90 L324,112 L298,148 L272,112 Z" fill="#f0abfc" stroke="#3730a3" stroke-width="3" stroke-linejoin="round"/><path d="M272,112 L324,112 M298,90 L288,112 L298,148 M298,90 L308,112 L298,148" fill="none" stroke="#3730a3" stroke-width="2" opacity="0.5"/>
+</g>
+<g transform="translate(356,150) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(296,58) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(252,342) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

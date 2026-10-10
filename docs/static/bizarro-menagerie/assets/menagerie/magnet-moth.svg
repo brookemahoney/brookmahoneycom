@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Magnet Moth">
+  <title>Bizarro Magnet Moth</title>
+  <desc>A bizarro cute magnet moth hovering on fluttering wings, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .mag-flutter { animation: magFlutter 1.9s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes magFlutter {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(-8deg) scale(1.05); }
+}
+    .mag-flutter-r { animation: magFlutterR 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom center; }
+    @keyframes magFlutterR {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(8deg) scale(1.05); }
+}
+    .mag-shine { animation: magShine 3.0s ease-in-out infinite; }
+    @keyframes magShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .mag-float { animation: magFloat 4.3s ease-in-out infinite; }
+    @keyframes magFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(1.2deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: magTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes magTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  mag-float, mag-flutter, mag-flutter-r, mag-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="206" r="172" fill="#ffe3fa"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#ffd0f4" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="mag-float">
+<g class="mag-flutter"><ellipse cx="148" cy="242" rx="44" ry="60" transform="rotate(-18 148 242)" fill="#ffd6f7" opacity="0.85" stroke="#5b21b6" stroke-width="3" stroke-dasharray="0.5 9" stroke-linecap="round"/></g><g class="mag-flutter-r"><ellipse cx="252" cy="242" rx="44" ry="60" transform="rotate(18 252 242)" fill="#ffd6f7" opacity="0.85" stroke="#5b21b6" stroke-width="3" stroke-dasharray="0.5 9" stroke-linecap="round"/></g><ellipse cx="200" cy="280" rx="54" ry="52" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><circle cx="200" cy="192" r="40" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><path d="M186,158 C174,140 182,124 172,116 C164,110 158,118 164,124" fill="none" stroke="#5b21b6" stroke-width="4" stroke-linecap="round"/><path d="M214,158 C226,140 218,124 228,116 C236,110 242,118 236,124" fill="none" stroke="#5b21b6" stroke-width="4" stroke-linecap="round"/><path d="M150,258 L124,250" stroke="#5b21b6" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M146,278 L118,278" stroke="#5b21b6" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M150,298 L126,308" stroke="#5b21b6" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M250,258 L276,250" stroke="#5b21b6" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M254,278 L282,278" stroke="#5b21b6" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M250,298 L274,308" stroke="#5b21b6" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="180" cy="188" r="18" fill="#ffffff"/>
+<circle cx="180" cy="188" r="11" fill="#8b5cf6"/>
+<circle cx="180" cy="188" r="6" fill="#5b21b6"/>
+<circle class="mag-shine" cx="176" cy="184" r="4" fill="#ffffff"/>
+<circle cx="220" cy="188" r="18" fill="#ffffff"/>
+<circle cx="220" cy="188" r="11" fill="#8b5cf6"/>
+<circle cx="220" cy="188" r="6" fill="#5b21b6"/>
+<circle class="mag-shine" cx="216" cy="184" r="4" fill="#ffffff"/>
+<ellipse cx="175" cy="214" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<ellipse cx="225" cy="214" rx="13" ry="8" fill="#f368e0" opacity="0.35"/>
+<path d="M186,220 Q200,231 214,220" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/>
+<g transform="rotate(-18 92 248)"><rect x="70" y="222" width="15" height="42" rx="4" fill="#f368e0"/><rect x="99" y="222" width="15" height="42" rx="4" fill="#f368e0"/><path d="M70,244 A22,22 0 0 0 114,244" fill="none" stroke="#f368e0" stroke-width="15"/><rect x="70" y="256" width="15" height="11" rx="3" fill="#ffffff"/><rect x="99" y="256" width="15" height="11" rx="3" fill="#ffffff"/></g>
+</g>
+<g transform="translate(296,58) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(322,332) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(356,150) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(252,342) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(88,204) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

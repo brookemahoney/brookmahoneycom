@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Pickle Phoenix">
+  <title>Bizarro Pickle Phoenix</title>
+  <desc>A bizarro cute pickle phoenix bobbing among sparkles, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .pic-flicker { animation: picFlicker 1.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes picFlicker {
+  0%, 100% { transform: scaleY(1); opacity: 0.9; }
+  50% { transform: scaleY(1.16); opacity: 1; }
+}
+    .pic-wing-l { animation: picWingL 2.1s ease-in-out infinite; transform-box: fill-box; transform-origin: right center; }
+    @keyframes picWingL {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-13deg); }
+}
+    .pic-wing-r { animation: picWingR 2.7s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes picWingR {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(13deg); }
+}
+    .pic-flicker { animation: picFlicker 1.0s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes picFlicker {
+  0%, 100% { transform: scaleY(1); opacity: 0.9; }
+  50% { transform: scaleY(1.16); opacity: 1; }
+}
+    .pic-shine { animation: picShine 3.0s ease-in-out infinite; }
+    @keyframes picShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .pic-float { animation: picFloat 4.7s ease-in-out infinite; }
+    @keyframes picFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.0deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: picTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes picTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  pic-flicker, pic-float, pic-shine, pic-wing-l, pic-wing-r, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f2fdf8"/>
+  <circle cx="200" cy="206" r="172" fill="#dcf7ec"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#b3e9cf" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="pic-float">
+<g class="pic-flicker"><path d="M168,318 C156,304 158,288 170,276 C182,290 180,306 170,318 Z" fill="#34d399"/></g><g class="pic-flicker" style="animation-delay:-0.5s"><path d="M200,330 C188,314 190,296 202,284 C214,298 212,316 200,330 Z" fill="#34d399"/></g><g class="pic-flicker" style="animation-delay:-0.9s"><path d="M232,318 C220,304 222,288 234,276 C246,290 244,306 234,318 Z" fill="#34d399"/></g>
+<g class="pic-wing-l"><path d="M128,214 C98,222 84,252 98,282 C114,264 124,244 130,226 Z" fill="#34d399" stroke="#065f46" stroke-width="3" stroke-linejoin="round"/></g><g class="pic-wing-r"><path d="M272,214 C302,222 316,252 302,282 C286,264 276,244 270,226 Z" fill="#34d399" stroke="#065f46" stroke-width="3" stroke-linejoin="round"/></g>
+<ellipse cx="200" cy="246" rx="88" ry="70" fill="#6ee7b7" stroke="#065f46" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#a7f3d0" opacity="0.85"/>
+<g class="pic-flicker"><path d="M184,158 C176,146 178,132 188,122 C198,134 196,148 186,158 Z" fill="#34d399"/></g><g class="pic-flicker" style="animation-delay:-0.6s"><path d="M216,158 C208,146 210,132 220,122 C230,134 228,148 218,158 Z" fill="#34d399"/></g>
+<path d="M200,230 L214,241 L186,241 Z" fill="#fbbf24" stroke="#065f46" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="158" cy="212" r="23" fill="#ffffff"/>
+<circle cx="158" cy="212" r="14" fill="#10b981"/>
+<circle cx="158" cy="212" r="7" fill="#065f46"/>
+<circle class="pic-shine" cx="153" cy="206" r="5" fill="#ffffff"/>
+<circle cx="242" cy="212" r="23" fill="#ffffff"/>
+<circle cx="242" cy="212" r="14" fill="#10b981"/>
+<circle cx="242" cy="212" r="7" fill="#065f46"/>
+<circle class="pic-shine" cx="237" cy="206" r="5" fill="#ffffff"/>
+<ellipse cx="137" cy="238" rx="13" ry="8" fill="#34d399" opacity="0.35"/>
+<ellipse cx="263" cy="238" rx="13" ry="8" fill="#34d399" opacity="0.35"/>
+<path d="M186,249 Q200,260 214,249" fill="none" stroke="#065f46" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M184,310 L184,330 M216,310 L216,330" stroke="#065f46" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M176,332 L192,332 M208,332 L224,332" stroke="#065f46" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g transform="translate(110,118) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(150,64) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(356,150) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(296,58) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(352,222) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Electric Eel">
+  <title>Bizarro Electric Eel</title>
+  <desc>A bizarro cute electric eel drifting in a sea of sparkle, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .ele-shine { animation: eleShine 3.0s ease-in-out infinite; }
+    @keyframes eleShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .ele-sway { animation: eleSway 3.3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes eleSway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(3deg); }
+}
+    .ele-flicker { animation: eleFlicker 1.5s ease-in-out infinite; }
+    @keyframes eleFlicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+    .ele-float { animation: eleFloat 4.2s ease-in-out infinite; }
+    @keyframes eleFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(0.8deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: eleTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes eleTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  ele-flicker, ele-float, ele-shine, ele-sway, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fffdf4"/>
+  <circle cx="200" cy="206" r="172" fill="#fef6d8"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f5e3a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="ele-float">
+<g class="ele-sway"><path d="M76,252 C126,222 166,282 216,252 C256,228 288,246 310,254" fill="none" stroke="#fde047" stroke-width="46" stroke-linecap="round"/><path d="M96,222 C146,200 196,240 246,220 C276,208 300,220 314,230" fill="none" stroke="#facc15" stroke-width="9" stroke-linecap="round" opacity="0.85"/><circle cx="304" cy="252" r="27" fill="#fde047" stroke="#713f12" stroke-width="3"/><circle cx="306" cy="244" r="11" fill="#ffffff"/><circle cx="306" cy="245" r="6.5" fill="#eab308"/><circle cx="306" cy="245" r="3.2" fill="#713f12"/><circle class="ele-shine" cx="303" cy="241" r="2.8" fill="#ffffff"/><path d="M312,262 Q318,267 324,262" fill="none" stroke="#713f12" stroke-width="3" stroke-linecap="round"/></g>
+<g class="ele-flicker"><path d="M102,58 L78,102 L94,102 L82,140 L118,92 L100,92 L114,58 Z" fill="#fde047" stroke="#713f12" stroke-width="3" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(356,150) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(352,222) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(150,64) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

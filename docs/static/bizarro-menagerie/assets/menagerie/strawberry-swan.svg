@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Strawberry Swan">
+  <title>Bizarro Strawberry Swan</title>
+  <desc>A bizarro cute strawberry swan bobbing among sparkles, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .str-shine { animation: strShine 3.0s ease-in-out infinite; }
+    @keyframes strShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .str-float { animation: strFloat 4.7s ease-in-out infinite; }
+    @keyframes strFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(0.7deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: strTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes strTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  str-float, str-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fff3fc"/>
+  <circle cx="200" cy="206" r="172" fill="#ffe3fa"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#ffd0f4" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="str-float">
+<ellipse cx="200" cy="302" rx="78" ry="56" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><path d="M198,296 C188,238 184,188 200,150 C208,130 234,132 238,150" fill="none" stroke="#ff9ff3" stroke-width="26" stroke-linecap="round"/><circle cx="240" cy="148" r="23" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><path d="M200,158 L213,169 L187,169 Z" fill="#fbbf24" stroke="#5b21b6" stroke-width="3" stroke-linejoin="round"/><circle cx="232" cy="142" r="13" fill="#ffffff"/><circle cx="232" cy="143" r="7.5" fill="#8b5cf6"/><circle cx="232" cy="143" r="3.8" fill="#5b21b6"/><circle class="str-shine" cx="229" cy="139" r="3" fill="#ffffff"/><path d="M184,350 L184,366 M216,350 L216,366" stroke="#5b21b6" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M176,368 L192,368 M208,368 L224,368" stroke="#5b21b6" stroke-width="4" stroke-linecap="round"/>
+<path d="M268,144 A34,34 0 0 1 336,144 Z" fill="#ff9ff3" stroke="#5b21b6" stroke-width="3"/><path d="M268,144 A34,34 0 0 1 336,144 Z" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.35"/><path d="M274,144 A28,28 0 0 1 330,144 Z" fill="#ff9ff3"/><path d="M302,144 L323,132" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/><path d="M302,144 L314,123" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/><path d="M302,144 L302,120" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/><path d="M302,144 L290,123" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/><path d="M302,144 L281,132" stroke="#ffffff" stroke-width="2.5" opacity="0.8"/>
+</g>
+<g transform="translate(352,222) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(48,292) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(296,58) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(110,118) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(58,78) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

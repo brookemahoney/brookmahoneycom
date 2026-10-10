@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Karaoke Koala">
+  <title>Bizarro Karaoke Koala</title>
+  <desc>A bizarro cute karaoke koala floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .kar-shine { animation: karShine 3.0s ease-in-out infinite; }
+    @keyframes karShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .kar-float { animation: karFloat 4.4s ease-in-out infinite; }
+    @keyframes karFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-11px) rotate(0.6deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: karTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes karTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  kar-float, kar-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f2fdf8"/>
+  <circle cx="200" cy="206" r="172" fill="#dcf7ec"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#b3e9cf" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="kar-float">
+<circle cx="134" cy="146" r="31" fill="#6ee7b7" stroke="#065f46" stroke-width="3"/><circle cx="134" cy="146" r="16" fill="#a7f3d0"/><circle cx="266" cy="146" r="31" fill="#6ee7b7" stroke="#065f46" stroke-width="3"/><circle cx="266" cy="146" r="16" fill="#a7f3d0"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#6ee7b7" stroke="#065f46" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#a7f3d0" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#10b981"/>
+<circle cx="148" cy="212" r="8" fill="#065f46"/>
+<circle class="kar-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#10b981"/>
+<circle cx="252" cy="212" r="8" fill="#065f46"/>
+<circle class="kar-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#34d399" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#34d399" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#065f46" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#34d399" stroke="#065f46" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#34d399" stroke="#065f46" stroke-width="3"/>
+<circle cx="280" cy="282" r="16" fill="#6ee7b7" stroke="#065f46" stroke-width="3"/><path d="M268,276 L292,276 M268,282 L292,282 M268,288 L292,288" stroke="#065f46" stroke-width="2" opacity="0.5"/><rect x="274" y="298" width="12" height="32" rx="6" fill="#065f46"/><path d="M274,330 C274,344 258,342 258,328" fill="none" stroke="#065f46" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g transform="translate(342,82) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(88,204) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(356,150) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

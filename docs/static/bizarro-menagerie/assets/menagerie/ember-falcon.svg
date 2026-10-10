@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Ember Falcon">
+  <title>Bizarro Ember Falcon</title>
+  <desc>A bizarro cute ember falcon bobbing among sparkles, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .emb-tail { animation: embTail 3.3s ease-in-out infinite; transform-box: fill-box; transform-origin: top center; }
+    @keyframes embTail {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+    .emb-wing-l { animation: embWingL 2.3s ease-in-out infinite; transform-box: fill-box; transform-origin: right center; }
+    @keyframes embWingL {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-13deg); }
+}
+    .emb-wing-r { animation: embWingR 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: left center; }
+    @keyframes embWingR {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(13deg); }
+}
+    .emb-shine { animation: embShine 3.0s ease-in-out infinite; }
+    @keyframes embShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .emb-flicker { animation: embFlicker 1.0s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes embFlicker {
+  0%, 100% { transform: scaleY(1); opacity: 0.9; }
+  50% { transform: scaleY(1.14); opacity: 1; }
+}
+    .emb-float { animation: embFloat 4.0s ease-in-out infinite; }
+    @keyframes embFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(0.8deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: embTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes embTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  emb-flicker, emb-float, emb-shine, emb-tail, emb-wing-l, emb-wing-r, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f2f9ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e0f2fe"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#aedffa" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="emb-float">
+<g class="emb-tail">
+<ellipse cx="166" cy="332" rx="9" ry="44" transform="rotate(-32 166 300)" fill="#7dd3fc" stroke="#075985" stroke-width="2.5"/>
+<ellipse cx="183" cy="332" rx="9" ry="44" transform="rotate(-16 183 300)" fill="#38bdf8" stroke="#075985" stroke-width="2.5"/>
+<ellipse cx="200" cy="332" rx="9" ry="44" transform="rotate(0 200 300)" fill="#0ea5e9" stroke="#075985" stroke-width="2.5"/>
+<ellipse cx="217" cy="332" rx="9" ry="44" transform="rotate(16 217 300)" fill="#7dd3fc" stroke="#075985" stroke-width="2.5"/>
+<ellipse cx="234" cy="332" rx="9" ry="44" transform="rotate(32 234 300)" fill="#38bdf8" stroke="#075985" stroke-width="2.5"/>
+</g>
+<g class="emb-wing-l"><path d="M128,214 C98,222 84,252 98,282 C114,264 124,244 130,226 Z" fill="#38bdf8" stroke="#075985" stroke-width="3" stroke-linejoin="round"/></g><g class="emb-wing-r"><path d="M272,214 C302,222 316,252 302,282 C286,264 276,244 270,226 Z" fill="#38bdf8" stroke="#075985" stroke-width="3" stroke-linejoin="round"/></g>
+<ellipse cx="200" cy="246" rx="88" ry="70" fill="#7dd3fc" stroke="#075985" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#bae6fd" opacity="0.85"/>
+<path d="M200,230 L214,241 L186,241 Z" fill="#fbbf24" stroke="#075985" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="158" cy="212" r="23" fill="#ffffff"/>
+<circle cx="158" cy="212" r="14" fill="#0ea5e9"/>
+<circle cx="158" cy="212" r="7" fill="#075985"/>
+<circle class="emb-shine" cx="153" cy="206" r="5" fill="#ffffff"/>
+<circle cx="242" cy="212" r="23" fill="#ffffff"/>
+<circle cx="242" cy="212" r="14" fill="#0ea5e9"/>
+<circle cx="242" cy="212" r="7" fill="#075985"/>
+<circle class="emb-shine" cx="237" cy="206" r="5" fill="#ffffff"/>
+<ellipse cx="137" cy="238" rx="13" ry="8" fill="#38bdf8" opacity="0.35"/>
+<ellipse cx="263" cy="238" rx="13" ry="8" fill="#38bdf8" opacity="0.35"/>
+<path d="M186,249 Q200,260 214,249" fill="none" stroke="#075985" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M184,310 L184,330 M216,310 L216,330" stroke="#075985" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M176,332 L192,332 M208,332 L224,332" stroke="#075985" stroke-width="4" stroke-linecap="round"/>
+<g class="emb-flicker" transform="translate(308,128)"><path d="M0,24 C-13,12 -13,-2 0,-18 C13,-2 13,12 0,24 Z" fill="#38bdf8"/><path d="M0,17 C-6,9 -5,1 0,-7 C5,1 6,9 0,17 Z" fill="#fde047"/></g>
+</g>
+<g transform="translate(200,50) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(356,150) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(252,342) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(48,292) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

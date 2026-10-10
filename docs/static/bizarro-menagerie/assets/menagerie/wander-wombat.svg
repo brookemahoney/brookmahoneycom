@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Wander Wombat">
+  <title>Bizarro Wander Wombat</title>
+  <desc>A bizarro cute wander wombat floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .wan-shine { animation: wanShine 3.0s ease-in-out infinite; }
+    @keyframes wanShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .wan-float { animation: wanFloat 4.7s ease-in-out infinite; }
+    @keyframes wanFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(1.1deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: wanTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes wanTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  twinkle, wan-float, wan-shine { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f2f9ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e0f2fe"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#aedffa" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="wan-float">
+<circle cx="146" cy="154" r="16" fill="#7dd3fc" stroke="#075985" stroke-width="3"/><circle cx="146" cy="154" r="8" fill="#bae6fd"/><circle cx="254" cy="154" r="16" fill="#7dd3fc" stroke="#075985" stroke-width="3"/><circle cx="254" cy="154" r="8" fill="#bae6fd"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#7dd3fc" stroke="#075985" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#bae6fd" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#0ea5e9"/>
+<circle cx="148" cy="212" r="8" fill="#075985"/>
+<circle class="wan-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#0ea5e9"/>
+<circle cx="252" cy="212" r="8" fill="#075985"/>
+<circle class="wan-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#38bdf8" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#38bdf8" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#075985" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#38bdf8" stroke="#075985" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#38bdf8" stroke="#075985" stroke-width="3"/>
+<circle cx="298" cy="126" r="25" fill="#ffffff" stroke="#075985" stroke-width="4"/><path d="M298,108 L307,126 L298,144 L289,126 Z" fill="#38bdf8"/><circle cx="298" cy="126" r="3.5" fill="#075985"/><path d="M298,103 L298,108 M298,144 L298,149 M275,126 L273,126 M323,126 L321,126" stroke="#075985" stroke-width="2.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(342,82) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(322,332) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(296,58) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(356,150) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+<g transform="translate(88,204) scale(0.85)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+</svg>

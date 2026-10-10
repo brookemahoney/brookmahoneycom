@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Velvet Viper">
+  <title>Bizarro Velvet Viper</title>
+  <desc>A bizarro cute velvet viper floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .vel-shine { animation: velShine 3.0s ease-in-out infinite; }
+    @keyframes velShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .vel-float { animation: velFloat 4.3s ease-in-out infinite; }
+    @keyframes velFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(1.0deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: velTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes velTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  twinkle, vel-float, vel-shine { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#fdf2fb"/>
+  <circle cx="200" cy="206" r="172" fill="#fbe0f3"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#f3c2e3" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="vel-float">
+<ellipse cx="200" cy="304" rx="82" ry="33" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><ellipse cx="200" cy="264" rx="64" ry="28" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><ellipse cx="200" cy="230" rx="50" ry="24" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><circle cx="150" cy="190" r="5.5" fill="#5b21b6" opacity="0.35"/>
+<circle cx="250" cy="190" r="5.5" fill="#5b21b6" opacity="0.35"/>
+<circle cx="135" cy="240" r="5.5" fill="#5b21b6" opacity="0.35"/>
+<circle cx="265" cy="240" r="5.5" fill="#5b21b6" opacity="0.35"/>
+<circle cx="170" cy="280" r="5.5" fill="#5b21b6" opacity="0.35"/>
+<circle cx="230" cy="280" r="5.5" fill="#5b21b6" opacity="0.35"/>
+<circle cx="200" cy="170" r="5.5" fill="#5b21b6" opacity="0.35"/>
+<circle cx="200" cy="295" r="5.5" fill="#5b21b6" opacity="0.35"/><circle cx="200" cy="180" r="37" fill="#f368e0" stroke="#5b21b6" stroke-width="3"/><circle cx="183" cy="176" r="20" fill="#ffffff"/>
+<circle cx="183" cy="176" r="12" fill="#a855f7"/>
+<circle cx="183" cy="176" r="6.5" fill="#5b21b6"/>
+<circle class="vel-shine" cx="179" cy="171" r="4.5" fill="#ffffff"/>
+<circle cx="217" cy="176" r="20" fill="#ffffff"/>
+<circle cx="217" cy="176" r="12" fill="#a855f7"/>
+<circle cx="217" cy="176" r="6.5" fill="#5b21b6"/>
+<circle class="vel-shine" cx="213" cy="171" r="4.5" fill="#ffffff"/>
+<path d="M186,210 Q200,221 214,210" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/><path d="M190,208 Q200,216 210,208" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/><path d="M200,212 L200,228 M200,228 L194,236 M200,228 L206,236" fill="none" stroke="#c8a2ff" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(200,50) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(252,342) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(58,78) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

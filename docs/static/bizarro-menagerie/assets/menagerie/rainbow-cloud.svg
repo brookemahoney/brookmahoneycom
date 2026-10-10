@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro cute pastel rainbow cloud drifting with twinkling sparkles">
+  <title>Rainbow Cloud</title>
+  <desc>A puffy white cloud with giant eyes and a tiny smile, drifting above a pastel pink-to-purple rainbow, with twinkling sparkles.</desc>
+  <style>
+    .cloud-drift { animation: cloudDrift 4.6s ease-in-out infinite; }
+    @keyframes cloudDrift {
+      0%, 100% { transform: translate(-8px, 0); }
+      50% { transform: translate(8px, -10px); }
+    }
+    .twinkle {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: twinkle 2.8s ease-in-out infinite;
+    }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.8s; }
+    @keyframes twinkle {
+      0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+      50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+    }
+    .eye-shine { animation: eyeShine 3.1s ease-in-out infinite; }
+    @keyframes eyeShine {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cloud-drift, .twinkle, .eye-shine { animation: none !important; }
+    }
+  </style>
+  <rect width="400" height="400" fill="#f7f1ff"/>
+  <circle cx="200" cy="200" r="172" fill="#eee2ff"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M50,302 A150,150 0 0 1 350,302" stroke="#ff9ff3" stroke-width="26"/>
+    <path d="M78,302 A122,122 0 0 1 322,302" stroke="#f368e0" stroke-width="26"/>
+    <path d="M106,302 A94,94 0 0 1 294,302" stroke="#c8a2ff" stroke-width="26"/>
+    <path d="M134,302 A66,66 0 0 1 266,302" stroke="#8b5cf6" stroke-width="26"/>
+    <path d="M162,302 A38,38 0 0 1 238,302" stroke="#5b21b6" stroke-width="26"/>
+  </g>
+  <g class="cloud-drift">
+    <g fill="#ffffff" stroke="#e3d4ff" stroke-width="3">
+      <circle cx="138" cy="222" r="36"/>
+      <circle cx="182" cy="198" r="48"/>
+      <circle cx="238" cy="202" r="44"/>
+      <circle cx="282" cy="224" r="32"/>
+      <ellipse cx="210" cy="230" rx="92" ry="30"/>
+    </g>
+    <ellipse cx="168" cy="220" rx="15" ry="9" fill="#ff9ff3" opacity="0.4"/>
+    <ellipse cx="254" cy="220" rx="15" ry="9" fill="#ff9ff3" opacity="0.4"/>
+    <circle cx="172" cy="214" r="19" fill="#c8a2ff"/>
+    <circle cx="250" cy="214" r="19" fill="#c8a2ff"/>
+    <circle cx="174" cy="217" r="10" fill="#8b5cf6"/>
+    <circle cx="248" cy="217" r="10" fill="#8b5cf6"/>
+    <circle cx="174" cy="217" r="5" fill="#5b21b6"/>
+    <circle cx="248" cy="217" r="5" fill="#5b21b6"/>
+    <circle class="eye-shine" cx="167" cy="208" r="4.5" fill="#ffffff"/>
+    <circle class="eye-shine" cx="241" cy="208" r="4.5" fill="#ffffff"/>
+    <path d="M194,240 Q201,246 208,240" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(62,92) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(340,96) scale(1.0)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+  <g transform="translate(352,330) scale(0.9)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+  <g transform="translate(48,332) scale(0.85)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(200,52) scale(0.75)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+  <g transform="translate(112,120) scale(0.6)"><path class="twinkle d5" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

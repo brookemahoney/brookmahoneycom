@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro Ninja Narwhal">
+  <title>Bizarro Ninja Narwhal</title>
+  <desc>A bizarro cute ninja narwhal floating gently, with giant eyes and twinkling sparkles.</desc>
+  <style>
+    .nin-shine { animation: ninShine 3.0s ease-in-out infinite; }
+    @keyframes ninShine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+    .nin-float { animation: ninFloat 4.8s ease-in-out infinite; }
+    @keyframes ninFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.1deg); }
+}
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: ninTwinkle 2.6s ease-in-out infinite; }
+    .twinkle.d1 { animation-delay: -0.6s; }
+    .twinkle.d2 { animation-delay: -1.3s; }
+    .twinkle.d3 { animation-delay: -1.9s; }
+    .twinkle.d4 { animation-delay: -2.4s; }
+    .twinkle.d5 { animation-delay: -0.9s; }
+    @keyframes ninTwinkle {
+  0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+  50% { transform: scale(1.15) rotate(12deg); opacity: 1; }
+}
+    @media (prefers-reduced-motion: reduce) {
+  nin-float, nin-shine, twinkle { animation: none !important; }
+}
+  </style>
+  <rect width="400" height="400" fill="#f3f2ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e7e5ff"/>
+  <circle cx="200" cy="206" r="172" fill="none" stroke="#c9c5ff" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.5 12"/>
+<g class="nin-float">
+<path d="M190,156 L200,56 L210,156 Z" fill="#ffffff" stroke="#3730a3" stroke-width="3" stroke-linejoin="round"/><path d="M195,130 L205,130 M194,106 L206,106 M193,82 L207,82" stroke="#c7d2fe" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="200" cy="238" rx="98" ry="82" fill="#a5b4fc" stroke="#3730a3" stroke-width="3"/>
+<ellipse cx="200" cy="252" rx="62" ry="46" fill="#c7d2fe" opacity="0.85"/>
+<circle cx="148" cy="212" r="27" fill="#ffffff"/>
+<circle cx="148" cy="212" r="16" fill="#6366f1"/>
+<circle cx="148" cy="212" r="8" fill="#3730a3"/>
+<circle class="nin-shine" cx="142" cy="206" r="5.5" fill="#ffffff"/>
+<circle cx="252" cy="212" r="27" fill="#ffffff"/>
+<circle cx="252" cy="212" r="16" fill="#6366f1"/>
+<circle cx="252" cy="212" r="8" fill="#3730a3"/>
+<circle class="nin-shine" cx="246" cy="206" r="5.5" fill="#ffffff"/>
+<ellipse cx="123" cy="238" rx="13" ry="8" fill="#818cf8" opacity="0.35"/>
+<ellipse cx="277" cy="238" rx="13" ry="8" fill="#818cf8" opacity="0.35"/>
+<path d="M186,253 Q200,264 214,253" fill="none" stroke="#3730a3" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="152" cy="318" rx="17" ry="9" fill="#818cf8" stroke="#3730a3" stroke-width="3"/><ellipse cx="248" cy="318" rx="17" ry="9" fill="#818cf8" stroke="#3730a3" stroke-width="3"/>
+<path d="M130,198 C160,178 240,178 270,198" fill="none" stroke="#818cf8" stroke-width="11" stroke-linecap="round"/><circle cx="272" cy="199" r="8" fill="#3730a3"/><path d="M276,204 C288,214 284,228 274,236" fill="none" stroke="#818cf8" stroke-width="7" stroke-linecap="round"/><path d="M268,206 C262,218 254,226 244,230" fill="none" stroke="#818cf8" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g transform="translate(110,118) scale(1.15)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+<g transform="translate(342,82) scale(0.95)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+<g transform="translate(356,150) scale(1.05)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+<g transform="translate(322,332) scale(0.9)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#f368e0"/></g>
+</svg>

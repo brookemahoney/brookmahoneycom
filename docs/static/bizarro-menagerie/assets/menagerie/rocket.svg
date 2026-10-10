@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro cute rocket with flickering exhaust flame">
+  <title>Bizarro Rocket</title>
+  <desc>A cute bizarro rocket with a starry window, flickering pink exhaust flame, and twinkling sparkles, floating through a lavender sky.</desc>
+  <style>
+    .rocket-float { animation: rocketFloat 4.6s ease-in-out infinite; }
+    @keyframes rocketFloat {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(1.4deg); }
+    }
+    .flame-outer {
+      transform-box: fill-box;
+      transform-origin: top center;
+      animation: flameFlicker 0.5s ease-in-out infinite;
+    }
+    .flame-inner {
+      transform-box: fill-box;
+      transform-origin: top center;
+      animation: flameFlicker 0.38s ease-in-out infinite;
+    }
+    @keyframes flameFlicker {
+      0%, 100% { transform: scaleY(0.82); opacity: 0.75; }
+      50% { transform: scaleY(1.12); opacity: 1; }
+    }
+    .window-star {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: windowStar 3s ease-in-out infinite;
+    }
+    @keyframes windowStar {
+      0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.8; }
+      50% { transform: scale(1.1) rotate(10deg); opacity: 1; }
+    }
+    .eye-shine { animation: eyeShine 3s ease-in-out infinite; }
+    @keyframes eyeShine {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .twinkle {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: twinkle 2.6s ease-in-out infinite;
+    }
+    .twinkle.d1 { animation-delay: -0.5s; }
+    .twinkle.d2 { animation-delay: -1.2s; }
+    .twinkle.d3 { animation-delay: -1.8s; }
+    .twinkle.d4 { animation-delay: -2.3s; }
+    @keyframes twinkle {
+      0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+      50% { transform: scale(1.1) rotate(12deg); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rocket-float, .flame-outer, .flame-inner, .window-star, .eye-shine, .twinkle { animation: none !important; }
+    }
+  </style>
+  <rect width="400" height="400" fill="#f3e8ff"/>
+  <circle cx="200" cy="206" r="172" fill="#e9d5ff"/>
+  <circle cx="92" cy="96" r="3" fill="#ffffff" opacity="0.9"/>
+  <circle cx="316" cy="76" r="2.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="330" cy="250" r="3" fill="#ffffff" opacity="0.9"/>
+  <circle cx="70" cy="260" r="2.5" fill="#ffffff" opacity="0.8"/>
+  <g class="rocket-float">
+    <path d="M138,238 C112,286 108,330 122,352 C130,364 146,360 150,344 C154,328 152,300 156,278 Z" fill="#8b5cf6"/>
+    <path d="M262,238 C288,286 292,330 278,352 C270,364 254,360 250,344 C246,328 248,300 244,278 Z" fill="#8b5cf6"/>
+    <path d="M200,92 C236,132 246,196 246,236 C246,258 228,268 200,268 C172,268 154,258 154,236 C154,196 164,132 200,92 Z" fill="#ffffff"/>
+    <path d="M200,92 C236,132 246,196 246,236 C246,258 228,268 200,268 C172,268 154,258 154,236 C154,196 164,132 200,92 Z" fill="none" stroke="#c8a2ff" stroke-width="5"/>
+    <path d="M200,92 C214,108 222,128 226,150 C214,138 206,132 200,132 C194,132 186,138 174,150 C178,128 186,108 200,92 Z" fill="#ff9ff3"/>
+    <circle cx="200" cy="196" r="34" fill="#8b5cf6"/>
+    <circle cx="200" cy="196" r="34" fill="none" stroke="#5b21b6" stroke-width="4"/>
+    <circle cx="200" cy="196" r="26" fill="#e9d5ff"/>
+    <g class="window-star">
+      <path d="M200,178 L204,190 L217,191 L206,199 L210,212 L200,205 L190,212 L194,199 L183,191 L196,190 Z" fill="#ffffff"/>
+    </g>
+    <circle cx="182" cy="176" r="10" fill="#ffffff"/>
+    <circle cx="182" cy="176" r="5.5" fill="#8b5cf6"/>
+    <circle cx="182" cy="176" r="2.5" fill="#5b21b6"/>
+    <circle class="eye-shine" cx="178" cy="172" r="2.5" fill="#ffffff"/>
+    <circle cx="218" cy="176" r="10" fill="#ffffff"/>
+    <circle cx="218" cy="176" r="5.5" fill="#8b5cf6"/>
+    <circle cx="218" cy="176" r="2.5" fill="#5b21b6"/>
+    <circle class="eye-shine" cx="214" cy="172" r="2.5" fill="#ffffff"/>
+    <path d="M193,222 Q200,227 207,222" fill="none" stroke="#5b21b6" stroke-width="3" stroke-linecap="round"/>
+    <g class="flame-outer">
+      <path d="M178,270 C172,306 182,332 200,352 C218,332 228,306 222,270 C210,280 190,280 178,270 Z" fill="#f368e0"/>
+    </g>
+    <g class="flame-inner">
+      <path d="M188,270 C184,296 190,314 200,328 C210,314 216,296 212,270 C204,278 196,278 188,270 Z" fill="#ff9ff3"/>
+    </g>
+    <ellipse cx="200" cy="352" rx="26" ry="10" fill="#c8a2ff" opacity="0.5"/>
+  </g>
+  <g transform="translate(58,84) scale(1.1)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(340,96) scale(0.9)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+  <g transform="translate(346,220) scale(0.85)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+  <g transform="translate(52,226) scale(0.8)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(318,330) scale(0.95)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+</svg>

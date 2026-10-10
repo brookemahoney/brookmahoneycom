@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Bizarro cute star puppy with a bobbing shining star and twinkling sparkles">
+  <title>Star Puppy</title>
+  <desc>A giant-eyed lavender puppy with floppy ears, a tiny smile, and a pink star on its head that bobs and shines, surrounded by twinkling sparkles.</desc>
+  <style>
+    .star-bob { animation: starBob 2.8s ease-in-out infinite; }
+    @keyframes starBob {
+      0%, 100% { transform: translateY(0) rotate(-4deg); }
+      50% { transform: translateY(-12px) rotate(5deg); }
+    }
+    .star-shine {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: starShine 1.9s ease-in-out infinite;
+    }
+    @keyframes starShine {
+      0%, 100% { opacity: 0.35; transform: scale(0.7); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+    .ear-wiggle {
+      transform-box: fill-box;
+      transform-origin: 50% 8%;
+      animation: earWiggle 3.9s ease-in-out infinite;
+    }
+    .ear-wiggle.right { animation-delay: -1.95s; }
+    @keyframes earWiggle {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+    }
+    .twinkle {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: twinkle 2.5s ease-in-out infinite;
+    }
+    .twinkle.d1 { animation-delay: -0.4s; }
+    .twinkle.d2 { animation-delay: -1.0s; }
+    .twinkle.d3 { animation-delay: -1.6s; }
+    .twinkle.d4 { animation-delay: -2.1s; }
+    .twinkle.d5 { animation-delay: -0.7s; }
+    .twinkle.d6 { animation-delay: -1.3s; }
+    @keyframes twinkle {
+      0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.3; }
+      50% { transform: scale(1.1) rotate(12deg); opacity: 1; }
+    }
+    .eye-shine { animation: eyeShine 3s ease-in-out infinite; }
+    @keyframes eyeShine {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .star-bob, .star-shine, .ear-wiggle, .twinkle, .eye-shine { animation: none !important; }
+    }
+  </style>
+  <rect width="400" height="400" fill="#fdf6ff"/>
+  <circle cx="200" cy="206" r="172" fill="#f2e6ff"/>
+  <g class="ear-wiggle">
+    <path d="M112,170 C72,174 58,230 76,266 C92,298 128,292 132,250 C135,212 128,182 112,170 Z" fill="#8b5cf6"/>
+  </g>
+  <g class="ear-wiggle right">
+    <path d="M288,170 C328,174 342,230 324,266 C308,298 272,292 268,250 C265,212 272,182 288,170 Z" fill="#8b5cf6"/>
+  </g>
+  <ellipse cx="200" cy="234" rx="106" ry="94" fill="#c8a2ff"/>
+  <ellipse cx="200" cy="264" rx="46" ry="30" fill="#f5efff"/>
+  <ellipse cx="138" cy="260" rx="14" ry="8" fill="#ff9ff3" opacity="0.45"/>
+  <ellipse cx="262" cy="260" rx="14" ry="8" fill="#ff9ff3" opacity="0.45"/>
+  <circle cx="162" cy="222" r="30" fill="#ffffff"/>
+  <circle cx="238" cy="222" r="30" fill="#ffffff"/>
+  <circle cx="164" cy="226" r="16" fill="#5b21b6"/>
+  <circle cx="236" cy="226" r="16" fill="#5b21b6"/>
+  <circle class="eye-shine" cx="156" cy="214" r="6" fill="#ffffff"/>
+  <circle class="eye-shine" cx="228" cy="214" r="6" fill="#ffffff"/>
+  <path d="M191,248 Q200,243 209,248 Q207,258 200,259 Q193,258 191,248 Z" fill="#5b21b6"/>
+  <path d="M188,266 Q194,272 200,267 Q206,272 212,266" fill="none" stroke="#5b21b6" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M195,270 Q200,284 205,270 Z" fill="#ff9ff3"/>
+  <g transform="translate(200,94)">
+    <g class="star-bob">
+      <path d="M0,-44 L11,-15.2 L41.8,-13.6 L17.8,5.8 L25.8,35.4 L0,18.8 L-25.8,35.4 L-17.8,5.8 L-41.8,-13.6 L-11,-15.2 Z" fill="#ff9ff3" stroke="#f368e0" stroke-width="5" stroke-linejoin="round"/>
+      <ellipse class="star-shine" cx="-9" cy="-13" rx="11" ry="6" fill="#ffffff" opacity="0.9"/>
+      <g transform="translate(24,-8) scale(0.55)"><path class="twinkle d1" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+      <g transform="translate(-26,10) scale(0.45)"><path class="twinkle d3" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+    </g>
+  </g>
+  <g transform="translate(60,110) scale(1.1)"><path class="twinkle" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(342,120) scale(1.0)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+  <g transform="translate(350,300) scale(0.9)"><path class="twinkle d4" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+  <g transform="translate(52,308) scale(0.85)"><path class="twinkle d5" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ffffff"/></g>
+  <g transform="translate(318,336) scale(0.7)"><path class="twinkle d6" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#c8a2ff"/></g>
+  <g transform="translate(96,60) scale(0.65)"><path class="twinkle d2" d="M0,-14 C2,-4 4,-2 14,0 C4,2 2,4 0,14 C-2,4 -4,2 -14,0 C-4,-2 -2,-4 0,-14 Z" fill="#ff9ff3"/></g>
+</svg>
