@@ -1,0 +1,28 @@
+uuid: d4b8c857-d90e-4ece-a3c4-5e542161519b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7b65581c-2ac0-4c4c-a469-83633240d1b4'
+  module:
+    - block_content
+    - system
+  theme:
+    - brooketheme2
+id: brooketheme2_brookemahoneysmiling
+theme: brooketheme2
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:7b65581c-2ac0-4c4c-a469-83633240d1b4'
+settings:
+  id: 'block_content:7b65581c-2ac0-4c4c-a469-83633240d1b4'
+  label: 'Brooke Mahoney smiling and standing in the sun with a palm tree in the background'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /about

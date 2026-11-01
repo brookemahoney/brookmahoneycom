@@ -1,0 +1,25 @@
+uuid: 9dcbc57d-7c4e-42e3-9b8f-a86fbdbd43a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - brooketheme2
+id: brooketheme2_footer
+theme: brooketheme2
+region: footer
+weight: -4
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

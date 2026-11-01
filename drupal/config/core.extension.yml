@@ -20,7 +20,6 @@ module:
   filter: 0
   help: 0
   highlight_js: 0
-  history: 0
   image: 0
   layout_builder: 0
   layout_discovery: 0
@@ -43,15 +42,14 @@ module:
   tome_base: 0
   tome_static: 0
   toolbar: 0
+  update: 0
   user: 0
   views_ui: 0
   pathauto: 1
   views: 10
   standard: 1000
 theme:
-  claro: 0
   stable9: 0
-  brooketheme: 0
-  brookeclaro: 0
-  olivero: 0
+  default_admin: 0
+  brooketheme2: 0
 profile: standard

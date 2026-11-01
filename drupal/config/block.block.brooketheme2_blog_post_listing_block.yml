@@ -1,0 +1,29 @@
+uuid: 9680b30f-cc04-4fe2-b861-ca7c1a6b98d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_post_listing
+  module:
+    - system
+    - views
+  theme:
+    - brooketheme2
+id: brooketheme2_blog_post_listing_block
+theme: brooketheme2
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:blog_post_listing-block_1'
+settings:
+  id: 'views_block:blog_post_listing-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /blog
