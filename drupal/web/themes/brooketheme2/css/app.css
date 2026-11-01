@@ -1,7 +1,8 @@
 :root {
-  --color-background: linear-gradient(180deg, #5c2882 0%, #541582 16%, #4b0082 84%, #23003d 100%);
-  --color-heading: orange;
-  --color-text: cornsilk;
+  --color-background: linear-gradient(180deg, #792882 0%, #771582 16%, #660082 84%, #30003d 100%);
+  --color-bgmain: rgba(0, 0, 0, 0.1);
+  --color-heading: #ff7ab8;
+  --color-text: #ffd5d5;
   --color-link: deepskyblue;
   --padding: 20px;
   --border-radius: var(--padding);
@@ -19,12 +20,13 @@ html {
 
 body {
   background: var(--color-background);
-  color: pink;
+  color: var(--color-text);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
   height: 100%;
+  line-height: 1.5;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1100px;
   padding: 0 2%;
 }
 
@@ -38,7 +40,7 @@ a {
 
 footer {
   background: var(--color-background), url('/themes/brooketheme/images/misc/fuzzyPurpleOval.svg');
-  background-blend-mode:overlay;
+  background-blend-mode: overlay;
   background-position: center center;
   background-size: cover;
   /* border: 1px solid purple; */
@@ -79,13 +81,12 @@ h6,
 
 h1 {
   font-size: 38px;
+  margin: 40px 0;
 }
 
 h1, .site-name {
-  margin: 40px 0;
-  text-shadow:
-    0.04em 0.04em 0.02em #2e002e,
-    -0.04em -0.04em 0.04em #9348c8;
+  text-shadow: 0.14em 0.14em 0.02em #2e002e,
+  -0.04em -0.04em 0.04em #9348c8;
 }
 
 h2 {
@@ -102,10 +103,11 @@ img {
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--color-bgmain);
+  border: 1px solid #9c5e5e;
   border-radius: var(--border-radius);
   margin-bottom: calc(var(--padding) * 2);
-  padding: calc(var(--padding) * 2) var(--padding);
+  padding: var(--padding) calc(var(--padding) * 2);
 }
 
 pre {
@@ -120,16 +122,26 @@ pre {
 }
 
 .site-name {
+  margin: 20px 0 20px;
   text-align: center;
 
   a {
+    color: #eedbdb;
     font-size: 48px;
     text-decoration: none;
-    color: var(--color-heading);
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 
+.path-frontpage {
+  main {
+    background-color: transparent;
+    border: none;
+  }
+
+  .field--name-body img {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-text);
+    border-radius: 100px;
+    outline: 2px solid black;
+  }
+}
