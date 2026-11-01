@@ -49,7 +49,6 @@ module:
   views: 10
   standard: 1000
 theme:
-  stable9: 0
   default_admin: 0
   brooketheme2: 0
 profile: standard
