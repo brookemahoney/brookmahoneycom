@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/brooketheme2/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://brookemahoney.com/blog/ddev" />
+<link rel="shortlink" href="https://brookemahoney.com/node/180" />
+
+    <title>DDEV | Brooke Mahoney</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_C1k4Hd--3jJ_jcMckiCdAsdHcSPhzNER7G2SGFYrJMk.css?delta=0&amp;language=en&amp;theme=brooketheme2&amp;include=eJx9jksKgDAQQy9UP6j3kVaDVTsONONCT6-40o2LwMsji4SsusIiBE0VPOHC2whIP4Ffu-kIN2jGTVl8mk-4OE8x3bF-YfUu5bDTVH4GtCOhaOumczxokOfIBfXROug" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/3024.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_HArDUEEBxTVWAvV1vANrElORupSKLOK7lsKbCnDGuGs.css?delta=2&amp;language=en&amp;theme=brooketheme2&amp;include=eJx9jksKgDAQQy9UP6j3kVaDVTsONONCT6-40o2LwMsji4SsusIiBE0VPOHC2whIP4Ffu-kIN2jGTVl8mk-4OE8x3bF-YfUu5bDTVH4GtCOhaOumczxokOfIBfXROug" />
+
+    
+  </head>
+  <body class="path-node page-node-type-blog-post">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container">
+
+  <header>
+      <div class="region region-header">
+    <div id="block-brooketheme2-site-branding" class="block block-system block-system-branding-block">
+  
+    
+          <div class="site-name">
+      <a href="/" rel="home">Brooke Mahoney</a>
+    </div>
+    </div>
+
+  </div>
+
+  </header>
+
+  
+  
+
+  
+
+  
+
+  
+
+  <main>
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-brooketheme2-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">DDEV</span>
+</h1>
+
+
+  </div>
+<div id="block-brooketheme2-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article class="node node--type-blog-post node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+    
+      <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items">
+              <div class="field__item"><p>Just some notes about DDEV</p><p><code>ddev snapshot --name=seed</code>&nbsp;</p><p><code>ddev delete</code></p><p><code>ddev start</code></p><h2>Addons for base Drupal configurations</h2><h3>Descriptions of 4 common ways to setup DDEV</h3><table><thead><tr><th>Add-on</th><th>Best for</th><th>Typical project layout</th></tr></thead><tbody><tr><td><a href="https://github.com/UltraBob/ddev-drupal-code-quality"><code>UltraBob/ddev-drupal-code-quality</code></a></td><td>Full Drupal website projects where your site repo already contains Drupal code and custom code.</td><td>Existing site/project repo; installs code-quality configs and IDE shims in-place.</td></tr><tr><td><a href="https://github.com/ddev/ddev-drupal-contrib"><code>ddev/ddev-drupal-contrib</code></a></td><td>Drupal contrib module/theme development where the contrib project is the center of the repo.</td><td>Contrib project repo with Drupal scaffolded around it (symlink workflow).</td></tr><tr><td><a href="https://github.com/justafish/ddev-drupal-core-dev"><code>justafish/ddev-drupal-core-dev</code></a> / <a href="https://github.com/joachim-n/ddev-drupal-core-dev"><code>joachim-n/ddev-drupal-core-dev</code></a></td><td>Drupal core development.</td><td>Drupal core checkout or core-dev project template.</td></tr><tr><td><a href="https://addons.ddev.com/addons/amateescu/ddev-drupal-dev">https://addons.ddev.com/addons/amateescu/ddev-drupal-dev</a></td><td>Drupal core and contrib combined, see below</td><td>core git checkout as the project root.</td></tr></tbody></table><h3>DDEV Drupal Dev from Andrei Mateescu of Tag1</h3><p>A DDEV add-on for working on Drupal core and contrib modules together, using a core git checkout as the project root.</p><p>Other add-ons target either core or contrib in isolation. This one is for when you need both: developing a contrib module against the latest core, fixing a core bug that affects contrib, or running contrib tests on a core patch.</p><p>Extra dependencies (contrib modules, Drush, dev tools) are managed through a <code>composer.local.json</code> overlay, keeping core's <code>composer.json</code> and <code>composer.lock</code> untouched.</p><p>"You can work on multiple modules this way; each gets its own git checkout that you can commit and push to independently."</p></div>
+          </div>
+  
+  <div class="field field--name-field-tags field--type-entity-reference field--label-above">
+    <div class="field__label">Tags</div>
+          <div class="field__items">
+              <div class="field__item"><a href="/tags/drupal" hreflang="en">Drupal</a></div>
+          <div class="field__item"><a href="/tags/ddev" hreflang="en">DDEV</a></div>
+              </div>
+      </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+      <footer>
+        <div class="region region-footer">
+    <nav aria-labelledby="block-brooketheme2-footer-menu" id="block-brooketheme2-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-brooketheme2-footer-menu">Footer</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+              </li>
+                <li class="menu-item">
+        <a href="/contact" data-drupal-link-system-path="node/137">Contact</a>
+              </li>
+                <li class="menu-item">
+        <a href="/resume" data-drupal-link-system-path="node/149">Resume</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+    </footer>
+  
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/180","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"button_data":{"copy_enable":true,"copy_bg_transparent":false,"copy_bg_color":"#661eaa","copy_txt_color":"#ffffff","copy_btn_text":"Copy","success_bg_transparent":true,"success_bg_color":"#4243b1","success_txt_color":"#4caf50","copy_success_text":"Copied"},"user":{"uid":0,"permissionsHash":"2cfcdc45117054f2578ef0f31781981156300e7511e12a3596143f48b7a7dc3c"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0"></script>
+<script src="/sites/default/files/js/js_6N_LPgVDd9eHLAEAlRnLtCWmrMofVm5lzPaDKOICkc4.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=brooketheme2&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script src="/sites/default/files/js/js_KVWI1w2JgFwP2j5f3KcdiDsMqcv4RrfhXlnzcY5lGu4.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=brooketheme2&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+
+  </body>
+</html>

@@ -7,6 +7,99 @@
     <language>en</language>
     
     <item>
+  <title>Matt Pocock's Wayfinder Skill Notes</title>
+  <link>https://brookemahoney.com/blog/matt-pococks-wayfinder-skill-notes</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Matt Pocock's Wayfinder Skill Notes&lt;/span&gt;
+
+      &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;h2&gt;Wayfinder Workflow&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Use &lt;code&gt;/wayfinder &amp;lt;prompt&amp;gt;&lt;/code&gt; to create a map with decision issues.&lt;/li&gt;&lt;li&gt;Wayfinder will ask you choose a destination: a buildable spec or an actual product.&lt;/li&gt;&lt;li&gt;After wayfinder has made the initial map, work through issues one at a time using &lt;code&gt;/wayfinder &amp;lt;ticket number&amp;gt;&lt;/code&gt; until all decisions are made. Sometimes new issues will be created while working on other issues.&lt;/li&gt;&lt;li&gt;Wayfinder will utilize other skills, such as /grill-with-docs, /prototype, and /research.&lt;ul&gt;&lt;li&gt;The map specifies when each of those other skills are to be used&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;The map also includes a list of 4 types of decision tickets:&lt;ul&gt;&lt;li&gt;research&lt;/li&gt;&lt;li&gt;prototype&lt;/li&gt;&lt;li&gt;grilling&lt;/li&gt;&lt;li&gt;task (things the agent can't quite do itself)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Once the map is made, then you can use &lt;code&gt;/to-spec&lt;/code&gt; to turn the map into a spec.&lt;/li&gt;&lt;li&gt;Then use &lt;code&gt;/to-tickets&lt;/code&gt; to create implementation tickets from the spec.&lt;/li&gt;&lt;li&gt;Use &lt;code&gt;/implement&lt;/code&gt; to implement one ticket at at time&lt;/li&gt;&lt;li&gt;Use &lt;code&gt;/implement-spec&lt;/code&gt; to have agents implement the whole spec AFK&lt;/li&gt;&lt;li&gt;Use &lt;code&gt;/code-review&lt;/code&gt; afterward&lt;/li&gt;&lt;li&gt;Use &lt;code&gt;/retro&lt;/code&gt; afterward to have the agent document what could have went better in the session.&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;Other mattpocock/skills that are helpful&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;/handoff: Compact the current conversation into a handoff document so another agent can continue the work.&lt;/li&gt;&lt;li&gt;/teach: Teach the user a new skill or concept over multiple sessions, using the current directory as a stateful teaching workspace.&lt;/li&gt;&lt;li&gt;/wait-what: Fire this the moment a message doesn't land.&lt;/li&gt;&lt;li&gt;/to-questionnaire: Turn a decision you can't answer alone into a Markdown questionnaire for the one person who can, filled in async, or together over a meeting. It grills you about the send (who it's for, what you need back), not the subject.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T12:01:53-08:00" title="Monday, 2 November 2026 - 12:01" class="datetime"&gt;Mon, 2 Nov 2026 - 12:01&lt;/time&gt;
+&lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 02 Nov 2026 20:01:53 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">181 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Contrib Drupal Module Development</title>
+  <link>https://brookemahoney.com/blog/contrib-drupal-module-development</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Contrib Drupal Module Development&lt;/span&gt;
+
+      &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;p&gt;One way to set up local Development for a contrib module using e0ipso's AI suite. See &lt;a href="https://www.youtube.com/watch?v=q0R9e7KhBsg"&gt;Agentic Coding Harness for Drupal&amp;nbsp;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;opt out of T3 telemetry by adding the following to &lt;code&gt;~/.ddev/.env&lt;/code&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;T3CODE_TELEMETRY_ENABLED=false&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Install &lt;a href="https://github.com/e0ipso/self-review"&gt;https://github.com/e0ipso/self-review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Then:&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;BDEV_CURRENT_SITE="config_suite"
+cd ~/Sites
+git clone git@git.drupal.org:project/$BDEV_CURRENT_SITE.git
+cd $BDEV_CURRENT_SITE
+cp ~/projects/.gitignore-ddev .gitignore
+ddev config --project-type=drupal11 --docroot=web
+orb
+ddev add-on get ddev/ddev-drupal-contrib
+ddev add-on get hanoii/ddev-drupal-contrib-extras
+ddev start
+ddev poser
+
+ddev symlink-project
+ddev config --update
+ddev restart
+ddev drush si -y
+ddev drush en $BDEV_CURRENT_SITE -y
+open $(ddev drush uli)
+ddev exec "cd web/core &amp;amp;&amp;amp; yarn install"
+
+# Temporary workaround on Mac because e0ipso's plugin only works for Linux for importing local OpenCode config
+mkdir -p $HOME/Sites/$BDEV_CURRENT_SITE/.ddev/homeadditions/.local/share
+ln -s $HOME/.local/share/opencode $HOME/Sites/$BDEV_CURRENT_SITE/.ddev/homeadditions/.local/share/opencode
+
+ddev add-on get e0ipso/ddev-playwright-cli
+ddev add-on get e0ipso/ddev-assistant-opencode
+ddev add-on get e0ipso/ddev-assistant-t3
+ddev restart
+
+# Allows running playwright-cli from inside the container
+#   without having to use the --config option
+# Symlinks .claude playwright skills to .agents folder for other harnesses. 
+ddev ssh
+
+rm .playwright/cli.config.json
+ln -s "$(pwd)/.ddev/playwright-cli/cli.config.json" .playwright/cli.config.json
+mkdir -p .agents/skills
+ln -s "$(pwd)/.claude/skills/playwright-cli" .agents/skills/playwright-cli
+exit
+
+npx kenkeep init --harnesses opencode
+npx kenkeep doctor
+npx kenkeep pack import e0ipso/kenkeep-pack-drupal
+npx strikethroo init --harnesses opencode
+npx skills add e0ipso/strikethroo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Strikethroo workflow: &lt;a href="https://strikethroo.canpicasoft.com/workflow.html"&gt;https://strikethroo.canpicasoft.com/workflow.html&lt;/a&gt; Kenkeep docs: &lt;a href="https://kenkeep.canpicasoft.com/"&gt;https://kenkeep.canpicasoft.com/&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;ddev t3 start&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;npx strikethroo serve&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-create-plan display a welcome message to new users&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-refine-plan 1, see review.xml&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-execute-blueprint 1&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-code-review 1, line 95 in example.module has a typo: "piece" should be "peace"&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T11:58:32-08:00" title="Monday, 2 November 2026 - 11:58" class="datetime"&gt;Mon, 2 Nov 2026 - 11:58&lt;/time&gt;
+&lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ddev" hreflang="en"&gt;DDEV&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 02 Nov 2026 19:58:32 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">179 at https://brookemahoney.com</guid>
+    </item>
+<item>
   <title>Notes for: Site Analysis and AI's Strengths and Limits, By David Hobbs</title>
   <link>https://brookemahoney.com/blog/notes-site-analysis-and-ais-strengths-and-limits-david-hobbs</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Notes for: Site Analysis and AI's Strengths and Limits, By David Hobbs&lt;/span&gt;
@@ -17,6 +110,14 @@
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T11:04:39-08:00" title="Monday, 2 November 2026 - 11:04" class="datetime"&gt;Mon, 2 Nov 2026 - 11:04&lt;/time&gt;
 &lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
 </description>
   <pubDate>Mon, 02 Nov 2026 19:04:39 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
@@ -33,6 +134,14 @@
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T10:58:09-08:00" title="Monday, 2 November 2026 - 10:58" class="datetime"&gt;Mon, 2 Nov 2026 - 10:58&lt;/time&gt;
 &lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
 </description>
   <pubDate>Mon, 02 Nov 2026 18:58:09 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
@@ -49,6 +158,13 @@
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-10-11T09:20:13-07:00" title="Sunday, 11 October 2026 - 09:20" class="datetime"&gt;Sun, 11 Oct 2026 - 09:20&lt;/time&gt;
 &lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
 </description>
   <pubDate>Sun, 11 Oct 2026 16:20:13 +0000</pubDate>
     <dc:creator>brooke</dc:creator>

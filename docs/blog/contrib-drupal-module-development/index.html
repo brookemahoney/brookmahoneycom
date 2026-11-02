@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/brooketheme2/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://brookemahoney.com/blog/contrib-drupal-module-development" />
+<link rel="shortlink" href="https://brookemahoney.com/node/179" />
+
+    <title>Contrib Drupal Module Development | Brooke Mahoney</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_C1k4Hd--3jJ_jcMckiCdAsdHcSPhzNER7G2SGFYrJMk.css?delta=0&amp;language=en&amp;theme=brooketheme2&amp;include=eJx9jksKgDAQQy9UP6j3kVaDVTsONONCT6-40o2LwMsji4SsusIiBE0VPOHC2whIP4Ffu-kIN2jGTVl8mk-4OE8x3bF-YfUu5bDTVH4GtCOhaOumczxokOfIBfXROug" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/3024.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_HArDUEEBxTVWAvV1vANrElORupSKLOK7lsKbCnDGuGs.css?delta=2&amp;language=en&amp;theme=brooketheme2&amp;include=eJx9jksKgDAQQy9UP6j3kVaDVTsONONCT6-40o2LwMsji4SsusIiBE0VPOHC2whIP4Ffu-kIN2jGTVl8mk-4OE8x3bF-YfUu5bDTVH4GtCOhaOumczxokOfIBfXROug" />
+
+    
+  </head>
+  <body class="path-node page-node-type-blog-post">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container">
+
+  <header>
+      <div class="region region-header">
+    <div id="block-brooketheme2-site-branding" class="block block-system block-system-branding-block">
+  
+    
+          <div class="site-name">
+      <a href="/" rel="home">Brooke Mahoney</a>
+    </div>
+    </div>
+
+  </div>
+
+  </header>
+
+  
+  
+
+  
+
+  
+
+  
+
+  <main>
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-brooketheme2-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Contrib Drupal Module Development</span>
+</h1>
+
+
+  </div>
+<div id="block-brooketheme2-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article class="node node--type-blog-post node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+    
+      <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items">
+              <div class="field__item"><p>One way to set up local Development for a contrib module using e0ipso's AI suite. See <a href="https://www.youtube.com/watch?v=q0R9e7KhBsg">Agentic Coding Harness for Drupal&nbsp;</a></p><ul><li>opt out of T3 telemetry by adding the following to <code>~/.ddev/.env</code><ul><li><code>T3CODE_TELEMETRY_ENABLED=false</code></li></ul></li><li>Install <a href="https://github.com/e0ipso/self-review">https://github.com/e0ipso/self-review</a></li><li>Then:</li></ul><pre><code class="language-plaintext">BDEV_CURRENT_SITE="config_suite"
+cd ~/Sites
+git clone git@git.drupal.org:project/$BDEV_CURRENT_SITE.git
+cd $BDEV_CURRENT_SITE
+cp ~/projects/.gitignore-ddev .gitignore
+ddev config --project-type=drupal11 --docroot=web
+orb
+ddev add-on get ddev/ddev-drupal-contrib
+ddev add-on get hanoii/ddev-drupal-contrib-extras
+ddev start
+ddev poser
+
+ddev symlink-project
+ddev config --update
+ddev restart
+ddev drush si -y
+ddev drush en $BDEV_CURRENT_SITE -y
+open $(ddev drush uli)
+ddev exec "cd web/core &amp;&amp; yarn install"
+
+# Temporary workaround on Mac because e0ipso's plugin only works for Linux for importing local OpenCode config
+mkdir -p $HOME/Sites/$BDEV_CURRENT_SITE/.ddev/homeadditions/.local/share
+ln -s $HOME/.local/share/opencode $HOME/Sites/$BDEV_CURRENT_SITE/.ddev/homeadditions/.local/share/opencode
+
+ddev add-on get e0ipso/ddev-playwright-cli
+ddev add-on get e0ipso/ddev-assistant-opencode
+ddev add-on get e0ipso/ddev-assistant-t3
+ddev restart
+
+# Allows running playwright-cli from inside the container
+#   without having to use the --config option
+# Symlinks .claude playwright skills to .agents folder for other harnesses. 
+ddev ssh
+
+rm .playwright/cli.config.json
+ln -s "$(pwd)/.ddev/playwright-cli/cli.config.json" .playwright/cli.config.json
+mkdir -p .agents/skills
+ln -s "$(pwd)/.claude/skills/playwright-cli" .agents/skills/playwright-cli
+exit
+
+npx kenkeep init --harnesses opencode
+npx kenkeep doctor
+npx kenkeep pack import e0ipso/kenkeep-pack-drupal
+npx strikethroo init --harnesses opencode
+npx skills add e0ipso/strikethroo
+</code></pre><p>Strikethroo workflow: <a href="https://strikethroo.canpicasoft.com/workflow.html">https://strikethroo.canpicasoft.com/workflow.html</a> Kenkeep docs: <a href="https://kenkeep.canpicasoft.com/">https://kenkeep.canpicasoft.com/</a></p><ul><li><code>ddev t3 start</code></li><li><code>npx strikethroo serve</code></li><li><code>/st-create-plan display a welcome message to new users</code></li><li><code>/st-refine-plan 1, see review.xml</code></li><li><code>/st-execute-blueprint 1</code></li><li><code>/st-code-review 1, line 95 in example.module has a typo: "piece" should be "peace"</code></li></ul></div>
+          </div>
+  
+  <div class="field field--name-field-tags field--type-entity-reference field--label-above">
+    <div class="field__label">Tags</div>
+          <div class="field__items">
+              <div class="field__item"><a href="/tags/ai" hreflang="en">AI</a></div>
+          <div class="field__item"><a href="/tags/drupal" hreflang="en">Drupal</a></div>
+          <div class="field__item"><a href="/tags/ddev" hreflang="en">DDEV</a></div>
+              </div>
+      </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+      <footer>
+        <div class="region region-footer">
+    <nav aria-labelledby="block-brooketheme2-footer-menu" id="block-brooketheme2-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-brooketheme2-footer-menu">Footer</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+              </li>
+                <li class="menu-item">
+        <a href="/contact" data-drupal-link-system-path="node/137">Contact</a>
+              </li>
+                <li class="menu-item">
+        <a href="/resume" data-drupal-link-system-path="node/149">Resume</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+    </footer>
+  
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/179","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"button_data":{"copy_enable":true,"copy_bg_transparent":false,"copy_bg_color":"#661eaa","copy_txt_color":"#ffffff","copy_btn_text":"Copy","success_bg_transparent":true,"success_bg_color":"#4243b1","success_txt_color":"#4caf50","copy_success_text":"Copied"},"user":{"uid":0,"permissionsHash":"2cfcdc45117054f2578ef0f31781981156300e7511e12a3596143f48b7a7dc3c"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0"></script>
+<script src="/sites/default/files/js/js_6N_LPgVDd9eHLAEAlRnLtCWmrMofVm5lzPaDKOICkc4.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=brooketheme2&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script src="/sites/default/files/js/js_KVWI1w2JgFwP2j5f3KcdiDsMqcv4RrfhXlnzcY5lGu4.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=brooketheme2&amp;include=eJzLyEzPyAHikvisYv0MJI5ecmlxSX4uANPEDOE"></script>
+
+  </body>
+</html>

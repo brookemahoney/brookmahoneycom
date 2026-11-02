@@ -7,12 +7,129 @@
     <language>en</language>
     
     <item>
+  <title>Matt Pocock's Wayfinder Skill Notes</title>
+  <link>https://brookemahoney.com/blog/matt-pococks-wayfinder-skill-notes</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Matt Pocock's Wayfinder Skill Notes&lt;/span&gt;
+
+      &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;h2&gt;Wayfinder Workflow&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Use &lt;code&gt;/wayfinder &amp;lt;prompt&amp;gt;&lt;/code&gt; to create a map with decision issues.&lt;/li&gt;&lt;li&gt;Wayfinder will ask you choose a destination: a buildable spec or an actual product.&lt;/li&gt;&lt;li&gt;After wayfinder has made the initial map, work through issues one at a time using &lt;code&gt;/wayfinder &amp;lt;ticket number&amp;gt;&lt;/code&gt; until all decisions are made. Sometimes new issues will be created while working on other issues.&lt;/li&gt;&lt;li&gt;Wayfinder will utilize other skills, such as /grill-with-docs, /prototype, and /research.&lt;ul&gt;&lt;li&gt;The map specifies when each of those other skills are to be used&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;The map also includes a list of 4 types of decision tickets:&lt;ul&gt;&lt;li&gt;research&lt;/li&gt;&lt;li&gt;prototype&lt;/li&gt;&lt;li&gt;grilling&lt;/li&gt;&lt;li&gt;task (things the agent can't quite do itself)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Once the map is made, then you can use &lt;code&gt;/to-spec&lt;/code&gt; to turn the map into a spec.&lt;/li&gt;&lt;li&gt;Then use &lt;code&gt;/to-tickets&lt;/code&gt; to create implementation tickets from the spec.&lt;/li&gt;&lt;li&gt;Use &lt;code&gt;/implement&lt;/code&gt; to implement one ticket at at time&lt;/li&gt;&lt;li&gt;Use &lt;code&gt;/implement-spec&lt;/code&gt; to have agents implement the whole spec AFK&lt;/li&gt;&lt;li&gt;Use &lt;code&gt;/code-review&lt;/code&gt; afterward&lt;/li&gt;&lt;li&gt;Use &lt;code&gt;/retro&lt;/code&gt; afterward to have the agent document what could have went better in the session.&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;Other mattpocock/skills that are helpful&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;/handoff: Compact the current conversation into a handoff document so another agent can continue the work.&lt;/li&gt;&lt;li&gt;/teach: Teach the user a new skill or concept over multiple sessions, using the current directory as a stateful teaching workspace.&lt;/li&gt;&lt;li&gt;/wait-what: Fire this the moment a message doesn't land.&lt;/li&gt;&lt;li&gt;/to-questionnaire: Turn a decision you can't answer alone into a Markdown questionnaire for the one person who can, filled in async, or together over a meeting. It grills you about the send (who it's for, what you need back), not the subject.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T12:01:53-08:00" title="Monday, 2 November 2026 - 12:01" class="datetime"&gt;Mon, 2 Nov 2026 - 12:01&lt;/time&gt;
+&lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 02 Nov 2026 20:01:53 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">181 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>DDEV</title>
+  <link>https://brookemahoney.com/blog/ddev</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;DDEV&lt;/span&gt;
+
+      &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;p&gt;Just some notes about DDEV&lt;/p&gt;&lt;p&gt;&lt;code&gt;ddev snapshot --name=seed&lt;/code&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;code&gt;ddev delete&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;code&gt;ddev start&lt;/code&gt;&lt;/p&gt;&lt;h2&gt;Addons for base Drupal configurations&lt;/h2&gt;&lt;h3&gt;Descriptions of 4 common ways to setup DDEV&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Add-on&lt;/th&gt;&lt;th&gt;Best for&lt;/th&gt;&lt;th&gt;Typical project layout&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="https://github.com/UltraBob/ddev-drupal-code-quality"&gt;&lt;code&gt;UltraBob/ddev-drupal-code-quality&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Full Drupal website projects where your site repo already contains Drupal code and custom code.&lt;/td&gt;&lt;td&gt;Existing site/project repo; installs code-quality configs and IDE shims in-place.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="https://github.com/ddev/ddev-drupal-contrib"&gt;&lt;code&gt;ddev/ddev-drupal-contrib&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drupal contrib module/theme development where the contrib project is the center of the repo.&lt;/td&gt;&lt;td&gt;Contrib project repo with Drupal scaffolded around it (symlink workflow).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="https://github.com/justafish/ddev-drupal-core-dev"&gt;&lt;code&gt;justafish/ddev-drupal-core-dev&lt;/code&gt;&lt;/a&gt; / &lt;a href="https://github.com/joachim-n/ddev-drupal-core-dev"&gt;&lt;code&gt;joachim-n/ddev-drupal-core-dev&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drupal core development.&lt;/td&gt;&lt;td&gt;Drupal core checkout or core-dev project template.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="https://addons.ddev.com/addons/amateescu/ddev-drupal-dev"&gt;https://addons.ddev.com/addons/amateescu/ddev-drupal-dev&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drupal core and contrib combined, see below&lt;/td&gt;&lt;td&gt;core git checkout as the project root.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;DDEV Drupal Dev from Andrei Mateescu of Tag1&lt;/h3&gt;&lt;p&gt;A DDEV add-on for working on Drupal core and contrib modules together, using a core git checkout as the project root.&lt;/p&gt;&lt;p&gt;Other add-ons target either core or contrib in isolation. This one is for when you need both: developing a contrib module against the latest core, fixing a core bug that affects contrib, or running contrib tests on a core patch.&lt;/p&gt;&lt;p&gt;Extra dependencies (contrib modules, Drush, dev tools) are managed through a &lt;code&gt;composer.local.json&lt;/code&gt; overlay, keeping core's &lt;code&gt;composer.json&lt;/code&gt; and &lt;code&gt;composer.lock&lt;/code&gt; untouched.&lt;/p&gt;&lt;p&gt;"You can work on multiple modules this way; each gets its own git checkout that you can commit and push to independently."&lt;/p&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T11:59:42-08:00" title="Monday, 2 November 2026 - 11:59" class="datetime"&gt;Mon, 2 Nov 2026 - 11:59&lt;/time&gt;
+&lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ddev" hreflang="en"&gt;DDEV&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 02 Nov 2026 19:59:42 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">180 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Contrib Drupal Module Development</title>
+  <link>https://brookemahoney.com/blog/contrib-drupal-module-development</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Contrib Drupal Module Development&lt;/span&gt;
+
+      &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;p&gt;One way to set up local Development for a contrib module using e0ipso's AI suite. See &lt;a href="https://www.youtube.com/watch?v=q0R9e7KhBsg"&gt;Agentic Coding Harness for Drupal&amp;nbsp;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;opt out of T3 telemetry by adding the following to &lt;code&gt;~/.ddev/.env&lt;/code&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;T3CODE_TELEMETRY_ENABLED=false&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Install &lt;a href="https://github.com/e0ipso/self-review"&gt;https://github.com/e0ipso/self-review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Then:&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;BDEV_CURRENT_SITE="config_suite"
+cd ~/Sites
+git clone git@git.drupal.org:project/$BDEV_CURRENT_SITE.git
+cd $BDEV_CURRENT_SITE
+cp ~/projects/.gitignore-ddev .gitignore
+ddev config --project-type=drupal11 --docroot=web
+orb
+ddev add-on get ddev/ddev-drupal-contrib
+ddev add-on get hanoii/ddev-drupal-contrib-extras
+ddev start
+ddev poser
+
+ddev symlink-project
+ddev config --update
+ddev restart
+ddev drush si -y
+ddev drush en $BDEV_CURRENT_SITE -y
+open $(ddev drush uli)
+ddev exec "cd web/core &amp;amp;&amp;amp; yarn install"
+
+# Temporary workaround on Mac because e0ipso's plugin only works for Linux for importing local OpenCode config
+mkdir -p $HOME/Sites/$BDEV_CURRENT_SITE/.ddev/homeadditions/.local/share
+ln -s $HOME/.local/share/opencode $HOME/Sites/$BDEV_CURRENT_SITE/.ddev/homeadditions/.local/share/opencode
+
+ddev add-on get e0ipso/ddev-playwright-cli
+ddev add-on get e0ipso/ddev-assistant-opencode
+ddev add-on get e0ipso/ddev-assistant-t3
+ddev restart
+
+# Allows running playwright-cli from inside the container
+#   without having to use the --config option
+# Symlinks .claude playwright skills to .agents folder for other harnesses. 
+ddev ssh
+
+rm .playwright/cli.config.json
+ln -s "$(pwd)/.ddev/playwright-cli/cli.config.json" .playwright/cli.config.json
+mkdir -p .agents/skills
+ln -s "$(pwd)/.claude/skills/playwright-cli" .agents/skills/playwright-cli
+exit
+
+npx kenkeep init --harnesses opencode
+npx kenkeep doctor
+npx kenkeep pack import e0ipso/kenkeep-pack-drupal
+npx strikethroo init --harnesses opencode
+npx skills add e0ipso/strikethroo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Strikethroo workflow: &lt;a href="https://strikethroo.canpicasoft.com/workflow.html"&gt;https://strikethroo.canpicasoft.com/workflow.html&lt;/a&gt; Kenkeep docs: &lt;a href="https://kenkeep.canpicasoft.com/"&gt;https://kenkeep.canpicasoft.com/&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;ddev t3 start&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;npx strikethroo serve&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-create-plan display a welcome message to new users&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-refine-plan 1, see review.xml&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-execute-blueprint 1&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-code-review 1, line 95 in example.module has a typo: "piece" should be "peace"&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T11:58:32-08:00" title="Monday, 2 November 2026 - 11:58" class="datetime"&gt;Mon, 2 Nov 2026 - 11:58&lt;/time&gt;
+&lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ddev" hreflang="en"&gt;DDEV&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 02 Nov 2026 19:58:32 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">179 at https://brookemahoney.com</guid>
+    </item>
+<item>
   <title>Recommended Reading</title>
   <link>https://brookemahoney.com/recommended-reading</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Recommended Reading&lt;/span&gt;
 
       &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items"&gt;
-              &lt;div class="field__item"&gt;&lt;p&gt;This is a list of links to things that I have found interesting.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;2026-09-29 &lt;a href="https://docs.google.com/presentation/d/1x1PojMJblIJUoY7Brsgb4V0KIjg_1B3vXE93UIUqubU/edit?slide=id.g412c196ba7a_3_2#slide=id.g412c196ba7a_3_2"&gt;AI-Assisted Contrib Module Maintenance - Google Slides&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-09-15 &lt;a href="https://www.linkedin.com/pulse/i-made-my-ai-harness-build-killer-feature-drupal-can-picasoft-owite/"&gt;&lt;span data-scaffold-immersive-reader-title&gt;I made my AI harness build a killer feature in Drupal&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-09-15 &lt;a href="https://www.morpht.com/blog/sitewide-governance-ai-answers-context-control-center-and-your-chatbot"&gt;Sitewide governance for AI answers: the Context Control Center and your chatbot&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-08-21 &lt;a href="https://gspikes.com/drupal-seo-modules/"&gt;The 10 Drupal SEO Modules That Matter in 2026 — and How to Configure Each One Properly&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-08-18 &lt;a href="https://newsletter.pragmaticengineer.com/p/the-great-engineering-leader-career-break"&gt;Headed for the Exit: the Great Engineering Leader Career Break&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-08-06 &lt;a href="https://www.tag1.com/blog/safer-ai-workflows-with-toolbelt-workspaces/"&gt;Building Safer AI Workflows in Drupal with Tool Belt and Workspaces&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-06-19 &lt;a href="https://www.devpanel.com/blog/drupal-hosting-without-vendor-lock-in/"&gt;Drupal Hosting Without Vendor Lock-In: Run Drupal on AWS, Azure, or Your Own Cloud - DevPanel&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-06-02 &lt;a href="https://www.youtube.com/watch?v=Li0MKrKKMeQ"&gt;Drupal AI Learners Club — How to Enhance Drupal Development with AI with Mateu Aguiló Bosch (e0ipso) - YouTube&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-05-22 &lt;a href="https://camoa.github.io/dev-guides/"&gt;Camoa Dev Guides&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-05-22 &lt;a href="https://project.pages.drupalcode.org/ai_learners/slides/2026-05-22-whos-driving-this-thing.html"&gt;AI Learners Club: Who's Driving This Thing? Using Claude Code for Drupal Without Losing the Wheel&amp;nbsp;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-04-23 &lt;a href="https://www.tag1.com/blog/structure-is-freedom-ai-agent-security/"&gt;Structure Is Freedom: A Practical Framework for AI Agent Security - Tag1 Insights&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;2026-02-11 &lt;a href="https://dri.es/drupal-ai-roadmap-for-2026"&gt;Drupal's AI roadmap for 2026&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+              &lt;div class="field__item"&gt;&lt;p&gt;This is a list of links to things that I have found interesting.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;2026-09-29 &lt;a href="https://docs.google.com/presentation/d/1x1PojMJblIJUoY7Brsgb4V0KIjg_1B3vXE93UIUqubU/edit?slide=id.g412c196ba7a_3_2#slide=id.g412c196ba7a_3_2"&gt;AI-Assisted Contrib Module Maintenance - Google Slides&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-09-15 &lt;a href="https://www.linkedin.com/pulse/i-made-my-ai-harness-build-killer-feature-drupal-can-picasoft-owite/"&gt;&lt;span data-scaffold-immersive-reader-title&gt;I made my AI harness build a killer feature in Drupal&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-09-15 &lt;a href="https://www.morpht.com/blog/sitewide-governance-ai-answers-context-control-center-and-your-chatbot"&gt;Sitewide governance for AI answers: the Context Control Center and your chatbot&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-08-21 &lt;a href="https://gspikes.com/drupal-seo-modules/"&gt;The 10 Drupal SEO Modules That Matter in 2026 — and How to Configure Each One Properly&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-08-18 &lt;a href="https://newsletter.pragmaticengineer.com/p/the-great-engineering-leader-career-break"&gt;Headed for the Exit: the Great Engineering Leader Career Break&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-07-15 &lt;a href="https://www.youtube.com/watch?v=q0R9e7KhBsg"&gt;Agentic Coding Harness for Drupal&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-08-06 &lt;a href="https://www.tag1.com/blog/safer-ai-workflows-with-toolbelt-workspaces/"&gt;Building Safer AI Workflows in Drupal with Tool Belt and Workspaces&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-06-19 &lt;a href="https://www.devpanel.com/blog/drupal-hosting-without-vendor-lock-in/"&gt;Drupal Hosting Without Vendor Lock-In: Run Drupal on AWS, Azure, or Your Own Cloud - DevPanel&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-06-02 &lt;a href="https://www.youtube.com/watch?v=Li0MKrKKMeQ"&gt;Drupal AI Learners Club — How to Enhance Drupal Development with AI with Mateu Aguiló Bosch (e0ipso) - YouTube&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-05-22 &lt;a href="https://camoa.github.io/dev-guides/"&gt;Camoa Dev Guides&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-05-22 &lt;a href="https://project.pages.drupalcode.org/ai_learners/slides/2026-05-22-whos-driving-this-thing.html"&gt;AI Learners Club: Who's Driving This Thing? Using Claude Code for Drupal Without Losing the Wheel&amp;nbsp;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-04-23 &lt;a href="https://www.tag1.com/blog/structure-is-freedom-ai-agent-security/"&gt;Structure Is Freedom: A Practical Framework for AI Agent Security - Tag1 Insights&lt;/a&gt;&lt;/li&gt;&lt;li&gt;2026-02-11 &lt;a href="https://dri.es/drupal-ai-roadmap-for-2026"&gt;Drupal's AI roadmap for 2026&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
           &lt;/div&gt;
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T11:10:08-08:00" title="Monday, 2 November 2026 - 11:10" class="datetime"&gt;Mon, 2 Nov 2026 - 11:10&lt;/time&gt;
@@ -33,6 +150,14 @@
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T11:04:39-08:00" title="Monday, 2 November 2026 - 11:04" class="datetime"&gt;Mon, 2 Nov 2026 - 11:04&lt;/time&gt;
 &lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
 </description>
   <pubDate>Mon, 02 Nov 2026 19:04:39 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
@@ -49,6 +174,14 @@
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T10:58:09-08:00" title="Monday, 2 November 2026 - 10:58" class="datetime"&gt;Mon, 2 Nov 2026 - 10:58&lt;/time&gt;
 &lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
 </description>
   <pubDate>Mon, 02 Nov 2026 18:58:09 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
@@ -122,42 +255,6 @@
   <pubDate>Sun, 01 Nov 2026 23:49:35 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
     <guid isPermaLink="false">169 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>Tourette's Syndrome (TS)</title>
-  <link>https://brookemahoney.com/diagnoses/tourettes-syndrome-ts</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Tourette's Syndrome (TS)&lt;/span&gt;
-&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:49:12-08:00" title="Sunday, 1 November 2026 - 15:49" class="datetime"&gt;Sun, 1 Nov 2026 - 15:49&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Sun, 01 Nov 2026 23:49:12 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">168 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>Major Depressive Disorder (MDD)</title>
-  <link>https://brookemahoney.com/diagnoses/major-depressive-disorder-mdd</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Major Depressive Disorder (MDD)&lt;/span&gt;
-&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:48:54-08:00" title="Sunday, 1 November 2026 - 15:48" class="datetime"&gt;Sun, 1 Nov 2026 - 15:48&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Sun, 01 Nov 2026 23:48:54 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">167 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>Obsessive Compulsive Disorder (OCD)</title>
-  <link>https://brookemahoney.com/diagnoses/obsessive-compulsive-disorder-ocd</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Obsessive Compulsive Disorder (OCD)&lt;/span&gt;
-&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:48:39-08:00" title="Sunday, 1 November 2026 - 15:48" class="datetime"&gt;Sun, 1 Nov 2026 - 15:48&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Sun, 01 Nov 2026 23:48:39 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">166 at https://brookemahoney.com</guid>
     </item>
 
   </channel>

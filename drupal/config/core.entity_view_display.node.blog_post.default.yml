@@ -30,10 +30,17 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
-hidden:
-  field_tags: true
+hidden: {  }

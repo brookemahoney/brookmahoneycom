@@ -7,6 +7,100 @@
     <language>en</language>
     
     <item>
+  <title>DDEV</title>
+  <link>https://brookemahoney.com/blog/ddev</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;DDEV&lt;/span&gt;
+
+      &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;p&gt;Just some notes about DDEV&lt;/p&gt;&lt;p&gt;&lt;code&gt;ddev snapshot --name=seed&lt;/code&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;code&gt;ddev delete&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;code&gt;ddev start&lt;/code&gt;&lt;/p&gt;&lt;h2&gt;Addons for base Drupal configurations&lt;/h2&gt;&lt;h3&gt;Descriptions of 4 common ways to setup DDEV&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Add-on&lt;/th&gt;&lt;th&gt;Best for&lt;/th&gt;&lt;th&gt;Typical project layout&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="https://github.com/UltraBob/ddev-drupal-code-quality"&gt;&lt;code&gt;UltraBob/ddev-drupal-code-quality&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Full Drupal website projects where your site repo already contains Drupal code and custom code.&lt;/td&gt;&lt;td&gt;Existing site/project repo; installs code-quality configs and IDE shims in-place.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="https://github.com/ddev/ddev-drupal-contrib"&gt;&lt;code&gt;ddev/ddev-drupal-contrib&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drupal contrib module/theme development where the contrib project is the center of the repo.&lt;/td&gt;&lt;td&gt;Contrib project repo with Drupal scaffolded around it (symlink workflow).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="https://github.com/justafish/ddev-drupal-core-dev"&gt;&lt;code&gt;justafish/ddev-drupal-core-dev&lt;/code&gt;&lt;/a&gt; / &lt;a href="https://github.com/joachim-n/ddev-drupal-core-dev"&gt;&lt;code&gt;joachim-n/ddev-drupal-core-dev&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drupal core development.&lt;/td&gt;&lt;td&gt;Drupal core checkout or core-dev project template.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="https://addons.ddev.com/addons/amateescu/ddev-drupal-dev"&gt;https://addons.ddev.com/addons/amateescu/ddev-drupal-dev&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drupal core and contrib combined, see below&lt;/td&gt;&lt;td&gt;core git checkout as the project root.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;DDEV Drupal Dev from Andrei Mateescu of Tag1&lt;/h3&gt;&lt;p&gt;A DDEV add-on for working on Drupal core and contrib modules together, using a core git checkout as the project root.&lt;/p&gt;&lt;p&gt;Other add-ons target either core or contrib in isolation. This one is for when you need both: developing a contrib module against the latest core, fixing a core bug that affects contrib, or running contrib tests on a core patch.&lt;/p&gt;&lt;p&gt;Extra dependencies (contrib modules, Drush, dev tools) are managed through a &lt;code&gt;composer.local.json&lt;/code&gt; overlay, keeping core's &lt;code&gt;composer.json&lt;/code&gt; and &lt;code&gt;composer.lock&lt;/code&gt; untouched.&lt;/p&gt;&lt;p&gt;"You can work on multiple modules this way; each gets its own git checkout that you can commit and push to independently."&lt;/p&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T11:59:42-08:00" title="Monday, 2 November 2026 - 11:59" class="datetime"&gt;Mon, 2 Nov 2026 - 11:59&lt;/time&gt;
+&lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ddev" hreflang="en"&gt;DDEV&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 02 Nov 2026 19:59:42 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">180 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Contrib Drupal Module Development</title>
+  <link>https://brookemahoney.com/blog/contrib-drupal-module-development</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Contrib Drupal Module Development&lt;/span&gt;
+
+      &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;p&gt;One way to set up local Development for a contrib module using e0ipso's AI suite. See &lt;a href="https://www.youtube.com/watch?v=q0R9e7KhBsg"&gt;Agentic Coding Harness for Drupal&amp;nbsp;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;opt out of T3 telemetry by adding the following to &lt;code&gt;~/.ddev/.env&lt;/code&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;T3CODE_TELEMETRY_ENABLED=false&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Install &lt;a href="https://github.com/e0ipso/self-review"&gt;https://github.com/e0ipso/self-review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Then:&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;BDEV_CURRENT_SITE="config_suite"
+cd ~/Sites
+git clone git@git.drupal.org:project/$BDEV_CURRENT_SITE.git
+cd $BDEV_CURRENT_SITE
+cp ~/projects/.gitignore-ddev .gitignore
+ddev config --project-type=drupal11 --docroot=web
+orb
+ddev add-on get ddev/ddev-drupal-contrib
+ddev add-on get hanoii/ddev-drupal-contrib-extras
+ddev start
+ddev poser
+
+ddev symlink-project
+ddev config --update
+ddev restart
+ddev drush si -y
+ddev drush en $BDEV_CURRENT_SITE -y
+open $(ddev drush uli)
+ddev exec "cd web/core &amp;amp;&amp;amp; yarn install"
+
+# Temporary workaround on Mac because e0ipso's plugin only works for Linux for importing local OpenCode config
+mkdir -p $HOME/Sites/$BDEV_CURRENT_SITE/.ddev/homeadditions/.local/share
+ln -s $HOME/.local/share/opencode $HOME/Sites/$BDEV_CURRENT_SITE/.ddev/homeadditions/.local/share/opencode
+
+ddev add-on get e0ipso/ddev-playwright-cli
+ddev add-on get e0ipso/ddev-assistant-opencode
+ddev add-on get e0ipso/ddev-assistant-t3
+ddev restart
+
+# Allows running playwright-cli from inside the container
+#   without having to use the --config option
+# Symlinks .claude playwright skills to .agents folder for other harnesses. 
+ddev ssh
+
+rm .playwright/cli.config.json
+ln -s "$(pwd)/.ddev/playwright-cli/cli.config.json" .playwright/cli.config.json
+mkdir -p .agents/skills
+ln -s "$(pwd)/.claude/skills/playwright-cli" .agents/skills/playwright-cli
+exit
+
+npx kenkeep init --harnesses opencode
+npx kenkeep doctor
+npx kenkeep pack import e0ipso/kenkeep-pack-drupal
+npx strikethroo init --harnesses opencode
+npx skills add e0ipso/strikethroo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Strikethroo workflow: &lt;a href="https://strikethroo.canpicasoft.com/workflow.html"&gt;https://strikethroo.canpicasoft.com/workflow.html&lt;/a&gt; Kenkeep docs: &lt;a href="https://kenkeep.canpicasoft.com/"&gt;https://kenkeep.canpicasoft.com/&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;ddev t3 start&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;npx strikethroo serve&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-create-plan display a welcome message to new users&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-refine-plan 1, see review.xml&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-execute-blueprint 1&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;/st-code-review 1, line 95 in example.module has a typo: "piece" should be "peace"&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T11:58:32-08:00" title="Monday, 2 November 2026 - 11:58" class="datetime"&gt;Mon, 2 Nov 2026 - 11:58&lt;/time&gt;
+&lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ddev" hreflang="en"&gt;DDEV&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 02 Nov 2026 19:58:32 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">179 at https://brookemahoney.com</guid>
+    </item>
+<item>
   <title>Notes for: Site Analysis and AI's Strengths and Limits, By David Hobbs</title>
   <link>https://brookemahoney.com/blog/notes-site-analysis-and-ais-strengths-and-limits-david-hobbs</link>
   <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Notes for: Site Analysis and AI's Strengths and Limits, By David Hobbs&lt;/span&gt;
@@ -17,6 +111,14 @@
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T11:04:39-08:00" title="Monday, 2 November 2026 - 11:04" class="datetime"&gt;Mon, 2 Nov 2026 - 11:04&lt;/time&gt;
 &lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
 </description>
   <pubDate>Mon, 02 Nov 2026 19:04:39 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
@@ -33,6 +135,14 @@
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-02T10:58:09-08:00" title="Monday, 2 November 2026 - 10:58" class="datetime"&gt;Mon, 2 Nov 2026 - 10:58&lt;/time&gt;
 &lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/ai" hreflang="en"&gt;AI&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
 </description>
   <pubDate>Mon, 02 Nov 2026 18:58:09 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
@@ -91,6 +201,13 @@ npx canvas login --client-id code-components
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-10-06T18:06:33-07:00" title="Tuesday, 6 October 2026 - 18:06" class="datetime"&gt;Tue, 6 Oct 2026 - 18:06&lt;/time&gt;
 &lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
 </description>
   <pubDate>Wed, 07 Oct 2026 01:06:33 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
@@ -139,6 +256,13 @@ brookemahoneycomBuild() {
   &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
 &lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-17T13:46:57-07:00" title="Wednesday, 17 September 2025 - 13:46" class="datetime"&gt;Wed, 17 Sep 2025 - 13:46&lt;/time&gt;
 &lt;/span&gt;
+
+  &lt;div class="field field--name-field-tags field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field__label"&gt;Tags&lt;/div&gt;
+          &lt;div class="field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;a href="https://brookemahoney.com/tags/drupal" hreflang="en"&gt;Drupal&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
 </description>
   <pubDate>Wed, 17 Sep 2025 20:46:57 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
