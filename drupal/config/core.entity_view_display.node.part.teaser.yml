@@ -1,0 +1,32 @@
+uuid: 44f80e73-fb95-45a3-8958-d7bb8fd3a0aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.part.body
+    - field.field.node.part.field_content_reference
+    - node.type.part
+  module:
+    - text
+    - user
+id: node.part.teaser
+targetEntityType: node
+bundle: part
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_content_reference: true

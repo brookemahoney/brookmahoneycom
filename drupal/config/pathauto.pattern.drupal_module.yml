@@ -1,0 +1,23 @@
+uuid: 63f79b01-4834-4120-8c9e-e6d819b94ff2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.drupal_module
+  module:
+    - node
+id: drupal_module
+label: 'Drupal Module'
+type: 'canonical_entities:node'
+pattern: '/drupal-modules/[node:title]'
+selection_criteria:
+  282f6581-097e-4901-8180-2684cfdb4190:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      drupal_module: drupal_module
+selection_logic: and
+weight: -5
+relationships: {  }

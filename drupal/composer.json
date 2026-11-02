@@ -17,6 +17,8 @@
     "require": {
         "composer/installers": "^2.3",
         "drupal/backup_migrate": "^5.1",
+        "drupal/ckeditor5_markdown": "^1.0",
+        "drupal/ckeditor5_roundtrip": "^1.0",
         "drupal/core-composer-scaffold": "^11.2",
         "drupal/core-project-message": "^11.2",
         "drupal/core-recipe-unpack": "^11.2",

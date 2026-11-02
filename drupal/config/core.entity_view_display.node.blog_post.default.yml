@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_content_reference
     - field.field.node.blog_post.field_tags
     - node.type.blog_post
   module:
@@ -20,6 +21,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_content_reference:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
     region: content
   links:
     settings: {  }

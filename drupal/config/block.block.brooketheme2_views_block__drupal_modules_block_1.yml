@@ -1,0 +1,29 @@
+uuid: 5806556f-cb3f-4909-b93c-5478c8e381ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.drupal_modules
+  module:
+    - system
+    - views
+  theme:
+    - brooketheme2
+id: brooketheme2_views_block__drupal_modules_block_1
+theme: brooketheme2
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:drupal_modules-block_1'
+settings:
+  id: 'views_block:drupal_modules-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /drupal-modules

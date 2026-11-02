@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_content_reference
     - field.field.node.blog_post.field_tags
     - node.type.blog_post
   module:
@@ -29,6 +30,16 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_content_reference:
+    type: entity_reference_autocomplete
+    weight: 121
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete
@@ -70,6 +81,11 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   promote: true

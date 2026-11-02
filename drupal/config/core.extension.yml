@@ -8,6 +8,8 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor5: 0
+  ckeditor5_markdown: 0
+  ckeditor5_roundtrip: 0
   config: 0
   contextual: 0
   datetime: 0
@@ -51,4 +53,5 @@ module:
 theme:
   default_admin: 0
   brooketheme2: 0
+  claro: 0
 profile: standard

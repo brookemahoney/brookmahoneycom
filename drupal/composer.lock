@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bdc4254a363a2aecbc0a60e5cab389d8",
+    "content-hash": "79dcaa4d9aa87b194285c844d786f953",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1033,6 +1033,104 @@
                 "issues": "https://www.drupal.org/project/issues/backup_migrate",
                 "slack": "https://drupal.slack.com/messages/C7C4M4QJV/details/"
             }
+        },
+        {
+            "name": "drupal/ckeditor5_markdown",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor5_markdown.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor5_markdown-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "ffd2e6805007910651291a49dcad56143dbdd786"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11 || ^12"
+            },
+            "require-dev": {
+                "drush/drush": "^13"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1781867794",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gedur",
+                    "homepage": "https://www.drupal.org/user/600158"
+                }
+            ],
+            "description": "Extends CKEditor5 with Markdown support: Markdown paste to HTML.",
+            "homepage": "https://www.drupal.org/project/ckeditor5_markdown",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor5_markdown"
+            },
+            "published-time": "2026-06-19T11:16:14+00:00"
+        },
+        {
+            "name": "drupal/ckeditor5_roundtrip",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor5_roundtrip.git",
+                "reference": "1.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor5_roundtrip-1.0.2.zip",
+                "reference": "1.0.2",
+                "shasum": "01cca95295f0b387e8c80097ff8367b6460b84bb"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11"
+            },
+            "require-dev": {
+                "drupal/core-dev": "^10.3 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.2",
+                    "datestamp": "1792397202",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nishchit Dayal",
+                    "homepage": "https://www.drupal.org/u/nishchitdayal",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Fixes HTML content loss and mutation through CKEditor 5 source/WYSIWYG editing cycles. Provides independent opt-in plugins for script tags, empty anchors, list IDs, table class injection, and legacy HTML4 elements.",
+            "homepage": "https://www.drupal.org/project/ckeditor5_roundtrip",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor5_roundtrip",
+                "issues": "https://www.drupal.org/project/issues/ckeditor5_roundtrip"
+            },
+            "published-time": "2026-10-19T08:05:20+00:00"
         },
         {
             "name": "drupal/core",

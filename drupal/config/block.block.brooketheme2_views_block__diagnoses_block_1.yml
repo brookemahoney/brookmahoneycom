@@ -1,0 +1,29 @@
+uuid: 951b6397-24e6-4ae8-a342-63ec91cdc04a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.diagnoses
+  module:
+    - system
+    - views
+  theme:
+    - brooketheme2
+id: brooketheme2_views_block__diagnoses_block_1
+theme: brooketheme2
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:diagnoses-block_1'
+settings:
+  id: 'views_block:diagnoses-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /diagnoses

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_content_reference
     - node.type.page
   module:
     - path
@@ -28,6 +29,16 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_content_reference:
+    type: entity_reference_autocomplete
+    weight: 121
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path
@@ -73,5 +84,10 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

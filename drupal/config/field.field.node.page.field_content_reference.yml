@@ -1,0 +1,36 @@
+uuid: dfb97ac5-a236-4db7-987f-252744e736cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_reference
+    - node.type.blog_post
+    - node.type.diagnosis
+    - node.type.idea
+    - node.type.page
+    - node.type.part
+id: node.page.field_content_reference
+field_name: field_content_reference
+entity_type: node
+bundle: page
+label: 'Content Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blog_post: blog_post
+      diagnosis: diagnosis
+      idea: idea
+      page: page
+      part: part
+    sort:
+      field: changed
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: idea
+field_type: entity_reference

@@ -7,186 +7,128 @@
     <language>en</language>
     
     <item>
-  <title>Distillation of "LIVE: Uncle Bob on Software Fundamentals in the Age of AI"</title>
-  <link>https://brookemahoney.com/blog/distillation-live-uncle-bob-software-fundamentals-age-ai</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Distillation of "LIVE: Uncle Bob on Software Fundamentals in the Age of AI"&lt;/span&gt;
+  <title>Context Control Center (ai_context)</title>
+  <link>https://brookemahoney.com/drupal-modules/context-control-center-aicontext</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Context Control Center (ai_context)&lt;/span&gt;
 
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;This page has my notes about the youtube video that Matt Pocock produced called "LIVE: Uncle Bob on Software Fundamentals in the Age of AI". The video can be found here: &lt;a class="external-link" href="https://www.youtube.com/watch?v=zcLPGC-tvgk" target="_blank" rel="noopener nofollow"&gt;https://www.youtube.com/watch?v=zcLPGC-tvgk&lt;/a&gt;&lt;/p&gt;&lt;h2 data-heading="Main Takeaways"&gt;Main Takeaways&lt;/h2&gt;&lt;ul&gt;&lt;li data-list-item-id="eb2f9bc07ff740f207b7b2064fe8554b7"&gt;Bob describes how he has agents with specific jobs that handoff to each other in a workflow.&lt;/li&gt;&lt;li data-list-item-id="ee00bb11d27b903a1f96f90eac84ffded"&gt;Bob uses mutation testing&lt;ul&gt;&lt;li data-list-item-id="e5229d39139a05cbb27405fa411be5470"&gt;ie. change + to -, === to !=, false to true, etc, and the test suite should fail.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-list-item-id="ee96ccfeabb8bc1fc6e70f05efe385714"&gt;A main concept is: Agents fumble with long context, just like humans.&lt;ul&gt;&lt;li data-list-item-id="e6b22a454e011deaad5bdd23cf3634032"&gt;We have limited short term memory.&lt;/li&gt;&lt;li data-list-item-id="e02e04c6ea3689459d80a6ef378ac75de"&gt;When we run out of short term memory, our work gets messy.&lt;/li&gt;&lt;li data-list-item-id="e88c8a8170e50ce0762385a1d8ee2846a"&gt;Agents have longer and perfect short-term memory.&lt;/li&gt;&lt;li data-list-item-id="eb445780872799872b1d847855791b2f5"&gt;Humans don't read all of what agents expect them to, and agents don't read all of what humans expect them to.&lt;/li&gt;&lt;li data-list-item-id="ed86aa48b539eff31c02879d9e5f158fb"&gt;19:31 "when you focus the agents down to a single task, you're keeping the context window under control. The lost in the middle problem becomes much less of a problem."&lt;/li&gt;&lt;li data-list-item-id="eb4428b2d5c2b287f6b641539beebf622"&gt;29:34 "if you compartmentalize nicely works pretty well just like a human."&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-list-item-id="e13d2fef9e8c4c638c783763ab615c3b6"&gt;Bob uses an agile mindset when working with agents (instead of a waterfall-like approach with very rigid specs and planning beforehand).&lt;ul&gt;&lt;li data-list-item-id="eaa40844dca35ca3f27ea0d976a725612"&gt;36:49 "Wait a minute. All this heavy upfront planning makes a mess of everything cuz what comes out at the end doesn't look anything like the plan and never has."&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-list-item-id="eeb9202327f33ae1043e42cf4ed9a6bea"&gt;Bob uses TDD when he codes but allows agents to write a function first and the test second.&lt;ul&gt;&lt;li data-list-item-id="ea0561ded3b6e53f5adf4ece252c54f6d"&gt;More details at 34:37 - 35:39&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 data-heading="Bob's Agents"&gt;Bob's Agents&lt;/h2&gt;&lt;h3 data-heading="Specifier Agents: Gherkin Specifier Agent and QA Procedure Specifier Agent"&gt;Specifier Agents: Gherkin Specifier Agent and QA Procedure Specifier Agent&lt;/h3&gt;&lt;p&gt;These agents' job is to take a human-written document and turn it into another type of document.&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="efaefedf6e8b966342b7247fa4c414ff0"&gt;Gherkin Specifier Agent: Creates a high level acceptance test using Gherkin&lt;/li&gt;&lt;li data-list-item-id="e13abbc74a59333b366949e80ecadffd8"&gt;QA Procedure Agent: Creates "essentially a system test"&lt;ul&gt;&lt;li data-list-item-id="e21887cc5da0ec65f16af18622ef0e47c"&gt;Example of QA Procedure Agent from transcript:&lt;ul&gt;&lt;li data-list-item-id="edc420a2c162e87052c84ccfc487485c7"&gt;20:49 "I have them write it from a human's point of view:&lt;ul&gt;&lt;li data-list-item-id="eecc26aea619797804a70067d4da5879e"&gt;You are a human.&lt;/li&gt;&lt;li data-list-item-id="e7816e0700ae8de38a79acb21e80b1330"&gt;You are operating this system at the UI.&lt;/li&gt;&lt;li data-list-item-id="ed60be59b3103e6e2a465f3bfb60c2588"&gt;You must prove that the system works."&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-heading="Coder / Implementer"&gt;Coder / Implementer&lt;/h3&gt;&lt;p&gt;This agent's job is to&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="e20463f7f8738c10a34c85baa4cd65175"&gt;write unit tests&lt;/li&gt;&lt;li data-list-item-id="e561dea896b762abb116c626c94ee9c04"&gt;write the code&lt;/li&gt;&lt;li data-list-item-id="ec385a91a9f29bebef9daad7036bb563a"&gt;get the Gherkin working&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-heading="Cleaner"&gt;Cleaner&lt;/h3&gt;&lt;p&gt;This agent's job is to&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="e66d7898e4b991c8ee56a886ae82b1f8f"&gt;Perform general code review (Change Risk Anti-Patterns)&lt;/li&gt;&lt;li data-list-item-id="ef1e8d9af79b56e993a4079bb6a38767c"&gt;then clean up the mess in the code that the coder/implementer inevitably left&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-heading="Hardener"&gt;Hardener&lt;/h3&gt;&lt;p&gt;This agent's job is to&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="e11dba0b810993139777d67f86518865a"&gt;Run mutation testing&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-heading="QA Agent"&gt;QA Agent&lt;/h3&gt;&lt;p&gt;This agent's job is to&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="edf28481cb0c75c5d31b9424f79eb0951"&gt;Turn "the written QA document into an executable script that manipulates the system and comes up with a deterministic result"&lt;/li&gt;&lt;/ul&gt;&lt;h2 data-heading="CRAP (Change Risk Anti-Patterns)"&gt;CRAP (Change Risk Anti-Patterns)&lt;/h2&gt;&lt;p&gt;CRAP (Change Risk Anti-Patterns) analysis is a metric used to identify code that is highly complex and lacks adequate test coverage, making it risky and difficult to maintain.&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="ec7e6b2dc5e8a3bce26379bf9c96a2b8a"&gt;43:44 Regarding CRAP, he has his agents write him his own crap tools for each language he writes in (Closure, Java, Go)&lt;/li&gt;&lt;li data-list-item-id="e3da90dfcef84c3fa43aeb30b788bc62f"&gt;43:50 What I tell people is don't download those. I wrote them for me. What you should do is point your agents at them, have the agents look at them, and then build one for you.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-10-11T09:20:13-07:00" title="Sunday, 11 October 2026 - 09:20" class="datetime"&gt;Sun, 11 Oct 2026 - 09:20&lt;/time&gt;
+      &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__items"&gt;
+              &lt;div class="field__item"&gt;&lt;p&gt;Context can include:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Accessibility&lt;/li&gt;&lt;li&gt;Approvals&lt;/li&gt;&lt;li&gt;Banned words&lt;/li&gt;&lt;li&gt;Brand voice&lt;/li&gt;&lt;li&gt;Disclaimers&lt;/li&gt;&lt;li&gt;Events&lt;/li&gt;&lt;li&gt;FAQS&lt;/li&gt;&lt;li&gt;Journey maps&lt;/li&gt;&lt;li&gt;Languages&lt;/li&gt;&lt;li&gt;Localization&lt;/li&gt;&lt;li&gt;Naming rules&lt;/li&gt;&lt;li&gt;Page rules&lt;/li&gt;&lt;li&gt;Partners&lt;/li&gt;&lt;li&gt;Positioning&lt;/li&gt;&lt;li&gt;Press kit&lt;/li&gt;&lt;li&gt;Pricing&lt;/li&gt;&lt;li&gt;Privacy&lt;/li&gt;&lt;li&gt;Product list&lt;/li&gt;&lt;li&gt;Return policy&lt;/li&gt;&lt;li&gt;SEO rules&lt;/li&gt;&lt;li&gt;Services&lt;/li&gt;&lt;li&gt;Style guide&lt;/li&gt;&lt;li&gt;Support hours&lt;/li&gt;&lt;li&gt;Team bios&lt;/li&gt;&lt;li&gt;Templates&lt;/li&gt;&lt;li&gt;Terminology&lt;/li&gt;&lt;li&gt;Testimonials&lt;/li&gt;&lt;li&gt;Tone of voice&lt;/li&gt;&lt;li&gt;Value props&lt;/li&gt;&lt;li&gt;Writing rules&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+          &lt;/div&gt;
+  &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T16:23:35-08:00" title="Sunday, 1 November 2026 - 16:23" class="datetime"&gt;Sun, 1 Nov 2026 - 16:23&lt;/time&gt;
 &lt;/span&gt;
 </description>
-  <pubDate>Sun, 11 Oct 2026 16:20:13 +0000</pubDate>
+  <pubDate>Mon, 02 Nov 2026 00:23:35 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">151 at https://brookemahoney.com</guid>
+    <guid isPermaLink="false">171 at https://brookemahoney.com</guid>
     </item>
 <item>
-  <title>Drupal Headless Code Components Setup - My First Attempt</title>
-  <link>https://brookemahoney.com/blog/drupal-headless-code-components-setup-my-first-attempt</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Drupal Headless Code Components Setup - My First Attempt&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;h2 data-heading="Overview"&gt;Overview&lt;/h2&gt;&lt;p&gt;This is an overview of my first attempt at working with Drupal Code Components and headless Next.js. The purpose of this page is to document my poor understanding of how to set this up so that I may revisit it when I know better and so that I may mentor other people to do better.&lt;/p&gt;&lt;p&gt;See &lt;a class="external-link" href="https://project.pages.drupalcode.org/canvas/headless/setup/" target="_blank" rel="noopener nofollow"&gt;https://project.pages.drupalcode.org/canvas/headless/setup/&lt;/a&gt; for the offical documentation.&lt;/p&gt;&lt;h2 data-heading="Outline of Setup Steps"&gt;Outline of Setup Steps&lt;/h2&gt;&lt;ul&gt;&lt;li data-list-item-id="e380ff679f58638f8520ecd6e703560bd"&gt;Create a folder for the project and cd into it.&lt;/li&gt;&lt;li data-list-item-id="eccf5125973286850741f44448a191e96"&gt;Configure DDEV for Drupal with some extra modules needed for the Canvas Headless (canvas_headless) module&lt;/li&gt;&lt;li data-list-item-id="e2efb13ff70788842eade998e433a6e88"&gt;Create a folder to store OAuth keys.&lt;/li&gt;&lt;li data-list-item-id="e1e3979a27aa8b91407e50774a3187e19"&gt;Enable the Canvas Headless and the Canvas OAuth modules&lt;/li&gt;&lt;li data-list-item-id="e971e806d54fe5c9f2f1a60af5f7f6d19"&gt;Log in with Chrome (&lt;a class="external-link" href="https://project.pages.drupalcode.org/canvas/headless/setup/#prerequisites" target="_blank" rel="noopener nofollow" aria-label="https://project.pages.drupalcode.org/canvas/headless/setup/#prerequisites" data-tooltip-position="top"&gt;the docs say you have to use a Chromium-based browser, so no Firefox of Safari.&lt;/a&gt;.)&lt;/li&gt;&lt;li data-list-item-id="e17888cb5d46b4c3f134748a4561fb533"&gt;Scaffold the Canvas Headless code, in a new folder called &lt;code&gt;headless&lt;/code&gt;, with support for Next.js&lt;/li&gt;&lt;li data-list-item-id="e3fe16d877258bb9f30dfd9ff9daf9786"&gt;Get Vercel AI agent skills to help your agents understand the Next/React conventions.&lt;/li&gt;&lt;li data-list-item-id="e6ea9f890dffb3ee14f67a639908ef6ee"&gt;Get Drupal Canvas AI agent skills&lt;/li&gt;&lt;li data-list-item-id="e7d7d6b458cb7504d84f90ae0c72c0624"&gt;Install Canvas CLI&lt;/li&gt;&lt;li data-list-item-id="e0884aa0230b719750dfcc699a275f0da"&gt;Start the Canvas Headless Next.js server.&lt;/li&gt;&lt;li data-list-item-id="e592b6e08cd32fb9229cb700d0e94c3be"&gt;Initialize a git repo with a default .gitignore&lt;/li&gt;&lt;li data-list-item-id="e6afca5163bab06c13e5277ea71b56ee0"&gt;Generate OAuth keys&lt;/li&gt;&lt;li data-list-item-id="e2fb90d3c56c1cab87cb3e74178a8c0de"&gt;Setup a consumer&lt;/li&gt;&lt;li data-list-item-id="ee4f4332be46e86129d932e960132015e"&gt;Add the Frontend in the Canvas editor&lt;/li&gt;&lt;li data-list-item-id="e49a0e11920e977afffce39ab9ce373d1"&gt;Login with Canvas CLI&lt;/li&gt;&lt;li data-list-item-id="e8d8bece8be3073882d7ab8f5edc2b592"&gt;Push the default Code Components to Drupal&lt;/li&gt;&lt;li data-list-item-id="e9d087b449c6e8c74a89ea9bb565537ef"&gt;Edit a page in the Canvas editor in Drupal&lt;/li&gt;&lt;li data-list-item-id="eeb12dcb9b3de0e1e56a6770699bfe69d"&gt;View the site in the Next.js app in the browser&lt;/li&gt;&lt;/ul&gt;&lt;h2 data-heading="Detailed Setup Steps"&gt;Detailed Setup Steps&lt;/h2&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;cd ~/Sites
-mkdir headless
-cd headless
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;
-ddev config --project-type=drupal11 --docroot=web
-ddev start
-
-ddev composer create-project drupal/recommended-project
-ddev composer require --dev 'drush/drush'
-ddev composer require 'drupal/canvas' 'drupal/consumers' 'drupal/custom_elements' 'drupal/simple_oauth'
-
-ddev restart
-
-mkdir keys
-ddev drush si -y
-ddev drush en canvas_headless, canvas_oauth -y
-open -a "Google Chrome" "$(ddev drush uli)"
-
-npx @drupal-canvas/create@latest headless \
-  --template nextjs \
-  --site-url https://headless.ddev.site \
-  --agents none
-
-cd headless
-npx skills add vercel-labs/agent-skills --yes
-npx skills add drupal-canvas/skills --yes
-npm install @drupal-canvas/cli
-npm run dev
-
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open up a new terminal window.&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="e1f9ed96547694e04e11509d5078a5d0d"&gt;Remove the newly added &lt;code&gt;.git&lt;/code&gt; folder that the scaffolding added (&lt;code&gt;~/Sites/headless/headless/.git&lt;/code&gt;).&lt;/li&gt;&lt;li data-list-item-id="e89598ba515cf5990faefe444f314b6db"&gt;Init a git repo for the whole project instead.&lt;/li&gt;&lt;li data-list-item-id="e7b465cfdc07b53894d213900ea9667c6"&gt;Make an initial commit so that later, you can get a clear picture of what Canvas CLI creates or pulls in.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;rm -rf ~/Sites/headless/headless/.git
-cd ~/Sites/headless/
-git init .
-echo "web/sites/default/files" &amp;gt;&amp;gt; .gitignore
-echo "vendor" &amp;gt;&amp;gt; .gitignore
-git add . &amp;amp;&amp;amp; git commit -m 'initial commit'
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open &lt;a class="external-link" href="http://headless.ddev.site/admin/config/people/simple_oauth" target="_blank" rel="noopener nofollow"&gt;http://headless.ddev.site/admin/config/people/simple_oauth&lt;/a&gt; and click "Generate keys" button, then enter the folder that was created in the steps above:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;/var/www/html/keys
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Make sure to click the "Save configuration" button.&lt;/p&gt;&lt;p&gt;Open &lt;a class="external-link" href="http://headless.ddev.site/admin/config/services/consumer" target="_blank" rel="noopener nofollow"&gt;http://headless.ddev.site/admin/config/services/consumer&lt;/a&gt; and click "+ Add Consumer", then set the following field values:&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="eb4015809ec3dd9abc72155f7667fe9da"&gt;Label: Code Components&lt;/li&gt;&lt;li data-list-item-id="ea3d8e4eb780463261d085736f609ac7d"&gt;Client ID: code-components&lt;/li&gt;&lt;li data-list-item-id="ed24bc11cd161d5130ee67e19202902dd"&gt;Grant types (enable both):&lt;ul&gt;&lt;li data-list-item-id="e5ea457461a79414727ad2a0fdf5285f5"&gt;JWT bearer (preview assertion)&lt;/li&gt;&lt;li data-list-item-id="e147e4d6152b101f9be02dd4ba7719d03"&gt;Authorization Code&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-list-item-id="e1da84f08356b464968ea92882808b476"&gt;Authorization Code settings&lt;ul&gt;&lt;li data-list-item-id="ee00f27ed4edd11621581f0c52679fa15"&gt;Enable all scopes&lt;/li&gt;&lt;li data-list-item-id="e6a947fc2c00f2442ba013df927f7d470"&gt;Enable "Automatic authorization", "Remember previous approval", "Use PKCE?"&lt;/li&gt;&lt;li data-list-item-id="eefade9eb6b5c66ff57e64cba9be71dea"&gt;Redirect URIs:&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;http://localhost:4444/callback
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&lt;li data-list-item-id="e8cc263dd3e58ac0fc20a23d30c46eeca"&gt;Disable "Is this consumer 3rd party?"&lt;/li&gt;&lt;li data-list-item-id="e1617103256f33b9e9e0d23281516bb2d"&gt;Disable "Is Confidential?"&lt;/li&gt;&lt;li data-list-item-id="eb5a2cc6b6010ce4df90c59daf85e18aa"&gt;Set "Access token expiration time" to 86400 (one day)&lt;/li&gt;&lt;li data-list-item-id="e4cc9be60e30ccd4da23210e02c6d3e19"&gt;Click Save&lt;/li&gt;&lt;li data-list-item-id="e01f1abdbf7c538a484667e8775bf5202"&gt;Open &lt;a class="external-link" href="http://headless.ddev.site/admin/content/pages" target="_blank" rel="noopener nofollow"&gt;http://headless.ddev.site/admin/content/pages&lt;/a&gt; and click "Add Page", which opens up a new Canvas editing screen at &lt;code&gt;canvas/editor/canvas_page/1&lt;/code&gt;&lt;/li&gt;&lt;li data-list-item-id="ed25053f01b23146fcbde8c11afd0d35a"&gt;Click the icon in the left rail for "Headless frontends"&lt;/li&gt;&lt;li data-list-item-id="e4e720dbcc09d1cbe9d12e5461ca9d177"&gt;Click "Add frontend".&lt;ul&gt;&lt;li data-list-item-id="ea3bb57aefc06b473949c0c5f602560fb"&gt;For the Frontend URL field, use the following (no trailing slash, no query, and no fragment):&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;http://localhost:3000
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If everything went as expected, the "Frontends" section will show &lt;code&gt;http://localhost:3000&lt;/code&gt; as being "Ready".&lt;/p&gt;&lt;p&gt;Change the default OS browser to Chrome; the Canvas CLI login command will open a browser and it needs to be Chrome (or &lt;code&gt;Chromium-based&lt;/code&gt;).&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="e0ac6bfe2bdf958cdcbba13ae8b47730b"&gt;Cd into the &lt;code&gt;headless&lt;/code&gt; folder in the directory of the site.&lt;ul&gt;&lt;li data-list-item-id="e2a83f9ed3adb9ccef4ace031ffd3ff1c"&gt;In this example, the site and the folder are both named &lt;code&gt;headless&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-list-item-id="e865819432ee310b9ca968ab6cb176810"&gt;Login with Canvas CLI using the OAuth consumer client id from the step above (&lt;code&gt;code-components&lt;/code&gt;).&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;cd ~/Sites/headless/headless
-npx canvas login --client-id code-components
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That will open a browser window to a link on the Drupal site, which redirects you to a localhost page that shows you a success/failure message. If everything went well, you can now use Canvas CLI (&lt;code&gt;npx canvas&lt;/code&gt;) to push and pull components between Drupal and Next. Since the scaffolding created some new components, use the push command to get them to the Drupal site:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;npx canvas push
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, you can create a page in Drupal and the components from the Next.js app should appear there. Build out a page, change some css in the code if you want (&lt;code&gt;headless/app/globals.css&lt;/code&gt; for example, maybe change the body background color), and watch things change in the edit screen in realtime. Then, save your changes in Canvas, just like when you are in regular non-headless mode, and view your site at &lt;code&gt;http://localhost:3000&lt;/code&gt;.&lt;/p&gt;&lt;h2 data-heading="Notes"&gt;Notes&lt;/h2&gt;&lt;p&gt;The example above doesn't use Astro, but if you do use Astro:&lt;/p&gt;&lt;pre&gt;&lt;code class="language-plaintext"&gt;npx astro telemetry disable
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-10-06T18:06:33-07:00" title="Tuesday, 6 October 2026 - 18:06" class="datetime"&gt;Tue, 6 Oct 2026 - 18:06&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Wed, 07 Oct 2026 01:06:33 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">150 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>Resume</title>
-  <link>https://brookemahoney.com/resume</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Resume&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;h2 data-heading="Drupal and React Developer"&gt;Senior Drupal and React Developer&lt;/h2&gt;&lt;p&gt;Building for the web since 1995 and working with Drupal since 2010. I'm strongest on the front-end and on Drupal module work, and I'm at my best inside a team. I help maintain Easy Breadcrumb, a Drupal navigation module that ships with Drupal CMS and is used on more than 115,000 sites.&lt;/p&gt;&lt;h2 data-heading="Technical Skills"&gt;Technical Skills&lt;/h2&gt;&lt;ul&gt;&lt;li data-list-item-id="efa0ff4a6308b61f8e3ee86def377f297"&gt;&lt;strong&gt;Drupal:&lt;/strong&gt; Drupal 6-11, Symfony, Plugin API, Configuration Management, Dependency Injection and Service Containers, Entity and Cache APIs, Drush, JSON:API, Recipes&lt;/li&gt;&lt;li data-list-item-id="e589a3369d5ddd1182584cb2d0b5fe8e0"&gt;&lt;strong&gt;Testing:&lt;/strong&gt; Static, unit, kernel, functional, and end-to-end testing using PHPUnit, PHPStan, ESlint, PHPCS, CSPELL, Playwright, Behat, Selenium, and many others..&lt;/li&gt;&lt;li data-list-item-id="e0cf1690f793bf7e9251a931e34f4d908"&gt;&lt;strong&gt;Front-end and decoupled:&lt;/strong&gt; React/Next/Typescript, ES6+, Node.js, Storybook / KSS and living style guides, HTML5, SASS/CSS3&lt;/li&gt;&lt;li data-list-item-id="e318d733546ae0c0630c6b3bfdc01cdc0"&gt;&lt;strong&gt;Data and platforms:&lt;/strong&gt; Apache Solr, MySQL, MariaDB, PostgreSQL, MSSQL migration, Acquia Cloud, AWS, Pantheon, Apache, Nginx, Docker, DDEV, SSH, Bash&lt;/li&gt;&lt;li data-list-item-id="e3e6a807f315dd7a8ee0ba69cf133ab2d"&gt;&lt;strong&gt;Accessibility:&lt;/strong&gt; WCAG&lt;/li&gt;&lt;/ul&gt;&lt;h2 data-heading="Open Source Work"&gt;Open Source Work&lt;/h2&gt;&lt;p&gt;Credited on 216 resolved Drupal.org issues, plus contributions to security advisories and technical documentation.&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="e968b70f1aaf65a62871271f02ea1fc1b"&gt;&lt;strong&gt;Easy Breadcrumb - Maintainer.&lt;/strong&gt; Drupal navigation module that ships with Drupal CMS and is used on more than 115,000 sites.&lt;/li&gt;&lt;li data-list-item-id="e6a5955f3b68ad66a2392ae6827fcc2ae"&gt;&lt;strong&gt;Config Suite - Maintainer.&lt;/strong&gt; Drupal module that allows for automatic configuration import, export, and exchange between sites.&lt;/li&gt;&lt;li data-list-item-id="ea11b9960ea7c09c44b94758cd7a8c3e7"&gt;&lt;strong&gt;Drupal 8 Multilingual Demo - Core readiness contributions.&lt;/strong&gt; Contributed to the demonstration project during Drupal Core's alpha and beta cycles, helping prepare Core for multilingual deployment.&lt;/li&gt;&lt;li data-list-item-id="ee817f18322f5298e1992a008a38e6c32"&gt;&lt;strong&gt;Drupal AI Learners - Member.&lt;/strong&gt; Participant in the ecosystem working group on Drupal and AI, collaborating in the official Slack channels on where the community is heading.&lt;/li&gt;&lt;/ul&gt;&lt;h2 data-heading="Professional Experience"&gt;Professional Experience&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Independent — Open Source &amp;amp; Ecosystem Study | Jun 2023 – Present&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="edfef7c702814d2368b2564e397ddf795"&gt;Planned a three-month break at 46 and extended it to three years. Used the time to study, to volunteer at a local animal rescue, and to plan my future Drupal career trajectory in the quickly-changing age of AI.&lt;/li&gt;&lt;li data-list-item-id="e433679ebf342978100810410c91747c3"&gt;July-Sept 2026: shipped a release for Easy Breadcrumb extending test coverage to every configuration option, a correctness fix needed by work underway in the Drupal CMS team, and a major bug fix for Config Suite to allow syncing to work for all delete cases.&lt;/li&gt;&lt;li data-list-item-id="e4d4ec8acf100d77d2e946d98cb0d5a1a"&gt;Developed a local containerized AI workflow for safe parallel orchestration of multiple harnesses using DDev and T3Code with spec-driven development using Strikethroo.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Redaptive.com | Staff Software Engineer | Nov 2018 – Jun 2023&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li data-list-item-id="ececbb3f1a0c46dd3ad6dfe5e9d8f2955"&gt;Started as the sole front-end and Drupal developer and grew the engineering operation into a team, establishing the code standards, Git workflows, and technical documentation the department worked under.&lt;/li&gt;&lt;li data-list-item-id="eb719c433d9f0a8c66aaf385db82a6d52"&gt;Built decoupled React front ends against enterprise Drupal installations on Acquia Cloud, integrated real-time AWS data streams, and worked cross-functionally with an internal Java engineering team.&lt;/li&gt;&lt;li data-list-item-id="ee284cb93ec3f74dd077e60a775a1a54f"&gt;Set up engineering knowledge management and project governance across the Atlassian suite, writing the Confluence documentation and structuring the Jira workflows.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hook 42 | Senior Drupal Developer | 2015 – 2018&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;A San Francisco Drupal agency. Client engagements included Zicasso and SunPower.&lt;/p&gt;&lt;ul&gt;&lt;li class="ck-list-marker-bold" data-list-item-id="ee231e6522a55b7ff4088e0154ff1bce1"&gt;&lt;strong&gt;Zicasso.com | Senior Drupal Developer | 2016 – Aug 2018&lt;/strong&gt;&lt;ul&gt;&lt;li data-list-item-id="ea679ea8b3bbe81bde603719f52804f8b"&gt;Maintained a high-traffic transactional e-commerce platform connecting global travelers with agencies.&lt;/li&gt;&lt;li data-list-item-id="e90ec141d29345ec6e8fdcbe5bc19c291"&gt;Built custom components including automated invoicing and secure internal messaging.&lt;/li&gt;&lt;li data-list-item-id="ec965e648b88982dbaf57cacfc159fdd8"&gt;Developed a component-driven front-end ecosystem through a living style guide and design pattern library using KSS.&lt;/li&gt;&lt;li data-list-item-id="ec8d10608acb7e66d64aacc38208a3736"&gt;Built and ran a custom multivariate A/B testing engine to optimize conversion funnels, using Pantheon Multisite and Google Analytics.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class="ck-list-marker-bold" data-list-item-id="e3be0f36a63fec42ecbf4b894080bbfeb"&gt;&lt;strong&gt;SunPower.com | Senior Drupal Developer | 2015 – 2016&lt;/strong&gt;&lt;ul&gt;&lt;li data-list-item-id="e06cb0231528a2a717615adfb7bcfa91a"&gt;Led development of the SunPower Savings Calculator, which won the 2016 Oracle Markie Award for Best Web or Commerce Experience.&lt;/li&gt;&lt;li data-list-item-id="efeb8fbf0bda76e865b03af2437dc05a4"&gt;Engineered an internationalized multi-site architecture and streamlined multilingual translation workflows on Acquia.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Thought Matrix | Senior Drupal Developer | Mar 2012 – 2014&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;A major San Francisco agency, later merged with Rauxa. Client engagements included Johnson &amp;amp; Johnson, General Electric, Fidelity Biosciences, and the University of Phoenix.&lt;/p&gt;&lt;ul&gt;&lt;li class="ck-list-marker-bold" data-list-item-id="ea11e2469f0cf32869b96648dbee1b4ea"&gt;&lt;strong&gt;Alzforum.org (Fidelity Biosciences)&lt;/strong&gt;&lt;ul&gt;&lt;li data-list-item-id="e806ee3d2a19b2a0bc35215278fd21bde"&gt;Lead developer on the rebuild of a 15-year-old scientific networking platform into a Drupal architecture hosted on Acquia.&lt;/li&gt;&lt;li data-list-item-id="ec4e44b6bc4583c6dcf86d6bef46507b8"&gt;Migrated the platform off MSSQL with Apache Solr indexing, supporting thousands of users creating their own annotations and comments alongside dozens of PubMed paper-citations, news articles, and reviews published daily.&lt;/li&gt;&lt;li data-list-item-id="e6f0cef72d1a1a0363ce8ec8b7a08fa4a"&gt;Integrated a third-party vendor's responsive template into a custom theme.&lt;/li&gt;&lt;li data-list-item-id="eef2cf628c7b37a2710a64484bf3311a6"&gt;Built a custom publishing and review system that pulled nightly scientific updates from PubMed APIs.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-list-item-id="e40393c6d21fbd0ec173e6062e76165e9"&gt;&lt;strong&gt;General Electric (Inside GE Software):&lt;/strong&gt; Built an internal responsive corporate platform on custom installation profiles, heavily leveraging panels for flexible content editing.&lt;/li&gt;&lt;li data-list-item-id="eeacc00db40b6f8f2d807b833f371a773"&gt;&lt;strong&gt;University of Phoenix:&lt;/strong&gt; Worked directly with Acquia teams to launch an agile, responsive research portal for research fellows on aggressive timelines.&lt;/li&gt;&lt;li data-list-item-id="e5b3cd8c10a68f3b22e5ebe2345585955"&gt;&lt;strong&gt;Johnson &amp;amp; Johnson:&lt;/strong&gt; Engineered mobile-responsive Drupal sites for One Touch diabetes testers and Children With Diabetes, building multi-step AJAX-driven forms with custom Google Analytics tracking funnels.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Bella Pictures | Drupal Developer | Dec 2011 – early 2012&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;A Drupal 6 portfolio-driven wedding photography and video service site, integrated with Jenkins for CI/CD, featuring customer sign-in, availability checking, pricing, video/album services, and a blog/planning resources section.&lt;/p&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-09-04T07:09:26-07:00" title="Friday, 4 September 2026 - 07:09" class="datetime"&gt;Fri, 4 Sep 2026 - 07:09&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Fri, 04 Sep 2026 14:09:26 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">149 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>About</title>
-  <link>https://brookemahoney.com/about</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;About&lt;/span&gt;
+  <title>Drupal Modules</title>
+  <link>https://brookemahoney.com/drupal-modules</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Drupal Modules&lt;/span&gt;
 &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-03-20T12:43:42-07:00" title="Friday, 20 March 2026 - 12:43" class="datetime"&gt;Fri, 20 Mar 2026 - 12:43&lt;/time&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T16:22:24-08:00" title="Sunday, 1 November 2026 - 16:22" class="datetime"&gt;Sun, 1 Nov 2026 - 16:22&lt;/time&gt;
 &lt;/span&gt;
 </description>
-  <pubDate>Fri, 20 Mar 2026 19:43:42 +0000</pubDate>
+  <pubDate>Mon, 02 Nov 2026 00:22:24 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">146 at https://brookemahoney.com</guid>
+    <guid isPermaLink="false">170 at https://brookemahoney.com</guid>
     </item>
 <item>
-  <title>Contact</title>
-  <link>https://brookemahoney.com/contact</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Contact&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;&lt;a href="https://www.drupal.org/u/loopduplicate"&gt;Drupal.org&lt;/a&gt;, &lt;a href="https://www.linkedin.com/in/brooke-marie-mahoney/"&gt;LinkedIn&lt;/a&gt;, &lt;a href="https://github.com/brookemahoney"&gt;Github&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-10-07T12:26:04-07:00" title="Tuesday, 7 October 2025 - 12:26" class="datetime"&gt;Tue, 7 Oct 2025 - 12:26&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Tue, 07 Oct 2025 19:26:04 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">137 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>Bash scripts for Drupal, DDEV, and Tome</title>
-  <link>https://brookemahoney.com/blog/bash-scripts-drupal-ddev-and-tome</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Bash scripts for Drupal, DDEV, and Tome&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p&gt;This website is made with &lt;a href="https://drupal.org"&gt;Drupal&lt;/a&gt;. Local development is done with &lt;a href="https://ddev.com/"&gt;DDEV&lt;/a&gt; configured to use Orbstack for container management. The &lt;a href="https://tome.fyi/"&gt;Tome&lt;/a&gt; Drupal module exports the dynamic site to a static site. Python is used to preview the site locally. Public hosting is provided free by Github.&lt;/p&gt;&lt;p&gt;Here are some custom bash aliases and functions I use to make common local tasks easy. &lt;a href="https://www.npmjs.com/package/concurrently"&gt;Concurrently&lt;/a&gt; is used to run two processes in one terminal session.&lt;/p&gt;&lt;pre&gt;&lt;code class="language-bash language-plaintext"&gt;alias brookemahoneycomCd='cd ~/Sites/brookemahoneycom'
-brookemahoneycomLaunch () {
-  # Starts Orbstack if it isn't running.
-  orb
-  brookemahoneycomCd
-  cd drupal
-  ddev launch
-}
-
-brookemahoneycomPreview () {
-  brookemahoneycomCd
-  cd docs
-  concurrently 'python -m http.server' 'open "http://localhost:8000"'
-}
-
-brookemahoneycomBuild() {
-  # Starts Orbstack if it isn't running.
-  orb
-  # Changes to the drupal directory.
-  cd ~/Sites/brookemahoneycom/drupal
-  # Clears caches.
-  ddev drush cr
-  # Exports the site with Tome.
-  ddev drush tome:static --uri=https://brookemahoney.com
-  # Removes old docs directory.
-  rm -rf ~/Sites/brookemahoneycom/docs
-  # Copies the Tome build directory to docs for Github hosting.
-  cp -R ~/Sites/brookemahoneycom/drupal/html ~/Sites/brookemahoneycom/docs
-  # Copies over static files, such as CNAME for Github hosting.
-  cp -R ~/projects/brookemahoneycom/sync/ ~/Sites/brookemahoneycom/docs
-}
-
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All the code for the Drupal install is in &lt;a href="https://github.com/brookemahoney/brookmahoneycom"&gt;this site's Github repo&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-17T13:46:57-07:00" title="Wednesday, 17 September 2025 - 13:46" class="datetime"&gt;Wed, 17 Sep 2025 - 13:46&lt;/time&gt;
-&lt;/span&gt;
-</description>
-  <pubDate>Wed, 17 Sep 2025 20:46:57 +0000</pubDate>
-    <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">11 at https://brookemahoney.com</guid>
-    </item>
-<item>
-  <title>Blog</title>
-  <link>https://brookemahoney.com/blog</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Blog&lt;/span&gt;
+  <title>Attention Deficit Hyperactivity Disorder (ADHD)</title>
+  <link>https://brookemahoney.com/diagnoses/attention-deficit-hyperactivity-disorder-adhd</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Attention Deficit Hyperactivity Disorder (ADHD)&lt;/span&gt;
 &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-14T15:10:00-07:00" title="Sunday, 14 September 2025 - 15:10" class="datetime"&gt;Sun, 14 Sep 2025 - 15:10&lt;/time&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:49:35-08:00" title="Sunday, 1 November 2026 - 15:49" class="datetime"&gt;Sun, 1 Nov 2026 - 15:49&lt;/time&gt;
 &lt;/span&gt;
 </description>
-  <pubDate>Sun, 14 Sep 2025 22:10:00 +0000</pubDate>
+  <pubDate>Sun, 01 Nov 2026 23:49:35 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">4 at https://brookemahoney.com</guid>
+    <guid isPermaLink="false">169 at https://brookemahoney.com</guid>
     </item>
 <item>
-  <title>Home</title>
-  <link>https://brookemahoney.com/content/welcome</link>
-  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Home&lt;/span&gt;
-
-            &lt;div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"&gt;&lt;p class="text-align-center"&gt;Welcome Everyone :3&lt;/p&gt;&lt;/div&gt;
-      &lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
-&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2025-09-14T14:50:57-07:00" title="Sunday, 14 September 2025 - 14:50" class="datetime"&gt;Sun, 14 Sep 2025 - 14:50&lt;/time&gt;
+  <title>Tourette's Syndrome (TS)</title>
+  <link>https://brookemahoney.com/diagnoses/tourettes-syndrome-ts</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Tourette's Syndrome (TS)&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:49:12-08:00" title="Sunday, 1 November 2026 - 15:49" class="datetime"&gt;Sun, 1 Nov 2026 - 15:49&lt;/time&gt;
 &lt;/span&gt;
 </description>
-  <pubDate>Sun, 14 Sep 2025 21:50:57 +0000</pubDate>
+  <pubDate>Sun, 01 Nov 2026 23:49:12 +0000</pubDate>
     <dc:creator>brooke</dc:creator>
-    <guid isPermaLink="false">3 at https://brookemahoney.com</guid>
+    <guid isPermaLink="false">168 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Major Depressive Disorder (MDD)</title>
+  <link>https://brookemahoney.com/diagnoses/major-depressive-disorder-mdd</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Major Depressive Disorder (MDD)&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:48:54-08:00" title="Sunday, 1 November 2026 - 15:48" class="datetime"&gt;Sun, 1 Nov 2026 - 15:48&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Sun, 01 Nov 2026 23:48:54 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">167 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Obsessive Compulsive Disorder (OCD)</title>
+  <link>https://brookemahoney.com/diagnoses/obsessive-compulsive-disorder-ocd</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Obsessive Compulsive Disorder (OCD)&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:48:39-08:00" title="Sunday, 1 November 2026 - 15:48" class="datetime"&gt;Sun, 1 Nov 2026 - 15:48&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Sun, 01 Nov 2026 23:48:39 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">166 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Dissociative Identity Disorder (DID)</title>
+  <link>https://brookemahoney.com/diagnoses/dissociative-identity-disorder-did</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Dissociative Identity Disorder (DID)&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:48:18-08:00" title="Sunday, 1 November 2026 - 15:48" class="datetime"&gt;Sun, 1 Nov 2026 - 15:48&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Sun, 01 Nov 2026 23:48:18 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">165 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Autism Spectrum Disorder (ASD)</title>
+  <link>https://brookemahoney.com/diagnoses/autism-spectrum-disorder-asd</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Autism Spectrum Disorder (ASD)&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:47:50-08:00" title="Sunday, 1 November 2026 - 15:47" class="datetime"&gt;Sun, 1 Nov 2026 - 15:47&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Sun, 01 Nov 2026 23:47:50 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">164 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Diagnoses</title>
+  <link>https://brookemahoney.com/diagnoses</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Diagnoses&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:45:57-08:00" title="Sunday, 1 November 2026 - 15:45" class="datetime"&gt;Sun, 1 Nov 2026 - 15:45&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Sun, 01 Nov 2026 23:45:57 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">163 at https://brookemahoney.com</guid>
+    </item>
+<item>
+  <title>Ideas</title>
+  <link>https://brookemahoney.com/ideas</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Ideas&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;span&gt;brooke&lt;/span&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;&lt;time datetime="2026-11-01T15:44:50-08:00" title="Sunday, 1 November 2026 - 15:44" class="datetime"&gt;Sun, 1 Nov 2026 - 15:44&lt;/time&gt;
+&lt;/span&gt;
+</description>
+  <pubDate>Sun, 01 Nov 2026 23:44:50 +0000</pubDate>
+    <dc:creator>brooke</dc:creator>
+    <guid isPermaLink="false">162 at https://brookemahoney.com</guid>
     </item>
 
   </channel>

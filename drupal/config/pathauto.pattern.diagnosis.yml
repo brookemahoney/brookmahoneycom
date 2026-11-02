@@ -1,0 +1,23 @@
+uuid: ac342560-ac6c-4d69-8551-42b996bd7493
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.diagnosis
+  module:
+    - node
+id: diagnosis
+label: Diagnosis
+type: 'canonical_entities:node'
+pattern: '/diagnoses/[node:title]'
+selection_criteria:
+  535bf928-9c1d-454a-9f79-a33ed2308b55:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      diagnosis: diagnosis
+selection_logic: and
+weight: -5
+relationships: {  }

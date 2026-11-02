@@ -1,0 +1,81 @@
+uuid: e390ff7b-781e-4c25-8166-4abaf4c2fe46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.diagnosis.body
+    - field.field.node.diagnosis.field_content_reference
+    - node.type.diagnosis
+  module:
+    - path
+    - text
+id: node.diagnosis.default
+targetEntityType: node
+bundle: diagnosis
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 5
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_content_reference:
+    type: entity_reference_autocomplete
+    weight: 121
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

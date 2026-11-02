@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_content_reference
     - field.field.node.blog_post.field_tags
     - node.type.blog_post
   module:
@@ -34,4 +35,5 @@ content:
     weight: 1
     region: content
 hidden:
+  field_content_reference: true
   field_tags: true

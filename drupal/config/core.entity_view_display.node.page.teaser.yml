@@ -1,0 +1,37 @@
+uuid: 460542fa-e479-4a66-92e0-fa2738223cab
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_content_reference
+    - node.type.page
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_content_reference: true
