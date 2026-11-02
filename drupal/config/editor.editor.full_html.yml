@@ -36,6 +36,7 @@ settings:
       - sourceEditing
       - highlightJs
       - markdownPaste
+      - fullscreen
   plugins:
     ckeditor5_alignment:
       enabled_alignments:
