@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.idea.body
     - field.field.node.idea.field_content_reference
+    - field.field.node.idea.field_tags
     - node.type.idea
   module:
     - text
@@ -30,3 +31,4 @@ content:
     region: content
 hidden:
   field_content_reference: true
+  field_tags: true

@@ -24,7 +24,7 @@ settings:
       - outdent
       - bulletedList
       - numberedList
-      - '|'
+      - '-'
       - horizontalLine
       - blockQuote
       - link

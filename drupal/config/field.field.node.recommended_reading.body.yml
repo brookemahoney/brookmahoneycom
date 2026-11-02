@@ -1,0 +1,24 @@
+uuid: 003d704e-7893-45ee-9faf-b272366786e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recommended_reading
+  module:
+    - text
+id: node.recommended_reading.body
+field_name: body
+entity_type: node
+bundle: recommended_reading
+label: body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

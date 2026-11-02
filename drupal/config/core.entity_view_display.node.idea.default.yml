@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.idea.body
     - field.field.node.idea.field_content_reference
+    - field.field.node.idea.field_tags
     - node.type.idea
   module:
     - text
@@ -28,6 +29,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
