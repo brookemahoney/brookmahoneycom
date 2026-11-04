@@ -11,7 +11,6 @@ dependencies:
     - path
     - system
     - taxonomy
-    - toolbar
 _core:
   default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
 id: content_editor
@@ -23,7 +22,6 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
-  - 'access toolbar'
   - 'administer url aliases'
   - 'create terms in tags'
   - 'create url aliases'

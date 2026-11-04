@@ -15,6 +15,6 @@ enable_dark_mode: '0'
 high_contrast_mode: false
 accent_color: '#bf54ab'
 focus_color: ''
-layout_density: default
+layout_density: ''
 show_description_toggle: false
 show_user_theme_settings: false
