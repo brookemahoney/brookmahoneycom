@@ -1,0 +1,23 @@
+uuid: 9bc343ed-e924-4fa8-888b-6f8c3f269f6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recommended_reading
+  module:
+    - node
+id: recommended_reading
+label: 'Recommended Reading'
+type: 'canonical_entities:node'
+pattern: '/recommended-reading/[node:title]'
+selection_criteria:
+  fd8e50e8-9cf1-411f-bf98-4fb4031ea68c:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      recommended_reading: recommended_reading
+selection_logic: and
+weight: -5
+relationships: {  }
